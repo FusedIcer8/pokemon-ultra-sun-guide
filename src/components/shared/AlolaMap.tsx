@@ -2,42 +2,44 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { MapPin, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import { ChevronRight, MapPin, Compass } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
-interface MapLocation {
+interface MapHotspot {
   slug: string;
   name: string;
   island: string;
   category: string;
-  x: number; // percentage position
+  // Position as % of image dimensions
+  x: number;
   y: number;
   encounterCount: number;
-  connections: string[]; // slugs of connected locations
 }
 
-// Alola region map positions — each island is a cluster
-const MAP_DATA: MapLocation[] = [
-  // Melemele Island (top-left cluster)
-  { slug: 'route-1', name: 'Route 1', island: 'melemele', category: 'route', x: 18, y: 28, encounterCount: 9, connections: ['hauoli-city', 'verdant-cavern'] },
-  { slug: 'route-2', name: 'Route 2', island: 'melemele', category: 'route', x: 12, y: 42, encounterCount: 9, connections: ['route-1', 'verdant-cavern'] },
-  { slug: 'verdant-cavern', name: 'Verdant Cavern', island: 'melemele', category: 'cave', x: 8, y: 32, encounterCount: 3, connections: ['route-2'] },
-  { slug: 'hauoli-city', name: "Hau'oli City", island: 'melemele', category: 'city', x: 24, y: 18, encounterCount: 7, connections: ['route-1'] },
+// Hotspot positions mapped to the official USUM artwork (1280x905)
+// Islands roughly: Melemele=bottom-left, Akala=top-center, Ula'ula=top-right area, Poni=bottom-right
+const HOTSPOTS: MapHotspot[] = [
+  // Melemele Island (bottom-left island)
+  { slug: 'route-1', name: 'Route 1', island: 'melemele', category: 'route', x: 22, y: 68, encounterCount: 9 },
+  { slug: 'route-2', name: 'Route 2', island: 'melemele', category: 'route', x: 16, y: 58, encounterCount: 9 },
+  { slug: 'verdant-cavern', name: 'Verdant Cavern', island: 'melemele', category: 'cave', x: 10, y: 52, encounterCount: 3 },
+  { slug: 'hauoli-city', name: "Hau'oli City", island: 'melemele', category: 'city', x: 28, y: 56, encounterCount: 7 },
 
-  // Akala Island (center cluster)
-  { slug: 'route-4', name: 'Route 4', island: 'akala', category: 'route', x: 42, y: 35, encounterCount: 7, connections: ['route-5', 'brooklet-hill'] },
-  { slug: 'route-5', name: 'Route 5', island: 'akala', category: 'route', x: 48, y: 48, encounterCount: 7, connections: ['route-4', 'brooklet-hill'] },
-  { slug: 'brooklet-hill', name: 'Brooklet Hill', island: 'akala', category: 'water', x: 55, y: 38, encounterCount: 8, connections: ['route-5', 'wela-volcano-park'] },
-  { slug: 'wela-volcano-park', name: 'Wela Volcano Park', island: 'akala', category: 'mountain', x: 62, y: 52, encounterCount: 5, connections: ['brooklet-hill', 'lush-jungle'] },
-  { slug: 'lush-jungle', name: 'Lush Jungle', island: 'akala', category: 'route', x: 70, y: 42, encounterCount: 11, connections: ['wela-volcano-park', 'route-8'] },
-  { slug: 'route-8', name: 'Route 8', island: 'akala', category: 'route', x: 78, y: 55, encounterCount: 6, connections: ['lush-jungle'] },
+  // Akala Island (top-center island)
+  { slug: 'route-4', name: 'Route 4', island: 'akala', category: 'route', x: 38, y: 22, encounterCount: 7 },
+  { slug: 'route-5', name: 'Route 5', island: 'akala', category: 'route', x: 44, y: 16, encounterCount: 7 },
+  { slug: 'brooklet-hill', name: 'Brooklet Hill', island: 'akala', category: 'water', x: 50, y: 24, encounterCount: 8 },
+  { slug: 'wela-volcano-park', name: 'Wela Volcano', island: 'akala', category: 'mountain', x: 56, y: 18, encounterCount: 5 },
+  { slug: 'lush-jungle', name: 'Lush Jungle', island: 'akala', category: 'route', x: 48, y: 30, encounterCount: 11 },
+  { slug: 'route-8', name: 'Route 8', island: 'akala', category: 'route', x: 54, y: 32, encounterCount: 6 },
 ];
 
-const ISLAND_COLORS: Record<string, { bg: string; ring: string; text: string; gradient: string }> = {
-  melemele: { bg: 'bg-yellow-400', ring: 'ring-yellow-300', text: 'text-yellow-800', gradient: 'from-yellow-50 to-amber-50' },
-  akala: { bg: 'bg-rose-400', ring: 'ring-rose-300', text: 'text-rose-800', gradient: 'from-rose-50 to-pink-50' },
-  'ula-ula': { bg: 'bg-red-500', ring: 'ring-red-300', text: 'text-red-800', gradient: 'from-red-50 to-orange-50' },
-  poni: { bg: 'bg-purple-500', ring: 'ring-purple-300', text: 'text-purple-800', gradient: 'from-purple-50 to-violet-50' },
+const ISLAND_STYLES: Record<string, { dot: string; glow: string; label: string }> = {
+  melemele: { dot: 'bg-yellow-400 border-yellow-200', glow: 'shadow-[0_0_12px_rgba(250,204,21,0.7)]', label: 'text-yellow-200' },
+  akala: { dot: 'bg-rose-400 border-rose-200', glow: 'shadow-[0_0_12px_rgba(251,113,133,0.7)]', label: 'text-rose-200' },
+  'ula-ula': { dot: 'bg-red-500 border-red-200', glow: 'shadow-[0_0_12px_rgba(239,68,68,0.7)]', label: 'text-red-200' },
+  poni: { dot: 'bg-purple-400 border-purple-200', glow: 'shadow-[0_0_12px_rgba(192,132,252,0.7)]', label: 'text-purple-200' },
 };
 
 const CATEGORY_ICONS: Record<string, string> = {
@@ -45,141 +47,112 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export function AlolaMap({ activeSlug, island }: { activeSlug?: string; island?: string }) {
-  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
-  const [selectedSlug, setSelectedSlug] = useState<string | null>(activeSlug ?? null);
+  const [selected, setSelected] = useState<string | null>(activeSlug ?? null);
+  const [hovered, setHovered] = useState<string | null>(null);
 
-  const filteredLocations = island ? MAP_DATA.filter(l => l.island === island) : MAP_DATA;
-  const selectedLocation = MAP_DATA.find(l => l.slug === (hoveredSlug ?? selectedSlug));
+  const visibleHotspots = island ? HOTSPOTS.filter(h => h.island === island) : HOTSPOTS;
+  const activeHotspot = HOTSPOTS.find(h => h.slug === (hovered ?? selected));
 
   return (
-    <div className="space-y-4">
-      {/* Map */}
-      <div className="map-container aspect-[16/9] bg-gradient-to-br from-sky-100 via-cyan-50 to-blue-100 dark:from-sky-950 dark:via-cyan-950 dark:to-blue-950 relative">
-        {/* Ocean background pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="waves" x="0" y="0" width="80" height="40" patternUnits="userSpaceOnUse">
-                <path d="M0 20 Q 20 10, 40 20 Q 60 30, 80 20" fill="none" stroke="currentColor" strokeWidth="1" className="text-sky-300 dark:text-sky-700" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#waves)" />
-          </svg>
+    <div className="space-y-3">
+      {/* Map with artwork background */}
+      <div className="relative rounded-2xl overflow-hidden border-2 border-amber-200/50 dark:border-amber-800/30 shadow-xl">
+        {/* The actual illustrated map */}
+        <div className="relative w-full aspect-[1280/905]">
+          <Image
+            src="/maps/alola-full.png"
+            alt="Alola Region Map"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            priority
+          />
+
+          {/* Subtle dark overlay for contrast with hotspots */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20 pointer-events-none" />
+
+          {/* Hotspot markers */}
+          {visibleHotspots.map(spot => {
+            const styles = ISLAND_STYLES[spot.island] || ISLAND_STYLES.melemele;
+            const isActive = spot.slug === activeSlug;
+            const isHovered = spot.slug === hovered;
+            const isSelected = spot.slug === selected;
+            const highlighted = isActive || isHovered || isSelected;
+
+            return (
+              <button
+                key={spot.slug}
+                className="absolute z-10 group"
+                style={{ left: `${spot.x}%`, top: `${spot.y}%`, transform: 'translate(-50%, -50%)' }}
+                onMouseEnter={() => setHovered(spot.slug)}
+                onMouseLeave={() => setHovered(null)}
+                onClick={() => setSelected(spot.slug === selected ? null : spot.slug)}
+              >
+                {/* Pulse ring on active */}
+                {highlighted && (
+                  <span className={`absolute inset-[-6px] rounded-full ${styles.dot} opacity-30 animate-ping`} />
+                )}
+
+                {/* Dot marker */}
+                <span className={`relative flex items-center justify-center w-5 h-5 md:w-6 md:h-6 rounded-full border-2 transition-all duration-200 ${styles.dot} ${
+                  highlighted ? `scale-125 ${styles.glow}` : 'scale-100 shadow-md'
+                }`}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                </span>
+
+                {/* Tooltip label */}
+                <span className={`absolute left-1/2 -translate-x-1/2 -top-8 whitespace-nowrap text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full transition-all duration-200 ${
+                  highlighted
+                    ? 'bg-gray-900/90 text-white opacity-100 scale-100'
+                    : 'bg-gray-900/70 text-white/90 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100'
+                }`}>
+                  {spot.name}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
-        {/* Island land masses */}
-        <div className="absolute top-[10%] left-[3%] w-[30%] h-[55%] rounded-[40%] bg-gradient-to-br from-green-200 to-emerald-300 dark:from-green-900 dark:to-emerald-800 opacity-40 blur-sm" />
-        <div className="absolute top-[20%] left-[35%] w-[50%] h-[60%] rounded-[35%] bg-gradient-to-br from-green-200 to-lime-300 dark:from-green-900 dark:to-lime-800 opacity-40 blur-sm" />
-
-        {/* Connection lines */}
-        <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }}>
-          {filteredLocations.map(loc =>
-            loc.connections
-              .map(connSlug => {
-                const conn = MAP_DATA.find(l => l.slug === connSlug);
-                if (!conn || (island && conn.island !== island)) return null;
-                return (
-                  <line
-                    key={`${loc.slug}-${connSlug}`}
-                    x1={`${loc.x}%`} y1={`${loc.y}%`}
-                    x2={`${conn.x}%`} y2={`${conn.y}%`}
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeDasharray="6 4"
-                    className="text-gray-400 dark:text-gray-600"
-                    opacity={0.5}
-                  />
-                );
-              })
-          )}
-        </svg>
-
-        {/* Location nodes */}
-        {filteredLocations.map(loc => {
-          const colors = ISLAND_COLORS[loc.island] || ISLAND_COLORS.melemele;
-          const isActive = loc.slug === activeSlug;
-          const isHovered = loc.slug === hoveredSlug;
-          const isSelected = loc.slug === selectedSlug;
-
-          return (
-            <Link
-              key={loc.slug}
-              href={`/routes/${loc.slug}`}
-              className={`map-node flex flex-col items-center gap-0.5 ${isActive ? 'active' : ''}`}
-              style={{ left: `${loc.x}%`, top: `${loc.y}%`, transform: 'translate(-50%, -50%)' }}
-              onMouseEnter={() => setHoveredSlug(loc.slug)}
-              onMouseLeave={() => setHoveredSlug(null)}
-              onClick={(e) => { e.preventDefault(); setSelectedSlug(loc.slug); }}
-            >
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-lg border-2 border-white dark:border-gray-700 transition-all ${
-                isActive || isHovered || isSelected
-                  ? `${colors.bg} ring-4 ${colors.ring} scale-110`
-                  : `${colors.bg} opacity-90`
-              }`}>
-                {CATEGORY_ICONS[loc.category] || '📍'}
-              </div>
-              <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap shadow-sm transition-opacity ${
-                isHovered || isSelected || isActive
-                  ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 opacity-100'
-                  : 'bg-white/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 opacity-70'
-              }`}>
-                {loc.name}
-              </span>
-            </Link>
-          );
-        })}
-
-        {/* Island labels */}
-        {!island && (
-          <>
-            <span className="absolute top-[8%] left-[15%] text-xs font-bold text-yellow-600/60 dark:text-yellow-400/40 tracking-wider uppercase">Melemele</span>
-            <span className="absolute top-[15%] left-[52%] text-xs font-bold text-rose-600/60 dark:text-rose-400/40 tracking-wider uppercase">Akala</span>
-          </>
-        )}
+        {/* Map legend (bottom overlay) */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-3 md:p-4 pointer-events-none">
+          <div className="flex items-center gap-4 text-[10px] md:text-xs font-medium">
+            <span className="flex items-center gap-1.5 text-white/80">
+              <Compass size={12} /> Alola Region
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-yellow-400 border border-yellow-200" />
+              <span className="text-yellow-200">Melemele</span>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full bg-rose-400 border border-rose-200" />
+              <span className="text-rose-200">Akala</span>
+            </span>
+          </div>
+        </div>
       </div>
 
-      {/* Selected location info panel */}
-      {selectedLocation && (
-        <div className="p-4 rounded-xl bg-card border border-border animate-fadein">
+      {/* Selected location detail card */}
+      {activeHotspot && (
+        <div className="rounded-xl bg-card border border-border p-4 animate-fadein">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="text-2xl">{CATEGORY_ICONS[selectedLocation.category]}</span>
+              <span className="text-2xl">{CATEGORY_ICONS[activeHotspot.category]}</span>
               <div>
-                <h3 className="font-bold text-lg">{selectedLocation.name}</h3>
+                <h3 className="font-bold text-base">{activeHotspot.name}</h3>
                 <div className="flex items-center gap-2 mt-0.5">
-                  <Badge variant="secondary" className="text-xs capitalize">{selectedLocation.island}</Badge>
-                  <Badge variant="outline" className="text-xs capitalize">{selectedLocation.category}</Badge>
-                  <span className="text-xs text-muted-foreground">{selectedLocation.encounterCount} Pokemon</span>
+                  <Badge variant="secondary" className="text-[10px] capitalize">{activeHotspot.island}</Badge>
+                  <Badge variant="outline" className="text-[10px] capitalize">{activeHotspot.category}</Badge>
+                  <span className="text-xs text-muted-foreground">{activeHotspot.encounterCount} Pokemon</span>
                 </div>
               </div>
             </div>
             <Link
-              href={`/routes/${selectedLocation.slug}`}
-              className="flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+              href={`/routes/${activeHotspot.slug}`}
+              className="flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
             >
-              View Details <ChevronRight size={14} />
+              Open Guide <ChevronRight size={14} />
             </Link>
           </div>
-
-          {/* Connections */}
-          {selectedLocation.connections.length > 0 && (
-            <div className="flex items-center gap-2 mt-3 pt-3 border-t border-border">
-              <MapPin size={12} className="text-muted-foreground" />
-              <span className="text-xs text-muted-foreground">Connected to:</span>
-              {selectedLocation.connections.map(slug => {
-                const conn = MAP_DATA.find(l => l.slug === slug);
-                return conn ? (
-                  <button
-                    key={slug}
-                    onClick={() => setSelectedSlug(slug)}
-                    className="text-xs font-medium text-primary hover:underline"
-                  >
-                    {conn.name}
-                  </button>
-                ) : null;
-              })}
-            </div>
-          )}
         </div>
       )}
     </div>
