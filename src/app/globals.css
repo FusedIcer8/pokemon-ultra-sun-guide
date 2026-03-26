@@ -1,25 +1,116 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #E53935;
-  --color-primary-light: #FF5252;
-  --color-secondary: #FF9800;
-  --color-accent: #FFC107;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 :root {
+  --nav-height: 4rem;
+  --radius: 0.625rem;
+
   --background: #FAFAF8;
   --foreground: #1A1A2E;
-  --nav-height: 4rem;
+
+  --card: #FFFFFF;
+  --card-foreground: #1A1A2E;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A2E;
+
+  --primary: #E53935;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #FFF3E0;
+  --secondary-foreground: #BF360C;
+
+  --muted: #F5F5F0;
+  --muted-foreground: #737380;
+
+  --accent: #FFF8E1;
+  --accent-foreground: #F57F17;
+
+  --destructive: #D32F2F;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E8E5DE;
+  --input: #E8E5DE;
+  --ring: #E53935;
+
+  --sidebar: #FAFAF8;
+  --sidebar-foreground: #1A1A2E;
+  --sidebar-border: #E8E5DE;
 }
 
 .dark {
   --background: #0F0F1A;
   --foreground: #F0F0F5;
+
+  --card: #1A1A2E;
+  --card-foreground: #F0F0F5;
+
+  --popover: #1A1A2E;
+  --popover-foreground: #F0F0F5;
+
+  --primary: #FF5252;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #2A1A10;
+  --secondary-foreground: #FFB74D;
+
+  --muted: #1E1E30;
+  --muted-foreground: #9090A0;
+
+  --accent: #2A2510;
+  --accent-foreground: #FFC107;
+
+  --destructive: #FF5252;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #2E2E45;
+  --input: #2E2E45;
+  --ring: #FF5252;
+
+  --sidebar: #0F0F1A;
+  --sidebar-foreground: #F0F0F5;
+  --sidebar-border: #2E2E45;
 }
 
 * { box-sizing: border-box; }
@@ -52,30 +143,20 @@ body {
 .type-steel { background-color: #B8B8D0; color: #333; }
 .type-fairy { background-color: #EE99AC; color: #333; }
 
-/* Island accent colors */
+/* Island colors */
 .island-melemele { --island-color: #F9A825; }
 .island-akala { --island-color: #E91E63; }
 .island-ula-ula { --island-color: #D32F2F; }
 .island-poni { --island-color: #7B1FA2; }
 .island-aether { --island-color: #0288D1; }
 
-/* Encounter method badges */
-.method-badge {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-/* Spoiler blur */
+/* Spoiler */
 .spoiler-hidden { filter: blur(5px); user-select: none; cursor: pointer; transition: filter 0.3s; }
 .spoiler-hidden:hover { filter: blur(3px); }
 .spoiler-revealed { filter: none; }
 
 /* Percentage bar */
-.pct-bar { height: 6px; border-radius: 3px; background: #E0E0E0; overflow: hidden; }
+.pct-bar { height: 6px; border-radius: 3px; background: var(--muted); overflow: hidden; }
 .pct-bar-fill { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
 
 /* Encounter table */
@@ -98,8 +179,40 @@ body {
 /* Scrollbar */
 ::-webkit-scrollbar { width: 7px; height: 7px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
-.dark ::-webkit-scrollbar-thumb { background: #444; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Interactive Map */
+.map-container {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.map-node {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.map-node:hover {
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+.map-node.active {
+  transform: scale(1.15);
+  z-index: 10;
+}
+
+.map-connection {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }

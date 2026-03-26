@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { TypeBadge } from '@/components/shared/TypeBadge';
 import { IslandBadge } from '@/components/shared/IslandBadge';
+import { AlolaMap } from '@/components/shared/AlolaMap';
 import { spriteUrl } from '@/lib/utils';
 import { getAllPokemon, getAllRoutes, getAllTips } from '@/lib/content/loader';
 
@@ -113,6 +114,17 @@ export default function HomePage() {
             </Card>
           </Link>
         </div>
+      </section>
+
+      {/* Interactive Alola Map */}
+      <section className="mb-12">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Explore Alola</h2>
+          <Link href="/routes" className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
+            All Routes <ChevronRight size={14} />
+          </Link>
+        </div>
+        <AlolaMap />
       </section>
 
       {/* Featured Routes */}

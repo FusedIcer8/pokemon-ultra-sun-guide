@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { IslandBadge } from '@/components/shared/IslandBadge';
 import { FavoriteButton } from '@/components/shared/FavoriteButton';
+import { AlolaMap } from '@/components/shared/AlolaMap';
 import { getAllRoutes } from '@/lib/content/loader';
 import type { Island, RouteCategory } from '@/types';
 
@@ -63,6 +64,11 @@ export default function RoutesListPage() {
         <p className="text-muted-foreground">
           {filtered.length} locations across Alola
         </p>
+      </div>
+
+      {/* Interactive Map */}
+      <div className="mb-8">
+        <AlolaMap island={selectedIsland === 'all' ? undefined : selectedIsland} />
       </div>
 
       {/* Island Tabs */}
