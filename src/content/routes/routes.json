@@ -1,0 +1,333 @@
+[
+  {
+    "slug": "route-1",
+    "name": "Route 1",
+    "island": "melemele",
+    "category": "route",
+    "description": "The first route in Alola, connecting Iki Town to Hau'oli Outskirts. Rich with tall grass and diverse Pokemon.",
+    "storyRelevance": "Your adventure begins here after receiving your starter from Professor Kukui.",
+    "unlockCondition": "Available from the start of the game",
+    "encounters": [
+      { "pokemon": "Pikipek", "pokemonSlug": "pikipek", "types": ["normal", "flying"], "method": "walking", "percentage": 30, "levelRange": [2, 4], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [2, 4], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" },
+      { "pokemon": "Rattata (Alolan)", "pokemonSlug": "rattata-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 30, "levelRange": [2, 4], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png" },
+      { "pokemon": "Caterpie", "pokemonSlug": "caterpie", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [2, 4], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" },
+      { "pokemon": "Ledyba", "pokemonSlug": "ledyba", "types": ["bug", "flying"], "method": "walking", "percentage": 10, "levelRange": [2, 4], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png" },
+      { "pokemon": "Spinarak", "pokemonSlug": "spinarak", "types": ["bug", "poison"], "method": "walking", "percentage": 10, "levelRange": [2, 4], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png" },
+      { "pokemon": "Grubbin", "pokemonSlug": "grubbin", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [2, 4], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png" },
+      { "pokemon": "Pichu", "pokemonSlug": "pichu", "types": ["electric"], "method": "walking", "percentage": 5, "levelRange": [2, 4], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png" },
+      { "pokemon": "Buneary", "pokemonSlug": "buneary", "types": ["normal"], "method": "walking", "percentage": 5, "levelRange": [2, 4], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png" }
+    ],
+    "items": [
+      { "name": "Potion", "itemSlug": "potion", "location": "Near the grass patch before the Trainer's School", "hidden": false },
+      { "name": "Antidote", "itemSlug": "antidote", "location": "Behind the fence near the berry tree", "hidden": true },
+      { "name": "Poke Ball", "itemSlug": "poke-ball", "location": "Gifted by the Professor after the festival", "hidden": false },
+      { "name": "Paralyze Heal", "itemSlug": "paralyze-heal", "location": "Near the ledge overlooking the sea", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Youngster Jimmy", "pokemon": [{ "name": "Caterpie", "level": 3 }], "reward": 60 },
+      { "name": "Lass Audrey", "pokemon": [{ "name": "Pikipek", "level": 3 }], "reward": 60 }
+    ],
+    "tips": "Great early grinding spot. Pikipek and Caterpie are common and give decent EXP. Pichu is rare but worth catching for its evolution into Alolan Raichu later. Visit the Trainer's School for Magnemite encounters.",
+    "connectedRoutes": [
+      { "name": "Iki Town", "slug": "iki-town" },
+      { "name": "Hau'oli Outskirts", "slug": "hauoli-outskirts" },
+      { "name": "Ten Carat Hill", "slug": "ten-carat-hill" },
+      { "name": "Trainer's School", "slug": "trainers-school" }
+    ]
+  },
+  {
+    "slug": "route-2",
+    "name": "Route 2",
+    "island": "melemele",
+    "category": "route",
+    "description": "A route on Melemele Island connecting Hau'oli City to Verdant Cavern. Home to the Pokemon Center and a variety of encounters.",
+    "storyRelevance": "You pass through here on the way to your first trial at Verdant Cavern. Team Skull grunts appear here.",
+    "unlockCondition": "After completing events in Hau'oli City",
+    "encounters": [
+      { "pokemon": "Drowzee", "pokemonSlug": "drowzee", "types": ["psychic"], "method": "walking", "percentage": 20, "levelRange": [5, 8], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" },
+      { "pokemon": "Smeargle", "pokemonSlug": "smeargle", "types": ["normal"], "method": "walking", "percentage": 15, "levelRange": [6, 9], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png" },
+      { "pokemon": "Growlithe", "pokemonSlug": "growlithe", "types": ["fire"], "method": "walking", "percentage": 20, "levelRange": [5, 8], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" },
+      { "pokemon": "Meowth (Alolan)", "pokemonSlug": "meowth-alola", "types": ["dark"], "method": "walking", "percentage": 20, "levelRange": [5, 8], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png" },
+      { "pokemon": "Abra", "pokemonSlug": "abra", "types": ["psychic"], "method": "walking", "percentage": 10, "levelRange": [6, 9], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" },
+      { "pokemon": "Spearow", "pokemonSlug": "spearow", "types": ["normal", "flying"], "method": "walking", "percentage": 15, "levelRange": [5, 8], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" }
+    ],
+    "items": [
+      { "name": "TM01 Work Up", "itemSlug": "tm01-work-up", "location": "From Ilima after meeting him on Route 2", "hidden": false },
+      { "name": "Super Potion", "itemSlug": "super-potion", "location": "In the tall grass near the Pokemon Center", "hidden": true },
+      { "name": "Revive", "itemSlug": "revive", "location": "Behind the motel", "hidden": true },
+      { "name": "Great Ball", "itemSlug": "great-ball", "location": "Near the berry tree on the upper path", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Drowzee", "level": 9 }], "reward": 288 },
+      { "name": "Preschooler Mia", "pokemon": [{ "name": "Caterpie", "level": 7 }], "reward": 84 }
+    ],
+    "tips": "Growlithe is an excellent early Fire-type if you didn't choose Litten. Abra will flee immediately so use a Quick Ball on your first turn. The Pokemon Center here is the last stop before Verdant Cavern.",
+    "connectedRoutes": [
+      { "name": "Hau'oli City", "slug": "hauoli-city" },
+      { "name": "Verdant Cavern", "slug": "verdant-cavern" },
+      { "name": "Hau'oli Cemetery", "slug": "hauoli-cemetery" },
+      { "name": "Berry Fields", "slug": "berry-fields" }
+    ]
+  },
+  {
+    "slug": "verdant-cavern",
+    "name": "Verdant Cavern",
+    "island": "melemele",
+    "category": "dungeon",
+    "description": "A cave on Melemele Island that serves as the location for the first Island Trial. Captain Ilima's trial takes place here against the Totem Pokemon.",
+    "storyRelevance": "The site of your first Island Trial. Captain Ilima challenges you to defeat the Totem Gumshoos (Ultra Sun) or Totem Raticate (Ultra Moon).",
+    "unlockCondition": "After receiving the trial amulet and speaking with Captain Ilima",
+    "encounters": [
+      { "pokemon": "Zubat", "pokemonSlug": "zubat", "types": ["poison", "flying"], "method": "walking", "percentage": 30, "levelRange": [8, 11], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" },
+      { "pokemon": "Diglett (Alolan)", "pokemonSlug": "diglett-alola", "types": ["ground", "steel"], "method": "walking", "percentage": 30, "levelRange": [8, 11], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10105.png" },
+      { "pokemon": "Noibat", "pokemonSlug": "noibat", "types": ["flying", "dragon"], "method": "walking", "percentage": 10, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png" },
+      { "pokemon": "Geodude (Alolan)", "pokemonSlug": "geodude-alola", "types": ["rock", "electric"], "method": "walking", "percentage": 20, "levelRange": [8, 11], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [8, 10], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" }
+    ],
+    "items": [
+      { "name": "TM31 Brick Break", "itemSlug": "tm31-brick-break", "location": "Deep inside the cavern, past the trial area", "hidden": false },
+      { "name": "TM46 Thief", "itemSlug": "tm46-thief", "location": "In the back room after completing the trial", "hidden": false },
+      { "name": "Normalium Z", "itemSlug": "normalium-z", "location": "Reward for defeating the Totem Pokemon", "hidden": false },
+      { "name": "X Defense", "itemSlug": "x-defense", "location": "Near the entrance on a ledge", "hidden": true },
+      { "name": "Super Potion", "itemSlug": "super-potion", "location": "Hidden in the corner near Totem's den", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Totem Gumshoos", "pokemon": [{ "name": "Gumshoos (Totem)", "level": 12 }], "reward": 0, "notes": "Ultra Sun Totem Pokemon. Boosts all stats by +1. Can call Yungoos as ally." },
+      { "name": "Totem Raticate (Alolan)", "pokemon": [{ "name": "Raticate-A (Totem)", "level": 12 }], "reward": 0, "notes": "Ultra Moon Totem Pokemon. Boosts Speed by +1. Can call Rattata as ally." }
+    ],
+    "tips": "The Totem Gumshoos/Raticate can call for help. Focus on the Totem first. Fighting-type moves are super effective against both. Use Makuhita if you traded for one in the Pokemon Center. Bring Potions and status heals. After the trial, explore the back of the cave for TM31 Brick Break and TM46 Thief.",
+    "connectedRoutes": [
+      { "name": "Route 2", "slug": "route-2" }
+    ]
+  },
+  {
+    "slug": "hauoli-city",
+    "name": "Hau'oli City",
+    "island": "melemele",
+    "category": "city",
+    "description": "The largest city on Melemele Island, featuring a shopping district, beachfront, marina, and the Trainer's School. The first major city you visit.",
+    "storyRelevance": "You explore here after Route 1. Team Skull makes their first appearance. Captain Ilima can be battled near the marina.",
+    "unlockCondition": "After passing through Route 1 and Hau'oli Outskirts",
+    "encounters": [
+      { "pokemon": "Wingull", "pokemonSlug": "wingull", "types": ["water", "flying"], "method": "walking", "percentage": 20, "levelRange": [6, 9], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png" },
+      { "pokemon": "Magnemite", "pokemonSlug": "magnemite", "types": ["electric", "steel"], "method": "walking", "percentage": 15, "levelRange": [6, 9], "notes": "Trainer's School area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" },
+      { "pokemon": "Grimer (Alolan)", "pokemonSlug": "grimer-alola", "types": ["poison", "dark"], "method": "walking", "percentage": 15, "levelRange": [7, 10], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10112.png" },
+      { "pokemon": "Meowth (Alolan)", "pokemonSlug": "meowth-alola", "types": ["dark"], "method": "walking", "percentage": 10, "levelRange": [7, 10], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 15, "levelRange": [6, 9], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" },
+      { "pokemon": "Rattata (Alolan)", "pokemonSlug": "rattata-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 15, "levelRange": [6, 9], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png" }
+    ],
+    "items": [
+      { "name": "TM10 Hidden Power", "itemSlug": "tm10-hidden-power", "location": "From an NPC inside the mall", "hidden": false },
+      { "name": "Silk Scarf", "itemSlug": "silk-scarf", "location": "Ilima's house, from his father", "hidden": false },
+      { "name": "X Attack", "itemSlug": "x-attack", "location": "Near the police station", "hidden": true },
+      { "name": "Poke Ball x10", "itemSlug": "poke-ball", "location": "Gift from Hau after exploring", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Drowzee", "level": 9 }], "reward": 288 },
+      { "name": "Captain Ilima", "pokemon": [{ "name": "Yungoos", "level": 10 }, { "name": "Smeargle", "level": 11 }], "reward": 660 }
+    ],
+    "tips": "Explore thoroughly before heading to Route 2. The shopping district has useful items. Visit Ilima's house for a free Silk Scarf that powers up Normal-type moves. Magnemite in the Trainer's School area is an excellent early Steel-type.",
+    "connectedRoutes": [
+      { "name": "Route 1", "slug": "route-1" },
+      { "name": "Route 2", "slug": "route-2" },
+      { "name": "Hau'oli Outskirts", "slug": "hauoli-outskirts" }
+    ]
+  },
+  {
+    "slug": "route-4",
+    "name": "Route 4",
+    "island": "akala",
+    "category": "route",
+    "description": "The first route on Akala Island, connecting Heahea City to Paniola Town. Features open grassy fields and a gentle slope.",
+    "storyRelevance": "Your first exploration on Akala Island. Hau accompanies you as you head toward Paniola Ranch and the next trials.",
+    "unlockCondition": "After arriving on Akala Island via ferry from Melemele",
+    "encounters": [
+      { "pokemon": "Eevee", "pokemonSlug": "eevee", "types": ["normal"], "method": "walking", "percentage": 5, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" },
+      { "pokemon": "Lillipup", "pokemonSlug": "lillipup", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png" },
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "types": ["ground"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png" },
+      { "pokemon": "Igglybuff", "pokemonSlug": "igglybuff", "types": ["normal", "fairy"], "method": "walking", "percentage": 10, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png" },
+      { "pokemon": "Pikipek", "pokemonSlug": "pikipek", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png" },
+      { "pokemon": "Grubbin", "pokemonSlug": "grubbin", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [11, 14], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png" },
+      { "pokemon": "Crabrawler", "pokemonSlug": "crabrawler", "types": ["fighting"], "method": "berry_tree", "percentage": 100, "levelRange": [12, 15], "notes": "Shakes out of berry trees", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 15, "levelRange": [11, 14], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" }
+    ],
+    "items": [
+      { "name": "Adrenaline Orb", "itemSlug": "adrenaline-orb", "location": "On the path near the tall grass", "hidden": false },
+      { "name": "Energy Root", "itemSlug": "energy-root", "location": "Off the main path to the left", "hidden": true },
+      { "name": "Poison Barb", "itemSlug": "poison-barb", "location": "Near the fence by Paniola entrance", "hidden": true },
+      { "name": "Great Ball", "itemSlug": "great-ball", "location": "Along the path from Heahea", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Cook Ernie", "pokemon": [{ "name": "Cutiefly", "level": 14 }], "reward": 560 },
+      { "name": "Bellhop Jody", "pokemon": [{ "name": "Fomantis", "level": 14 }], "reward": 560 }
+    ],
+    "tips": "Eevee is rare (5%) but very worth hunting for, as it has 8 possible evolutions. Mudbray is an excellent physical attacker for your team. Check berry trees for Crabrawler encounters.",
+    "connectedRoutes": [
+      { "name": "Heahea City", "slug": "heahea-city" },
+      { "name": "Paniola Town", "slug": "paniola-town" },
+      { "name": "Pikachu Valley", "slug": "pikachu-valley" }
+    ]
+  },
+  {
+    "slug": "route-5",
+    "name": "Route 5",
+    "island": "akala",
+    "category": "route",
+    "description": "A route on Akala Island between Paniola Ranch and Brooklet Hill. Features a Pokemon Center and leads to the second trial.",
+    "storyRelevance": "Team Skull grunts block the path initially. Gladion battles you here for the first time with his Type: Null.",
+    "unlockCondition": "After events at Paniola Ranch",
+    "encounters": [
+      { "pokemon": "Fomantis", "pokemonSlug": "fomantis", "types": ["grass"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png" },
+      { "pokemon": "Grubbin", "pokemonSlug": "grubbin", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png" },
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png" },
+      { "pokemon": "Caterpie", "pokemonSlug": "caterpie", "types": ["bug"], "method": "walking", "percentage": 15, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" },
+      { "pokemon": "Metapod", "pokemonSlug": "metapod", "types": ["bug"], "method": "walking", "percentage": 15, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" },
+      { "pokemon": "Butterfree", "pokemonSlug": "butterfree", "types": ["bug", "flying"], "method": "walking", "percentage": 5, "levelRange": [14, 17], "notes": "SOS call only from Caterpie/Metapod", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" },
+      { "pokemon": "Bonsly", "pokemonSlug": "bonsly", "types": ["rock"], "method": "walking", "percentage": 15, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png" }
+    ],
+    "items": [
+      { "name": "TM41 Torment", "itemSlug": "tm41-torment", "location": "On a ledge accessible from above", "hidden": false },
+      { "name": "Hyper Potion", "itemSlug": "hyper-potion", "location": "Near the Pokemon Center", "hidden": true },
+      { "name": "Super Repel", "itemSlug": "super-repel", "location": "Past the bridge to the south", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Gladion", "pokemon": [{ "name": "Type: Null", "level": 18 }], "reward": 1800, "notes": "First rival battle with Gladion" },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Drowzee", "level": 15 }], "reward": 480 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Salandit", "level": 15 }], "reward": 480 }
+    ],
+    "tips": "Gladion's Type: Null is tough at this point. Make sure your team is at least level 17-18. Fomantis is good for a Grass-type if you need one. The Pokemon Center is the last stop before Brooklet Hill.",
+    "connectedRoutes": [
+      { "name": "Paniola Ranch", "slug": "paniola-ranch" },
+      { "name": "Brooklet Hill", "slug": "brooklet-hill" }
+    ]
+  },
+  {
+    "slug": "brooklet-hill",
+    "name": "Brooklet Hill",
+    "island": "akala",
+    "category": "dungeon",
+    "description": "A lush waterfall area on Akala Island where Captain Lana's Water-type trial takes place. The trial involves investigating splashing in various pools.",
+    "storyRelevance": "Captain Lana's trial site. You must investigate mysterious splashing in the water, eventually facing the Totem Araquanid.",
+    "unlockCondition": "After completing events on Route 5",
+    "encounters": [
+      { "pokemon": "Dewpider", "pokemonSlug": "dewpider", "types": ["water", "bug"], "method": "walking", "percentage": 25, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png" },
+      { "pokemon": "Surskit", "pokemonSlug": "surskit", "types": ["bug", "water"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png" },
+      { "pokemon": "Poliwag", "pokemonSlug": "poliwag", "types": ["water"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" },
+      { "pokemon": "Psyduck", "pokemonSlug": "psyduck", "types": ["water"], "method": "walking", "percentage": 15, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "surfing", "percentage": 40, "levelRange": [15, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 55, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Feebas", "pokemonSlug": "feebas", "types": ["water"], "method": "fishing", "percentage": 5, "levelRange": [14, 17], "notes": "Extremely rare via fishing and SOS", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png" }
+    ],
+    "items": [
+      { "name": "Waterium Z", "itemSlug": "waterium-z", "location": "Reward for completing Captain Lana's trial", "hidden": false },
+      { "name": "Net Ball", "itemSlug": "net-ball", "location": "Near the first pool area", "hidden": false },
+      { "name": "Hyper Potion", "itemSlug": "hyper-potion", "location": "Hidden near the waterfall", "hidden": true },
+      { "name": "TM55 Scald", "itemSlug": "tm55-scald", "location": "After the trial, near the exit", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Totem Araquanid", "pokemon": [{ "name": "Araquanid (Totem)", "level": 20 }], "reward": 0, "notes": "Totem Pokemon. +1 to all defenses. Calls Dewpider as ally. Uses Water Bubble ability to boost Water moves." }
+    ],
+    "tips": "The Totem Araquanid is bulky with Water Bubble boosting its Water-type attacks. Electric and Grass types are your best bet. Bring a Pikachu or Fomantis. The ally Dewpider can use Infestation to trap you, so try to KO it quickly. Wishiwashi's School Form in the trial pools is an appetizer for the real challenge.",
+    "connectedRoutes": [
+      { "name": "Route 5", "slug": "route-5" }
+    ]
+  },
+  {
+    "slug": "wela-volcano-park",
+    "name": "Wela Volcano Park",
+    "island": "akala",
+    "category": "dungeon",
+    "description": "A volcanic area on Akala Island where Captain Kiawe's Fire-type trial takes place. You must spot differences in dance performances.",
+    "storyRelevance": "Captain Kiawe's trial involves watching Marowak dance performances and identifying the odd one out, culminating in a battle against Totem Alolan Marowak.",
+    "unlockCondition": "After completing Lana's trial at Brooklet Hill",
+    "encounters": [
+      { "pokemon": "Cubone", "pokemonSlug": "cubone", "types": ["ground"], "method": "walking", "percentage": 30, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png" },
+      { "pokemon": "Kangaskhan", "pokemonSlug": "kangaskhan", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [17, 20], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png" },
+      { "pokemon": "Magby", "pokemonSlug": "magby", "types": ["fire"], "method": "walking", "percentage": 20, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png" },
+      { "pokemon": "Fletchinder", "pokemonSlug": "fletchinder", "types": ["fire", "flying"], "method": "walking", "percentage": 20, "levelRange": [17, 20], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png" },
+      { "pokemon": "Salandit", "pokemonSlug": "salandit", "types": ["poison", "fire"], "method": "walking", "percentage": 20, "levelRange": [16, 19], "notes": "Only females evolve into Salazzle (12.5% chance female)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png" }
+    ],
+    "items": [
+      { "name": "Firium Z", "itemSlug": "firium-z", "location": "Reward for completing Captain Kiawe's trial", "hidden": false },
+      { "name": "Charcoal", "itemSlug": "charcoal", "location": "Near the entrance to the volcano", "hidden": false },
+      { "name": "TM39 Rock Tomb", "itemSlug": "tm39-rock-tomb", "location": "Along the mountainside path", "hidden": false },
+      { "name": "Burn Heal", "itemSlug": "burn-heal", "location": "Near a ledge on the volcanic slopes", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Totem Marowak (Alolan)", "pokemon": [{ "name": "Marowak-A (Totem)", "level": 22 }], "reward": 0, "notes": "Totem Pokemon. +2 Speed boost. Fire/Ghost type. Calls Salazzle as ally. Uses Shadow Bone and Flame Wheel." }
+    ],
+    "tips": "Totem Alolan Marowak is Fire/Ghost and calls Salazzle as an ally. Water types dominate here. Rock and Dark types also work well. Watch out for the Salazzle ally's Poison Gas. Cubone evolves into Alolan Marowak when leveled up at night starting at level 28. Female Salandit (12.5% female rate) are needed to get Salazzle.",
+    "connectedRoutes": [
+      { "name": "Route 7", "slug": "route-7" }
+    ]
+  },
+  {
+    "slug": "lush-jungle",
+    "name": "Lush Jungle",
+    "island": "akala",
+    "category": "dungeon",
+    "description": "A dense jungle on Akala Island hosting Captain Mallow's Grass-type trial. You must gather ingredients to lure out the Totem Pokemon.",
+    "storyRelevance": "Captain Mallow's trial requires collecting Mago Berry, Honey, and Big Root to cook a special meal that attracts the Totem Lurantis.",
+    "unlockCondition": "After completing Kiawe's trial at Wela Volcano Park",
+    "encounters": [
+      { "pokemon": "Fomantis", "pokemonSlug": "fomantis", "types": ["grass"], "method": "walking", "percentage": 25, "levelRange": [18, 21], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png" },
+      { "pokemon": "Morelull", "pokemonSlug": "morelull", "types": ["grass", "fairy"], "method": "walking", "percentage": 20, "levelRange": [18, 21], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png" },
+      { "pokemon": "Comfey", "pokemonSlug": "comfey", "types": ["fairy"], "method": "walking", "percentage": 10, "levelRange": [19, 22], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png" },
+      { "pokemon": "Steenee", "pokemonSlug": "steenee", "types": ["grass"], "method": "walking", "percentage": 15, "levelRange": [19, 22], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png" },
+      { "pokemon": "Paras", "pokemonSlug": "paras", "types": ["bug", "grass"], "method": "walking", "percentage": 20, "levelRange": [18, 21], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" },
+      { "pokemon": "Oranguru", "pokemonSlug": "oranguru", "types": ["normal", "psychic"], "method": "walking", "percentage": 5, "levelRange": [19, 22], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png" },
+      { "pokemon": "Passimian", "pokemonSlug": "passimian", "types": ["fighting"], "method": "walking", "percentage": 5, "levelRange": [19, 22], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png" }
+    ],
+    "items": [
+      { "name": "Grassium Z", "itemSlug": "grassium-z", "location": "Reward for completing Captain Mallow's trial", "hidden": false },
+      { "name": "Miracle Seed", "itemSlug": "miracle-seed", "location": "Deep in the jungle near the Moss Rock", "hidden": false },
+      { "name": "TM86 Grass Knot", "itemSlug": "tm86-grass-knot", "location": "In the western section of the jungle", "hidden": false },
+      { "name": "Big Root", "itemSlug": "big-root", "location": "Trial ingredient - found in the jungle", "hidden": false },
+      { "name": "Mago Berry", "itemSlug": "mago-berry", "location": "Trial ingredient - from a berry tree", "hidden": false },
+      { "name": "Honey", "itemSlug": "honey", "location": "Trial ingredient - from a Fomantis area", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Totem Lurantis", "pokemon": [{ "name": "Lurantis (Totem)", "level": 24 }], "reward": 0, "notes": "Totem Pokemon. +2 Speed boost. Uses Solar Blade with Power Herb for instant use. Calls Trumbeak (which can use Sunny Day) or Castform as ally." }
+    ],
+    "tips": "Totem Lurantis is one of the hardest early trials. It uses Power Herb + Solar Blade for a devastating first-turn nuke. Its Trumbeak ally sets up Sunny Day, boosting Solar Blade even more. Fire and Flying types are the best counters. The Moss Rock is here for evolving Eevee into Leafeon. Comfey is a strong Fairy-type healer if you can find one.",
+    "connectedRoutes": [
+      { "name": "Route 5", "slug": "route-5" },
+      { "name": "Route 8", "slug": "route-8" }
+    ]
+  },
+  {
+    "slug": "route-8",
+    "name": "Route 8",
+    "island": "akala",
+    "category": "route",
+    "description": "A coastal route on Akala Island connecting Lush Jungle to Route 5. Features diverse terrain including rocky areas near the shore.",
+    "storyRelevance": "After completing the Lush Jungle trial, you traverse Route 8 heading toward the Dimensional Research Lab and further Akala exploration.",
+    "unlockCondition": "After completing Mallow's trial at Lush Jungle",
+    "encounters": [
+      { "pokemon": "Stufful", "pokemonSlug": "stufful", "types": ["normal", "fighting"], "method": "walking", "percentage": 15, "levelRange": [18, 21], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png" },
+      { "pokemon": "Salandit", "pokemonSlug": "salandit", "types": ["poison", "fire"], "method": "walking", "percentage": 20, "levelRange": [18, 21], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png" },
+      { "pokemon": "Fletchinder", "pokemonSlug": "fletchinder", "types": ["fire", "flying"], "method": "walking", "percentage": 15, "levelRange": [19, 22], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png" },
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [19, 22], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 15, "levelRange": [18, 21], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" },
+      { "pokemon": "Rattata (Alolan)", "pokemonSlug": "rattata-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 15, "levelRange": [18, 21], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png" }
+    ],
+    "items": [
+      { "name": "TM58 Sky Drop", "itemSlug": "tm58-sky-drop", "location": "Near the Fossil Restoration Center", "hidden": false },
+      { "name": "Water Stone", "itemSlug": "water-stone", "location": "In the tide pool area (hidden)", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the route sign", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden behind rocks near the shore", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Backpacker Vicki", "pokemon": [{ "name": "Fletchinder", "level": 20 }], "reward": 480 },
+      { "name": "Scientist Ikaika", "pokemon": [{ "name": "Magneton", "level": 21 }], "reward": 1008 }
+    ],
+    "tips": "Stufful is surprisingly strong with Fluffy ability and evolves into the powerful Bewear at level 27. The Fossil Restoration Center on this route lets you revive fossils. Salandit is worth catching but remember only females evolve into Salazzle.",
+    "connectedRoutes": [
+      { "name": "Lush Jungle", "slug": "lush-jungle" },
+      { "name": "Route 5", "slug": "route-5" },
+      { "name": "Fossil Restoration Center", "slug": "fossil-restoration-center" },
+      { "name": "Dividing Peak Tunnel", "slug": "dividing-peak-tunnel" }
+    ]
+  }
+]

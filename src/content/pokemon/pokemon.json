@@ -1,0 +1,733 @@
+[
+  {
+    "id": 722,
+    "slug": "rowlet",
+    "name": "Rowlet",
+    "types": ["grass", "flying"],
+    "abilities": [
+      { "name": "Overgrow" },
+      { "name": "Long Reach", "hidden": true }
+    ],
+    "baseStats": { "hp": 68, "attack": 55, "defense": 55, "spAtk": 50, "spDef": 50, "speed": 42 },
+    "locations": [
+      { "route": "Iki Town", "routeSlug": "iki-town", "method": "gift", "percentage": 100, "levelRange": [5, 5], "notes": "Starter Pokemon from Professor Kukui" }
+    ],
+    "evolution": [
+      { "pokemon": "Rowlet", "pokemonSlug": "rowlet", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png", "condition": "Starter", "stage": 1 },
+      { "pokemon": "Dartrix", "pokemonSlug": "dartrix", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png", "condition": "Level 17", "stage": 2 },
+      { "pokemon": "Decidueye", "pokemonSlug": "decidueye", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png", "condition": "Level 34", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Leafage", "type": "grass", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 4, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 8, "move": "Peck", "type": "flying", "category": "physical", "power": 35, "accuracy": 100 },
+      { "level": 11, "move": "Astonish", "type": "ghost", "category": "physical", "power": 30, "accuracy": 100 },
+      { "level": 15, "move": "Razor Leaf", "type": "grass", "category": "physical", "power": 55, "accuracy": 95 },
+      { "level": 19, "move": "Foresight", "type": "normal", "category": "status" },
+      { "level": 24, "move": "Pluck", "type": "flying", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 28, "move": "Synthesis", "type": "grass", "category": "status" },
+      { "level": 33, "move": "Fury Attack", "type": "normal", "category": "physical", "power": 15, "accuracy": 85 },
+      { "level": 37, "move": "Sucker Punch", "type": "dark", "category": "physical", "power": 70, "accuracy": 100 },
+      { "level": 42, "move": "Leaf Blade", "type": "grass", "category": "physical", "power": 90, "accuracy": 100 },
+      { "level": 46, "move": "Feather Dance", "type": "flying", "category": "status" },
+      { "level": 51, "move": "Brave Bird", "type": "flying", "category": "physical", "power": 120, "accuracy": 100 }
+    ],
+    "description": "A Grass/Flying starter Pokemon. This round owl can rotate its head 180 degrees and attack without making a sound.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png"
+  },
+  {
+    "id": 725,
+    "slug": "litten",
+    "name": "Litten",
+    "types": ["fire"],
+    "abilities": [
+      { "name": "Blaze" },
+      { "name": "Intimidate", "hidden": true }
+    ],
+    "baseStats": { "hp": 45, "attack": 65, "defense": 40, "spAtk": 60, "spDef": 40, "speed": 70 },
+    "locations": [
+      { "route": "Iki Town", "routeSlug": "iki-town", "method": "gift", "percentage": 100, "levelRange": [5, 5], "notes": "Starter Pokemon from Professor Kukui" }
+    ],
+    "evolution": [
+      { "pokemon": "Litten", "pokemonSlug": "litten", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png", "condition": "Starter", "stage": 1 },
+      { "pokemon": "Torracat", "pokemonSlug": "torracat", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png", "condition": "Level 17", "stage": 2 },
+      { "pokemon": "Incineroar", "pokemonSlug": "incineroar", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png", "condition": "Level 34", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Scratch", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Ember", "type": "fire", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 4, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 8, "move": "Lick", "type": "ghost", "category": "physical", "power": 30, "accuracy": 100 },
+      { "level": 11, "move": "Leer", "type": "normal", "category": "status" },
+      { "level": 15, "move": "Fire Fang", "type": "fire", "category": "physical", "power": 65, "accuracy": 95 },
+      { "level": 19, "move": "Roar", "type": "normal", "category": "status" },
+      { "level": 24, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 28, "move": "Swagger", "type": "normal", "category": "status" },
+      { "level": 33, "move": "Fury Swipes", "type": "normal", "category": "physical", "power": 18, "accuracy": 80 },
+      { "level": 37, "move": "Thrash", "type": "normal", "category": "physical", "power": 120, "accuracy": 100 },
+      { "level": 42, "move": "Flamethrower", "type": "fire", "category": "special", "power": 90, "accuracy": 100 },
+      { "level": 46, "move": "Scary Face", "type": "normal", "category": "status" },
+      { "level": 51, "move": "Flare Blitz", "type": "fire", "category": "physical", "power": 120, "accuracy": 100 }
+    ],
+    "description": "A Fire-type starter Pokemon. It grooms itself by licking its fur, then spits the collected fur as flaming hairballs.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png"
+  },
+  {
+    "id": 728,
+    "slug": "popplio",
+    "name": "Popplio",
+    "types": ["water"],
+    "abilities": [
+      { "name": "Torrent" },
+      { "name": "Liquid Voice", "hidden": true }
+    ],
+    "baseStats": { "hp": 50, "attack": 54, "defense": 54, "spAtk": 66, "spDef": 56, "speed": 40 },
+    "locations": [
+      { "route": "Iki Town", "routeSlug": "iki-town", "method": "gift", "percentage": 100, "levelRange": [5, 5], "notes": "Starter Pokemon from Professor Kukui" }
+    ],
+    "evolution": [
+      { "pokemon": "Popplio", "pokemonSlug": "popplio", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png", "condition": "Starter", "stage": 1 },
+      { "pokemon": "Brionne", "pokemonSlug": "brionne", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png", "condition": "Level 17", "stage": 2 },
+      { "pokemon": "Primarina", "pokemonSlug": "primarina", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png", "condition": "Level 34", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Pound", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Water Gun", "type": "water", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 4, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 8, "move": "Disarming Voice", "type": "fairy", "category": "special", "power": 40 },
+      { "level": 11, "move": "Baby-Doll Eyes", "type": "fairy", "category": "status" },
+      { "level": 15, "move": "Aqua Jet", "type": "water", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 19, "move": "Encore", "type": "normal", "category": "status" },
+      { "level": 24, "move": "Bubble Beam", "type": "water", "category": "special", "power": 65, "accuracy": 100 },
+      { "level": 28, "move": "Sing", "type": "normal", "category": "status", "accuracy": 55 },
+      { "level": 33, "move": "Double Slap", "type": "normal", "category": "physical", "power": 15, "accuracy": 85 },
+      { "level": 37, "move": "Hyper Voice", "type": "normal", "category": "special", "power": 90, "accuracy": 100 },
+      { "level": 42, "move": "Moonblast", "type": "fairy", "category": "special", "power": 95, "accuracy": 100 },
+      { "level": 46, "move": "Captivate", "type": "normal", "category": "status" },
+      { "level": 51, "move": "Hydro Pump", "type": "water", "category": "special", "power": 110, "accuracy": 80 }
+    ],
+    "description": "A Water-type starter Pokemon. It creates balloons of water from its nose, using them to perform acrobatic battle strategies.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png"
+  },
+  {
+    "id": 731,
+    "slug": "pikipek",
+    "name": "Pikipek",
+    "types": ["normal", "flying"],
+    "abilities": [
+      { "name": "Keen Eye" },
+      { "name": "Skill Link" },
+      { "name": "Pickup", "hidden": true }
+    ],
+    "baseStats": { "hp": 35, "attack": 75, "defense": 30, "spAtk": 30, "spDef": 30, "speed": 65 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 30, "levelRange": [2, 4], "notes": "Very common in tall grass" },
+      { "route": "Route 4", "routeSlug": "route-4", "method": "walking", "percentage": 20, "levelRange": [11, 14] },
+      { "route": "Route 5", "routeSlug": "route-5", "method": "walking", "percentage": 20, "levelRange": [14, 17] }
+    ],
+    "evolution": [
+      { "pokemon": "Pikipek", "pokemonSlug": "pikipek", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png", "condition": "Level 14", "stage": 2 },
+      { "pokemon": "Toucannon", "pokemonSlug": "toucannon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png", "condition": "Level 28", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Peck", "type": "flying", "category": "physical", "power": 35, "accuracy": 100 },
+      { "level": 3, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 7, "move": "Echoed Voice", "type": "normal", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 9, "move": "Rock Smash", "type": "fighting", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 13, "move": "Roost", "type": "flying", "category": "status" },
+      { "level": 16, "move": "Fury Attack", "type": "normal", "category": "physical", "power": 15, "accuracy": 85 },
+      { "level": 21, "move": "Pluck", "type": "flying", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 24, "move": "Rock Blast", "type": "rock", "category": "physical", "power": 25, "accuracy": 90 },
+      { "level": 29, "move": "Feather Dance", "type": "flying", "category": "status" },
+      { "level": 32, "move": "Drill Peck", "type": "flying", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 37, "move": "Bullet Seed", "type": "grass", "category": "physical", "power": 25, "accuracy": 100 },
+      { "level": 40, "move": "Hyper Voice", "type": "normal", "category": "special", "power": 90, "accuracy": 100 }
+    ],
+    "description": "A Normal/Flying woodpecker Pokemon. It pecks at trees 16 times per second and stores berries in its beak hole.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png"
+  },
+  {
+    "id": 734,
+    "slug": "yungoos",
+    "name": "Yungoos",
+    "types": ["normal"],
+    "abilities": [
+      { "name": "Stakeout" },
+      { "name": "Strong Jaw" },
+      { "name": "Adaptability", "hidden": true }
+    ],
+    "baseStats": { "hp": 48, "attack": 70, "defense": 30, "spAtk": 30, "spDef": 30, "speed": 45 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 30, "levelRange": [2, 4], "timeOfDay": "day", "notes": "Only appears during the day" },
+      { "route": "Route 2", "routeSlug": "route-2", "method": "walking", "percentage": 20, "levelRange": [5, 8], "timeOfDay": "day" }
+    ],
+    "evolution": [
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png", "condition": "Level 20 (daytime only)", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 3, "move": "Leer", "type": "normal", "category": "status" },
+      { "level": 7, "move": "Pursuit", "type": "dark", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 10, "move": "Sand Attack", "type": "ground", "category": "status" },
+      { "level": 13, "move": "Odor Sleuth", "type": "normal", "category": "status" },
+      { "level": 16, "move": "Bide", "type": "normal", "category": "physical" },
+      { "level": 19, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 23, "move": "Mud-Slap", "type": "ground", "category": "special", "power": 20, "accuracy": 100 },
+      { "level": 27, "move": "Super Fang", "type": "normal", "category": "physical", "accuracy": 90 },
+      { "level": 31, "move": "Take Down", "type": "normal", "category": "physical", "power": 90, "accuracy": 85 },
+      { "level": 35, "move": "Scary Face", "type": "normal", "category": "status" },
+      { "level": 39, "move": "Crunch", "type": "dark", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 43, "move": "Hyper Fang", "type": "normal", "category": "physical", "power": 80, "accuracy": 90 }
+    ],
+    "description": "A Normal-type mongoose Pokemon imported to Alola to deal with the Rattata problem. It patrols during the day and sleeps at dusk.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png"
+  },
+  {
+    "id": 736,
+    "slug": "grubbin",
+    "name": "Grubbin",
+    "types": ["bug"],
+    "abilities": [
+      { "name": "Swarm" }
+    ],
+    "baseStats": { "hp": 47, "attack": 62, "defense": 45, "spAtk": 55, "spDef": 45, "speed": 46 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 10, "levelRange": [2, 4] },
+      { "route": "Route 4", "routeSlug": "route-4", "method": "walking", "percentage": 10, "levelRange": [11, 14] },
+      { "route": "Route 5", "routeSlug": "route-5", "method": "walking", "percentage": 10, "levelRange": [14, 17] }
+    ],
+    "evolution": [
+      { "pokemon": "Grubbin", "pokemonSlug": "grubbin", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Charjabug", "pokemonSlug": "charjabug", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png", "condition": "Level 20", "stage": 2 },
+      { "pokemon": "Vikavolt", "pokemonSlug": "vikavolt", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png", "condition": "Level up at Vast Poni Canyon", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Vice Grip", "type": "normal", "category": "physical", "power": 55, "accuracy": 100 },
+      { "level": 1, "move": "String Shot", "type": "bug", "category": "status", "accuracy": 95 },
+      { "level": 1, "move": "Mud-Slap", "type": "ground", "category": "special", "power": 20, "accuracy": 100 },
+      { "level": 4, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 7, "move": "Bug Bite", "type": "bug", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 10, "move": "Spark", "type": "electric", "category": "physical", "power": 65, "accuracy": 100 },
+      { "level": 13, "move": "Acrobatics", "type": "flying", "category": "physical", "power": 55, "accuracy": 100 },
+      { "level": 16, "move": "Crunch", "type": "dark", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 19, "move": "X-Scissor", "type": "bug", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 22, "move": "Dig", "type": "ground", "category": "physical", "power": 80, "accuracy": 100 }
+    ],
+    "description": "A Bug-type larva Pokemon. Its strong jaws let it scrape tree bark and chew through thick wood. It loves electricity.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png"
+  },
+  {
+    "id": 10,
+    "slug": "caterpie",
+    "name": "Caterpie",
+    "types": ["bug"],
+    "abilities": [
+      { "name": "Shield Dust" },
+      { "name": "Run Away", "hidden": true }
+    ],
+    "baseStats": { "hp": 45, "attack": 30, "defense": 35, "spAtk": 20, "spDef": 20, "speed": 45 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 10, "levelRange": [2, 4] },
+      { "route": "Route 5", "routeSlug": "route-5", "method": "walking", "percentage": 15, "levelRange": [14, 17] }
+    ],
+    "evolution": [
+      { "pokemon": "Caterpie", "pokemonSlug": "caterpie", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Metapod", "pokemonSlug": "metapod", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png", "condition": "Level 7", "stage": 2 },
+      { "pokemon": "Butterfree", "pokemonSlug": "butterfree", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png", "condition": "Level 10", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "String Shot", "type": "bug", "category": "status", "accuracy": 95 },
+      { "level": 9, "move": "Bug Bite", "type": "bug", "category": "physical", "power": 60, "accuracy": 100 }
+    ],
+    "description": "A Bug-type caterpillar Pokemon. It releases a terrible stench from the antenna on its head to repel enemies.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+  },
+  {
+    "id": 172,
+    "slug": "pichu",
+    "name": "Pichu",
+    "types": ["electric"],
+    "abilities": [
+      { "name": "Static" },
+      { "name": "Lightning Rod", "hidden": true }
+    ],
+    "baseStats": { "hp": 20, "attack": 40, "defense": 15, "spAtk": 35, "spDef": 35, "speed": 60 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 5, "levelRange": [2, 4], "notes": "Rare encounter" }
+    ],
+    "evolution": [
+      { "pokemon": "Pichu", "pokemonSlug": "pichu", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Pikachu", "pokemonSlug": "pikachu", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png", "condition": "High Friendship", "stage": 2 },
+      { "pokemon": "Raichu (Alolan)", "pokemonSlug": "raichu-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png", "condition": "Thunder Stone (in Alola)", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Thunder Shock", "type": "electric", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Charm", "type": "fairy", "category": "status" },
+      { "level": 5, "move": "Tail Whip", "type": "normal", "category": "status" },
+      { "level": 10, "move": "Sweet Kiss", "type": "fairy", "category": "status", "accuracy": 75 },
+      { "level": 13, "move": "Nasty Plot", "type": "dark", "category": "status" }
+    ],
+    "description": "A baby Electric-type Pokemon. It is unskilled at storing electricity and may discharge if amused, startled, or tickled.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png"
+  },
+  {
+    "id": 63,
+    "slug": "abra",
+    "name": "Abra",
+    "types": ["psychic"],
+    "abilities": [
+      { "name": "Synchronize" },
+      { "name": "Inner Focus" },
+      { "name": "Magic Guard", "hidden": true }
+    ],
+    "baseStats": { "hp": 25, "attack": 20, "defense": 15, "spAtk": 105, "spDef": 55, "speed": 90 },
+    "locations": [
+      { "route": "Route 2", "routeSlug": "route-2", "method": "walking", "percentage": 10, "levelRange": [6, 9], "notes": "Will Teleport on first turn - use Quick Ball or status move" },
+      { "route": "Hau'oli City", "routeSlug": "hauoli-city", "method": "walking", "percentage": 5, "levelRange": [7, 10] }
+    ],
+    "evolution": [
+      { "pokemon": "Abra", "pokemonSlug": "abra", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Kadabra", "pokemonSlug": "kadabra", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png", "condition": "Level 16", "stage": 2 },
+      { "pokemon": "Alakazam", "pokemonSlug": "alakazam", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png", "condition": "Trade", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Teleport", "type": "psychic", "category": "status" }
+    ],
+    "description": "A Psychic-type Pokemon. It sleeps 18 hours a day but can sense danger through telepathy and Teleport to safety.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+  },
+  {
+    "id": 278,
+    "slug": "wingull",
+    "name": "Wingull",
+    "types": ["water", "flying"],
+    "abilities": [
+      { "name": "Keen Eye" },
+      { "name": "Hydration" },
+      { "name": "Rain Dish", "hidden": true }
+    ],
+    "baseStats": { "hp": 40, "attack": 30, "defense": 30, "spAtk": 55, "spDef": 30, "speed": 85 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 10, "levelRange": [5, 8], "notes": "Near Hau'oli Outskirts" },
+      { "route": "Hau'oli City", "routeSlug": "hauoli-city", "method": "walking", "percentage": 20, "levelRange": [6, 9], "notes": "Beachfront area" }
+    ],
+    "evolution": [
+      { "pokemon": "Wingull", "pokemonSlug": "wingull", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png", "condition": "Level 25", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 1, "move": "Water Gun", "type": "water", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 6, "move": "Supersonic", "type": "normal", "category": "status", "accuracy": 55 },
+      { "level": 9, "move": "Wing Attack", "type": "flying", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 14, "move": "Water Pulse", "type": "water", "category": "special", "power": 60, "accuracy": 100 },
+      { "level": 17, "move": "Quick Attack", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 22, "move": "Air Cutter", "type": "flying", "category": "special", "power": 60, "accuracy": 95 },
+      { "level": 26, "move": "Roost", "type": "flying", "category": "status" },
+      { "level": 30, "move": "Mist", "type": "ice", "category": "status" },
+      { "level": 34, "move": "Aerial Ace", "type": "flying", "category": "physical", "power": 60 },
+      { "level": 38, "move": "Air Slash", "type": "flying", "category": "special", "power": 75, "accuracy": 95 },
+      { "level": 42, "move": "Hurricane", "type": "flying", "category": "special", "power": 110, "accuracy": 70 }
+    ],
+    "description": "A Water/Flying seagull Pokemon. It rides updrafts with its long wings and dives down to snatch food from the sea.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png"
+  },
+  {
+    "id": 81,
+    "slug": "magnemite",
+    "name": "Magnemite",
+    "types": ["electric", "steel"],
+    "abilities": [
+      { "name": "Magnet Pull" },
+      { "name": "Sturdy" },
+      { "name": "Analytic", "hidden": true }
+    ],
+    "baseStats": { "hp": 25, "attack": 35, "defense": 70, "spAtk": 95, "spDef": 55, "speed": 45 },
+    "locations": [
+      { "route": "Hau'oli City", "routeSlug": "hauoli-city", "method": "walking", "percentage": 15, "levelRange": [6, 9], "notes": "Trainer's School area" },
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 5, "levelRange": [6, 9], "notes": "Trainer's School area on Route 1" }
+    ],
+    "evolution": [
+      { "pokemon": "Magnemite", "pokemonSlug": "magnemite", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Magneton", "pokemonSlug": "magneton", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png", "condition": "Level 30", "stage": 2 },
+      { "pokemon": "Magnezone", "pokemonSlug": "magnezone", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png", "condition": "Level up at Vast Poni Canyon", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Supersonic", "type": "normal", "category": "status", "accuracy": 55 },
+      { "level": 5, "move": "Thunder Shock", "type": "electric", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 7, "move": "Magnet Bomb", "type": "steel", "category": "physical", "power": 60 },
+      { "level": 11, "move": "Thunder Wave", "type": "electric", "category": "status", "accuracy": 90 },
+      { "level": 13, "move": "Light Screen", "type": "psychic", "category": "status" },
+      { "level": 17, "move": "Sonic Boom", "type": "normal", "category": "special", "accuracy": 90 },
+      { "level": 19, "move": "Spark", "type": "electric", "category": "physical", "power": 65, "accuracy": 100 },
+      { "level": 23, "move": "Mirror Shot", "type": "steel", "category": "special", "power": 65, "accuracy": 85 },
+      { "level": 25, "move": "Metal Sound", "type": "steel", "category": "status", "accuracy": 85 },
+      { "level": 29, "move": "Electro Ball", "type": "electric", "category": "special", "accuracy": 100 },
+      { "level": 31, "move": "Flash Cannon", "type": "steel", "category": "special", "power": 80, "accuracy": 100 },
+      { "level": 35, "move": "Screech", "type": "normal", "category": "status", "accuracy": 85 },
+      { "level": 37, "move": "Discharge", "type": "electric", "category": "special", "power": 80, "accuracy": 100 },
+      { "level": 41, "move": "Lock-On", "type": "normal", "category": "status" },
+      { "level": 43, "move": "Zap Cannon", "type": "electric", "category": "special", "power": 120, "accuracy": 50 }
+    ],
+    "description": "An Electric/Steel Pokemon. The units at its sides generate antigravity energy to keep it afloat. It feeds on electricity.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+  },
+  {
+    "id": 41,
+    "slug": "zubat",
+    "name": "Zubat",
+    "types": ["poison", "flying"],
+    "abilities": [
+      { "name": "Inner Focus" },
+      { "name": "Infiltrator", "hidden": true }
+    ],
+    "baseStats": { "hp": 40, "attack": 45, "defense": 35, "spAtk": 30, "spDef": 40, "speed": 55 },
+    "locations": [
+      { "route": "Verdant Cavern", "routeSlug": "verdant-cavern", "method": "walking", "percentage": 30, "levelRange": [8, 11] },
+      { "route": "Diglett's Tunnel", "routeSlug": "digletts-tunnel", "method": "walking", "percentage": 30, "levelRange": [20, 23] }
+    ],
+    "evolution": [
+      { "pokemon": "Zubat", "pokemonSlug": "zubat", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Golbat", "pokemonSlug": "golbat", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png", "condition": "Level 22", "stage": 2 },
+      { "pokemon": "Crobat", "pokemonSlug": "crobat", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png", "condition": "High Friendship", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Absorb", "type": "grass", "category": "special", "power": 20, "accuracy": 100 },
+      { "level": 4, "move": "Supersonic", "type": "normal", "category": "status", "accuracy": 55 },
+      { "level": 7, "move": "Astonish", "type": "ghost", "category": "physical", "power": 30, "accuracy": 100 },
+      { "level": 10, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 13, "move": "Wing Attack", "type": "flying", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 16, "move": "Confuse Ray", "type": "ghost", "category": "status" },
+      { "level": 19, "move": "Swift", "type": "normal", "category": "special", "power": 60 },
+      { "level": 22, "move": "Poison Fang", "type": "poison", "category": "physical", "power": 50, "accuracy": 100 },
+      { "level": 25, "move": "Mean Look", "type": "normal", "category": "status" },
+      { "level": 28, "move": "Leech Life", "type": "bug", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 31, "move": "Venoshock", "type": "poison", "category": "special", "power": 65, "accuracy": 100 },
+      { "level": 34, "move": "Air Cutter", "type": "flying", "category": "special", "power": 60, "accuracy": 95 },
+      { "level": 37, "move": "Haze", "type": "ice", "category": "status" },
+      { "level": 40, "move": "Air Slash", "type": "flying", "category": "special", "power": 75, "accuracy": 95 }
+    ],
+    "description": "A Poison/Flying bat Pokemon that navigates using ultrasonic waves. It avoids sunlight and lives in caves and dark places.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
+  },
+  {
+    "id": 74,
+    "slug": "geodude-alola",
+    "name": "Geodude (Alolan)",
+    "types": ["rock", "electric"],
+    "abilities": [
+      { "name": "Magnet Pull" },
+      { "name": "Sturdy" },
+      { "name": "Galvanize", "hidden": true }
+    ],
+    "baseStats": { "hp": 40, "attack": 80, "defense": 100, "spAtk": 30, "spDef": 30, "speed": 20 },
+    "locations": [
+      { "route": "Verdant Cavern", "routeSlug": "verdant-cavern", "method": "walking", "percentage": 20, "levelRange": [8, 11] },
+      { "route": "Route 12", "routeSlug": "route-12", "method": "walking", "percentage": 30, "levelRange": [27, 30] }
+    ],
+    "evolution": [
+      { "pokemon": "Geodude (Alolan)", "pokemonSlug": "geodude-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Graveler (Alolan)", "pokemonSlug": "graveler-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png", "condition": "Level 25", "stage": 2 },
+      { "pokemon": "Golem (Alolan)", "pokemonSlug": "golem-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png", "condition": "Trade", "stage": 3 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Defense Curl", "type": "normal", "category": "status" },
+      { "level": 4, "move": "Charge", "type": "electric", "category": "status" },
+      { "level": 6, "move": "Rock Polish", "type": "rock", "category": "status" },
+      { "level": 10, "move": "Rollout", "type": "rock", "category": "physical", "power": 30, "accuracy": 90 },
+      { "level": 12, "move": "Spark", "type": "electric", "category": "physical", "power": 65, "accuracy": 100 },
+      { "level": 16, "move": "Rock Throw", "type": "rock", "category": "physical", "power": 50, "accuracy": 90 },
+      { "level": 18, "move": "Smack Down", "type": "rock", "category": "physical", "power": 50, "accuracy": 100 },
+      { "level": 22, "move": "Thunder Punch", "type": "electric", "category": "physical", "power": 75, "accuracy": 100 },
+      { "level": 24, "move": "Self-Destruct", "type": "normal", "category": "physical", "power": 200, "accuracy": 100 },
+      { "level": 28, "move": "Stealth Rock", "type": "rock", "category": "status" },
+      { "level": 30, "move": "Rock Blast", "type": "rock", "category": "physical", "power": 25, "accuracy": 90 },
+      { "level": 34, "move": "Discharge", "type": "electric", "category": "special", "power": 80, "accuracy": 100 },
+      { "level": 36, "move": "Explosion", "type": "normal", "category": "physical", "power": 250, "accuracy": 100 },
+      { "level": 40, "move": "Double-Edge", "type": "normal", "category": "physical", "power": 120, "accuracy": 100 },
+      { "level": 42, "move": "Stone Edge", "type": "rock", "category": "physical", "power": 100, "accuracy": 80 }
+    ],
+    "description": "The Alolan form of Geodude. Rock/Electric type due to Alola's magnetic minerals. It can be found with eyebrows made of iron sand.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png"
+  },
+  {
+    "id": 52,
+    "slug": "meowth-alola",
+    "name": "Meowth (Alolan)",
+    "types": ["dark"],
+    "abilities": [
+      { "name": "Pickup" },
+      { "name": "Technician" },
+      { "name": "Rattled", "hidden": true }
+    ],
+    "baseStats": { "hp": 40, "attack": 35, "defense": 35, "spAtk": 50, "spDef": 40, "speed": 90 },
+    "locations": [
+      { "route": "Route 2", "routeSlug": "route-2", "method": "walking", "percentage": 20, "levelRange": [5, 8], "notes": "Common on Route 2" },
+      { "route": "Hau'oli City", "routeSlug": "hauoli-city", "method": "walking", "percentage": 10, "levelRange": [7, 10] }
+    ],
+    "evolution": [
+      { "pokemon": "Meowth (Alolan)", "pokemonSlug": "meowth-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Persian (Alolan)", "pokemonSlug": "persian-alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png", "condition": "High Friendship", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Scratch", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 6, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 9, "move": "Fake Out", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 14, "move": "Fury Swipes", "type": "normal", "category": "physical", "power": 18, "accuracy": 80 },
+      { "level": 17, "move": "Screech", "type": "normal", "category": "status", "accuracy": 85 },
+      { "level": 22, "move": "Feint Attack", "type": "dark", "category": "physical", "power": 60 },
+      { "level": 25, "move": "Taunt", "type": "dark", "category": "status" },
+      { "level": 30, "move": "Assurance", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 33, "move": "Slash", "type": "normal", "category": "physical", "power": 70, "accuracy": 100 },
+      { "level": 38, "move": "Nasty Plot", "type": "dark", "category": "status" },
+      { "level": 41, "move": "Play Rough", "type": "fairy", "category": "physical", "power": 90, "accuracy": 90 },
+      { "level": 46, "move": "Dark Pulse", "type": "dark", "category": "special", "power": 80, "accuracy": 100 }
+    ],
+    "description": "The Alolan Dark-type Meowth. Pampered by Alolan royalty, it became prideful and vain, developing into a Dark type.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png"
+  },
+  {
+    "id": 58,
+    "slug": "growlithe",
+    "name": "Growlithe",
+    "types": ["fire"],
+    "abilities": [
+      { "name": "Intimidate" },
+      { "name": "Flash Fire" },
+      { "name": "Justified", "hidden": true }
+    ],
+    "baseStats": { "hp": 55, "attack": 70, "defense": 45, "spAtk": 70, "spDef": 50, "speed": 60 },
+    "locations": [
+      { "route": "Route 2", "routeSlug": "route-2", "method": "walking", "percentage": 20, "levelRange": [5, 8] }
+    ],
+    "evolution": [
+      { "pokemon": "Growlithe", "pokemonSlug": "growlithe", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Arcanine", "pokemonSlug": "arcanine", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png", "condition": "Fire Stone", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 1, "move": "Roar", "type": "normal", "category": "status" },
+      { "level": 6, "move": "Ember", "type": "fire", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 8, "move": "Leer", "type": "normal", "category": "status" },
+      { "level": 10, "move": "Odor Sleuth", "type": "normal", "category": "status" },
+      { "level": 14, "move": "Helping Hand", "type": "normal", "category": "status" },
+      { "level": 17, "move": "Flame Wheel", "type": "fire", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 20, "move": "Reversal", "type": "fighting", "category": "physical", "accuracy": 100 },
+      { "level": 23, "move": "Fire Fang", "type": "fire", "category": "physical", "power": 65, "accuracy": 95 },
+      { "level": 28, "move": "Take Down", "type": "normal", "category": "physical", "power": 90, "accuracy": 85 },
+      { "level": 31, "move": "Flame Burst", "type": "fire", "category": "special", "power": 70, "accuracy": 100 },
+      { "level": 34, "move": "Agility", "type": "psychic", "category": "status" },
+      { "level": 37, "move": "Retaliate", "type": "normal", "category": "physical", "power": 70, "accuracy": 100 },
+      { "level": 40, "move": "Flamethrower", "type": "fire", "category": "special", "power": 90, "accuracy": 100 },
+      { "level": 43, "move": "Crunch", "type": "dark", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 45, "move": "Heat Wave", "type": "fire", "category": "special", "power": 95, "accuracy": 90 },
+      { "level": 48, "move": "Outrage", "type": "dragon", "category": "physical", "power": 120, "accuracy": 100 },
+      { "level": 51, "move": "Flare Blitz", "type": "fire", "category": "physical", "power": 120, "accuracy": 100 }
+    ],
+    "description": "A loyal Fire-type puppy Pokemon. It has a brave and trustworthy nature and will fearlessly bark at larger opponents.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 133,
+    "slug": "eevee",
+    "name": "Eevee",
+    "types": ["normal"],
+    "abilities": [
+      { "name": "Run Away" },
+      { "name": "Adaptability" },
+      { "name": "Anticipation", "hidden": true }
+    ],
+    "baseStats": { "hp": 55, "attack": 55, "defense": 50, "spAtk": 45, "spDef": 65, "speed": 55 },
+    "locations": [
+      { "route": "Route 4", "routeSlug": "route-4", "method": "walking", "percentage": 5, "levelRange": [11, 14], "notes": "Rare encounter" },
+      { "route": "Route 6", "routeSlug": "route-6", "method": "walking", "percentage": 5, "levelRange": [16, 19], "notes": "Rare encounter" }
+    ],
+    "evolution": [
+      { "pokemon": "Eevee", "pokemonSlug": "eevee", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Vaporeon", "pokemonSlug": "vaporeon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png", "condition": "Water Stone", "stage": 2 },
+      { "pokemon": "Jolteon", "pokemonSlug": "jolteon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png", "condition": "Thunder Stone", "stage": 2 },
+      { "pokemon": "Flareon", "pokemonSlug": "flareon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png", "condition": "Fire Stone", "stage": 2 },
+      { "pokemon": "Espeon", "pokemonSlug": "espeon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png", "condition": "High Friendship (daytime, no Fairy move)", "stage": 2 },
+      { "pokemon": "Umbreon", "pokemonSlug": "umbreon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png", "condition": "High Friendship (nighttime, no Fairy move)", "stage": 2 },
+      { "pokemon": "Leafeon", "pokemonSlug": "leafeon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png", "condition": "Level up near Moss Rock (Lush Jungle)", "stage": 2 },
+      { "pokemon": "Glaceon", "pokemonSlug": "glaceon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png", "condition": "Level up near Icy Rock (Mount Lanakila)", "stage": 2 },
+      { "pokemon": "Sylveon", "pokemonSlug": "sylveon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png", "condition": "High Friendship + knows a Fairy-type move", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Growl", "type": "normal", "category": "status" },
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Helping Hand", "type": "normal", "category": "status" },
+      { "level": 5, "move": "Sand Attack", "type": "ground", "category": "status" },
+      { "level": 9, "move": "Baby-Doll Eyes", "type": "fairy", "category": "status" },
+      { "level": 13, "move": "Swift", "type": "normal", "category": "special", "power": 60 },
+      { "level": 17, "move": "Quick Attack", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 20, "move": "Refresh", "type": "normal", "category": "status" },
+      { "level": 25, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 29, "move": "Take Down", "type": "normal", "category": "physical", "power": 90, "accuracy": 85 },
+      { "level": 33, "move": "Charm", "type": "fairy", "category": "status" },
+      { "level": 37, "move": "Baton Pass", "type": "normal", "category": "status" },
+      { "level": 41, "move": "Double-Edge", "type": "normal", "category": "physical", "power": 120, "accuracy": 100 },
+      { "level": 45, "move": "Last Resort", "type": "normal", "category": "physical", "power": 140, "accuracy": 100 },
+      { "level": 49, "move": "Trump Card", "type": "normal", "category": "special" }
+    ],
+    "description": "A Normal-type Pokemon with unstable genetic makeup that allows it to evolve into 8 different forms depending on the conditions.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+  },
+  {
+    "id": 744,
+    "slug": "rockruff",
+    "name": "Rockruff",
+    "types": ["rock"],
+    "abilities": [
+      { "name": "Keen Eye" },
+      { "name": "Vital Spirit" },
+      { "name": "Steadfast", "hidden": true }
+    ],
+    "baseStats": { "hp": 45, "attack": 65, "defense": 40, "spAtk": 30, "spDef": 40, "speed": 60 },
+    "locations": [
+      { "route": "Route 1", "routeSlug": "route-1", "method": "walking", "percentage": 10, "levelRange": [11, 14], "notes": "Ten Carat Hill area" },
+      { "route": "Vast Poni Canyon", "routeSlug": "vast-poni-canyon", "method": "walking", "percentage": 20, "levelRange": [41, 44] }
+    ],
+    "evolution": [
+      { "pokemon": "Rockruff", "pokemonSlug": "rockruff", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Lycanroc (Midday)", "pokemonSlug": "lycanroc-midday", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png", "condition": "Level 25 (daytime)", "stage": 2 },
+      { "pokemon": "Lycanroc (Midnight)", "pokemonSlug": "lycanroc-midnight", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10126.png", "condition": "Level 25 (nighttime)", "stage": 2 },
+      { "pokemon": "Lycanroc (Dusk)", "pokemonSlug": "lycanroc-dusk", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10152.png", "condition": "Level 25 at dusk (5:00-5:59 PM, Own Tempo ability only)", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 1, "move": "Leer", "type": "normal", "category": "status" },
+      { "level": 4, "move": "Sand Attack", "type": "ground", "category": "status" },
+      { "level": 7, "move": "Bite", "type": "dark", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 12, "move": "Howl", "type": "normal", "category": "status" },
+      { "level": 15, "move": "Rock Throw", "type": "rock", "category": "physical", "power": 50, "accuracy": 90 },
+      { "level": 18, "move": "Odor Sleuth", "type": "normal", "category": "status" },
+      { "level": 23, "move": "Rock Tomb", "type": "rock", "category": "physical", "power": 60, "accuracy": 95 },
+      { "level": 26, "move": "Roar", "type": "normal", "category": "status" },
+      { "level": 29, "move": "Stealth Rock", "type": "rock", "category": "status" },
+      { "level": 34, "move": "Rock Slide", "type": "rock", "category": "physical", "power": 75, "accuracy": 90 },
+      { "level": 37, "move": "Scary Face", "type": "normal", "category": "status" },
+      { "level": 40, "move": "Crunch", "type": "dark", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 45, "move": "Stone Edge", "type": "rock", "category": "physical", "power": 100, "accuracy": 80 }
+    ],
+    "description": "A Rock-type puppy Pokemon native to Alola. As it grows, it becomes more aggressive and eventually evolves based on the time of day.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png"
+  },
+  {
+    "id": 749,
+    "slug": "mudbray",
+    "name": "Mudbray",
+    "types": ["ground"],
+    "abilities": [
+      { "name": "Own Tempo" },
+      { "name": "Stamina" },
+      { "name": "Inner Focus", "hidden": true }
+    ],
+    "baseStats": { "hp": 70, "attack": 100, "defense": 70, "spAtk": 45, "spDef": 55, "speed": 45 },
+    "locations": [
+      { "route": "Route 4", "routeSlug": "route-4", "method": "walking", "percentage": 20, "levelRange": [11, 14] },
+      { "route": "Route 6", "routeSlug": "route-6", "method": "walking", "percentage": 20, "levelRange": [16, 19] },
+      { "route": "Paniola Ranch", "routeSlug": "paniola-ranch", "method": "walking", "percentage": 30, "levelRange": [12, 15] }
+    ],
+    "evolution": [
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Mudsdale", "pokemonSlug": "mudsdale", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png", "condition": "Level 30", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Mud-Slap", "type": "ground", "category": "special", "power": 20, "accuracy": 100 },
+      { "level": 3, "move": "Mud Sport", "type": "ground", "category": "status" },
+      { "level": 8, "move": "Rototiller", "type": "ground", "category": "status" },
+      { "level": 10, "move": "Bulldoze", "type": "ground", "category": "physical", "power": 60, "accuracy": 100 },
+      { "level": 15, "move": "Double Kick", "type": "fighting", "category": "physical", "power": 30, "accuracy": 100 },
+      { "level": 17, "move": "Stomp", "type": "normal", "category": "physical", "power": 65, "accuracy": 100 },
+      { "level": 22, "move": "Bide", "type": "normal", "category": "physical" },
+      { "level": 24, "move": "High Horsepower", "type": "ground", "category": "physical", "power": 95, "accuracy": 95 },
+      { "level": 29, "move": "Iron Defense", "type": "steel", "category": "status" },
+      { "level": 31, "move": "Heavy Slam", "type": "steel", "category": "physical", "accuracy": 100 },
+      { "level": 36, "move": "Counter", "type": "fighting", "category": "physical", "accuracy": 100 },
+      { "level": 38, "move": "Earthquake", "type": "ground", "category": "physical", "power": 100, "accuracy": 100 },
+      { "level": 43, "move": "Mega Kick", "type": "normal", "category": "physical", "power": 120, "accuracy": 75 },
+      { "level": 45, "move": "Superpower", "type": "fighting", "category": "physical", "power": 120, "accuracy": 100 }
+    ],
+    "description": "A Ground-type donkey Pokemon. It eats mud and dirt to create a protective mud armor. Its kicks have incredible force.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png"
+  },
+  {
+    "id": 129,
+    "slug": "magikarp",
+    "name": "Magikarp",
+    "types": ["water"],
+    "abilities": [
+      { "name": "Swift Swim" },
+      { "name": "Rattled", "hidden": true }
+    ],
+    "baseStats": { "hp": 20, "attack": 10, "defense": 55, "spAtk": 15, "spDef": 20, "speed": 80 },
+    "locations": [
+      { "route": "Brooklet Hill", "routeSlug": "brooklet-hill", "method": "fishing", "percentage": 55, "levelRange": [14, 17] },
+      { "route": "Route 7", "routeSlug": "route-7", "method": "fishing", "percentage": 40, "levelRange": [16, 19] },
+      { "route": "Route 9", "routeSlug": "route-9", "method": "fishing", "percentage": 40, "levelRange": [18, 21] },
+      { "route": "Paniola Ranch", "routeSlug": "paniola-ranch", "method": "fishing", "percentage": 50, "levelRange": [14, 17] }
+    ],
+    "evolution": [
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Gyarados", "pokemonSlug": "gyarados", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png", "condition": "Level 20", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Splash", "type": "normal", "category": "status" },
+      { "level": 15, "move": "Tackle", "type": "normal", "category": "physical", "power": 40, "accuracy": 100 },
+      { "level": 25, "move": "Flail", "type": "normal", "category": "physical", "accuracy": 100 }
+    ],
+    "description": "A Water-type fish Pokemon famous for being nearly useless in battle. However, it evolves into the fearsome Gyarados at level 20.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+  },
+  {
+    "id": 72,
+    "slug": "tentacool",
+    "name": "Tentacool",
+    "types": ["water", "poison"],
+    "abilities": [
+      { "name": "Clear Body" },
+      { "name": "Liquid Ooze" },
+      { "name": "Rain Dish", "hidden": true }
+    ],
+    "baseStats": { "hp": 40, "attack": 40, "defense": 35, "spAtk": 50, "spDef": 100, "speed": 70 },
+    "locations": [
+      { "route": "Route 7", "routeSlug": "route-7", "method": "surfing", "percentage": 30, "levelRange": [16, 19] },
+      { "route": "Route 8", "routeSlug": "route-8", "method": "surfing", "percentage": 30, "levelRange": [18, 21] },
+      { "route": "Hau'oli City", "routeSlug": "hauoli-city", "method": "surfing", "percentage": 20, "levelRange": [15, 18] },
+      { "route": "Kala'e Bay", "routeSlug": "kalae-bay", "method": "surfing", "percentage": 30, "levelRange": [15, 18] }
+    ],
+    "evolution": [
+      { "pokemon": "Tentacool", "pokemonSlug": "tentacool", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png", "condition": "Base", "stage": 1 },
+      { "pokemon": "Tentacruel", "pokemonSlug": "tentacruel", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png", "condition": "Level 30", "stage": 2 }
+    ],
+    "learnset": [
+      { "level": 1, "move": "Poison Sting", "type": "poison", "category": "physical", "power": 15, "accuracy": 100 },
+      { "level": 4, "move": "Supersonic", "type": "normal", "category": "status", "accuracy": 55 },
+      { "level": 7, "move": "Constrict", "type": "normal", "category": "physical", "power": 10, "accuracy": 100 },
+      { "level": 10, "move": "Acid", "type": "poison", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 13, "move": "Toxic Spikes", "type": "poison", "category": "status" },
+      { "level": 16, "move": "Water Pulse", "type": "water", "category": "special", "power": 60, "accuracy": 100 },
+      { "level": 19, "move": "Wrap", "type": "normal", "category": "physical", "power": 15, "accuracy": 90 },
+      { "level": 22, "move": "Acid Spray", "type": "poison", "category": "special", "power": 40, "accuracy": 100 },
+      { "level": 25, "move": "Bubble Beam", "type": "water", "category": "special", "power": 65, "accuracy": 100 },
+      { "level": 28, "move": "Barrier", "type": "psychic", "category": "status" },
+      { "level": 31, "move": "Poison Jab", "type": "poison", "category": "physical", "power": 80, "accuracy": 100 },
+      { "level": 34, "move": "Brine", "type": "water", "category": "special", "power": 65, "accuracy": 100 },
+      { "level": 37, "move": "Screech", "type": "normal", "category": "status", "accuracy": 85 },
+      { "level": 40, "move": "Hex", "type": "ghost", "category": "special", "power": 65, "accuracy": 100 },
+      { "level": 43, "move": "Sludge Wave", "type": "poison", "category": "special", "power": 95, "accuracy": 100 },
+      { "level": 46, "move": "Hydro Pump", "type": "water", "category": "special", "power": 110, "accuracy": 80 },
+      { "level": 49, "move": "Wring Out", "type": "normal", "category": "special", "accuracy": 100 }
+    ],
+    "description": "A Water/Poison jellyfish Pokemon commonly found in Alola's oceans. Its tentacles contain potent venom.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "slug": "sos-chaining-hidden-abilities-shinies",
+    "title": "SOS Chaining for Hidden Abilities and Shinies",
+    "category": "advanced",
+    "tags": ["shiny-hunting", "hidden-abilities", "sos-battles"],
+    "content": "When a wild Pokemon calls for help in an SOS battle, the allies it summons have an increasing chance of having their Hidden Ability. After 10 allies, there is roughly a 15% chance of the Hidden Ability. For shiny hunting, the shiny odds improve the longer the chain goes: at 31+ chain length, odds improve to approximately 1/1024 with the Shiny Charm. Use an Adrenaline Orb to increase call rate, keep the original caller alive but weak (use False Swipe), and KO each ally that isn't shiny or doesn't have the ability you want. Bring lots of PP-restoring Leppa Berries and Adrenaline Orbs.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "slug": "amulet-coin-money-farming",
+    "title": "Amulet Coin Location and Money Farming",
+    "category": "economy",
+    "tags": ["money", "amulet-coin", "farming"],
+    "content": "The Amulet Coin is given by a gentleman inside the Paniola Ranch house on Akala Island. Have the holder participate in every trainer battle to double your prize money. For late-game money farming, use Amulet Coin + Happy Hour (from event Pokemon or Smeargle Sketching it) + Roto Prize Money from Rotom Dex for up to 8x money multiplier. Challenge the Pokemon League repeatedly with this setup. The Elite Four gives roughly 60,000 base per run, which becomes nearly 500,000 with all multipliers active.",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Paniola Ranch", "slug": "paniola-ranch" }],
+    "priority": "high"
+  },
+  {
+    "id": 3,
+    "slug": "best-grinding-spots",
+    "title": "Best Grinding and EXP Spots",
+    "category": "leveling",
+    "tags": ["exp", "grinding", "leveling", "chansey"],
+    "content": "Early game: Route 1 trainers and wild encounters (levels 2-8). Mid game: Paniola Ranch trainers and wild Mudbray. Late game: The best EXP farming method is SOS chaining Chansey at Poni Plains or Mount Lanakila. Chansey gives massive base EXP (395) and has a chance to SOS call Blissey (608 base EXP). Equip a Lucky Egg for 50% more EXP. Use Roto Exp. Points from Rotom Dex for another boost. A single Blissey KO with Lucky Egg and Roto Exp can yield 10,000+ EXP per Pokemon. Poni Gauntlet trainers also give good EXP for late-game grinding.",
+    "relatedPokemon": [],
+    "relatedLocations": [
+      { "name": "Poni Plains", "slug": "poni-plains" },
+      { "name": "Mount Lanakila", "slug": "mount-lanakila" }
+    ],
+    "priority": "high"
+  },
+  {
+    "id": 4,
+    "slug": "island-scan-qr-codes",
+    "title": "Island Scan for Rare Pokemon",
+    "category": "catching",
+    "tags": ["island-scan", "qr-codes", "rare-pokemon"],
+    "content": "Scan 10 QR codes (any QR code works, even non-Pokemon ones) to charge the Island Scan feature. Activate it to find a rare non-Alolan Pokemon on the island you're currently on. The Pokemon available depends on the day of the week and which island you're on. Notable finds include: Charmander (Route 3, Sunday), Totodile (Seaward Cave, Monday), Ralts (Route 6, Sunday on Akala), Honedge (Akala Outskirts, Thursday), Litwick (Hau'oli Cemetery, Tuesday), Deino (Ten Carat Hill, Thursday). The scanned Pokemon appears for one hour, so be ready to catch it.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "slug": "pokemon-refresh-affection-bonuses",
+    "title": "Pokemon Refresh Affection Bonuses",
+    "category": "mechanics",
+    "tags": ["affection", "pokemon-refresh", "bonuses"],
+    "content": "Pokemon Refresh (accessible from the menu) lets you pet, feed, and groom your Pokemon. Higher affection provides massive battle bonuses: at 2 hearts, your Pokemon gains boosted EXP (same as traded Pokemon). At 3 hearts, it may survive fatal hits at 1 HP ('toughed it out' message). At 4 hearts, it can dodge attacks ('avoided the attack' message). At 5 hearts, it has a higher critical hit ratio and can cure its own status conditions. Feed Pokemon Rainbow Beans for fastest affection gain. Use it after every battle to heal status conditions for free (instead of items). Note: Affection is separate from Friendship.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 6,
+    "slug": "ev-training-spots",
+    "title": "EV Training Spots in Alola",
+    "category": "competitive",
+    "tags": ["ev-training", "competitive", "stats"],
+    "content": "Each stat has optimal EV training spots in Alola. HP: Caterpie (1 EV) on Route 1. Attack: Yungoos (1 EV) on Route 1, or Pikipek (1 ATK EV) on Route 1. Defense: Geodude-A (1 EV) at Verdant Cavern or Route 12. Sp. Attack: Psyduck (1 EV) at Brooklet Hill. Sp. Defense: Tentacool (1 EV) via surfing on Route 7/8. Speed: Zubat (1 EV) at Verdant Cavern or Diglett-A (1 Speed EV) at Diglett's Tunnel. Use Power items (Power Bracer, Power Lens, etc.) from the Battle Royal Dome for +8 EVs per battle. Pokerus doubles all EV gains. SOS chains double the EVs. With Power Item + Pokerus + SOS, you get (1+8)*2*2 = 36 EVs per KO.",
+    "relatedPokemon": [],
+    "relatedLocations": [
+      { "name": "Route 1", "slug": "route-1" },
+      { "name": "Brooklet Hill", "slug": "brooklet-hill" }
+    ],
+    "priority": "medium"
+  },
+  {
+    "id": 7,
+    "slug": "early-game-team-compositions",
+    "title": "Best Early-Game Team Compositions",
+    "category": "team-building",
+    "tags": ["team-building", "early-game", "recommendations"],
+    "content": "For a strong early-game team that covers type matchups well: If you chose Rowlet: Growlithe (Route 2, Fire), Magnemite (Hau'oli, Electric/Steel), Mudbray (Route 4, Ground), Wingull (Route 1, Water/Flying), Rockruff (Ten Carat Hill, Rock). If you chose Litten: Wingull/Poliwag (Water), Magnemite (Electric/Steel), Mudbray (Ground), Pikipek (Flying), Fomantis (Route 5, Grass). If you chose Popplio: Growlithe (Fire), Pikipek (Flying), Grubbin (Bug->Electric), Mudbray (Ground), Rockruff (Rock). Key priority: get a Ground type (Mudbray), an Electric type (Magnemite or Pichu), and a Flying type (Pikipek line) early.",
+    "relatedPokemon": [
+      { "name": "Growlithe", "slug": "growlithe" },
+      { "name": "Magnemite", "slug": "magnemite" },
+      { "name": "Mudbray", "slug": "mudbray" }
+    ],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 8,
+    "slug": "soft-reset-starter-nature",
+    "title": "Soft Resetting for Starter Nature",
+    "category": "optimization",
+    "tags": ["nature", "starter", "soft-reset"],
+    "content": "You can soft reset (press L+R+START or L+R+SELECT simultaneously) before choosing your starter to get a desired nature. Save before approaching the bag with the Poke Balls. Choose your starter, check its nature in the summary screen, and reset if it's not what you want. Recommended natures: Rowlet/Decidueye - Adamant (+Atk, -SpA) since it's a physical attacker, or Jolly (+Spe, -SpA). Litten/Incineroar - Adamant (+Atk, -SpA) is ideal for its physical moveset. Popplio/Primarina - Modest (+SpA, -Atk) since it's a special attacker, or Timid (+Spe, -Atk). Each reset takes about 1-2 minutes. With 25 possible natures, expect around 12-13 resets on average.",
+    "relatedPokemon": [
+      { "name": "Rowlet", "slug": "rowlet" },
+      { "name": "Litten", "slug": "litten" },
+      { "name": "Popplio", "slug": "popplio" }
+    ],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 9,
+    "slug": "lucky-egg-from-kukui",
+    "title": "Getting the Lucky Egg from Professor Kukui",
+    "category": "items",
+    "tags": ["lucky-egg", "exp", "leveling"],
+    "content": "Professor Kukui gives you a Lucky Egg at his lab on Route 1 once you have registered 50 Pokemon in your Pokedex. You don't need to catch all 50 - just seeing them counts (battle encounters, trainer battles, etc.). The Lucky Egg boosts EXP gained by the holder by 50%. This stacks with Roto Exp. Points, traded Pokemon boost, and affection bonus. Prioritize filling your Pokedex early for this massive leveling advantage. A good strategy is to use the GTS (Global Trade Station) in Festival Plaza to trade for Pokemon you haven't seen.",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Route 1", "slug": "route-1" }],
+    "priority": "high"
+  },
+  {
+    "id": 10,
+    "slug": "eevee-evolutions-guide",
+    "title": "How to Get All Eevee Evolutions in Alola",
+    "category": "evolution",
+    "tags": ["eevee", "evolution", "eeveelutions"],
+    "content": "Eevee can be found rarely (5%) on Route 4 and Route 6. Here's how to get each evolution: Vaporeon - Use a Water Stone (Konikoni City shop, 3000). Jolteon - Use a Thunder Stone (Konikoni City shop, 3000). Flareon - Use a Fire Stone (Konikoni City shop, 3000). Espeon - Max friendship, then level up during the day. Must NOT know a Fairy move. Umbreon - Max friendship, then level up at night. Must NOT know a Fairy move. Leafeon - Level up near the Moss Rock in Lush Jungle. Glaceon - Level up near the Icy Rock inside the cave on Mount Lanakila (near Pokemon League). Sylveon - Max friendship while knowing a Fairy-type move (Baby-Doll Eyes, learned at level 9). Tip: Sylveon takes priority over Espeon/Umbreon if Eevee knows a Fairy move.",
+    "relatedPokemon": [{ "name": "Eevee", "slug": "eevee" }],
+    "relatedLocations": [
+      { "name": "Route 4", "slug": "route-4" },
+      { "name": "Lush Jungle", "slug": "lush-jungle" }
+    ],
+    "priority": "high"
+  },
+  {
+    "id": 11,
+    "slug": "festival-plaza-tips",
+    "title": "Festival Plaza Tips and Best Facilities",
+    "category": "features",
+    "tags": ["festival-plaza", "online", "facilities"],
+    "content": "Festival Plaza is your hub for online features, accessed from the menu. Priority facilities to add: Treasure Hunt 2-star or higher (free items daily), Rare Kitchen 5-star (level Pokemon up by feeding them meals - costs FC but great for leveling), Bouncy Houses (EV training facilities), and Dye Houses (customize your clothes). Earn Festival Coins (FC) by hosting missions, participating in Wonder Trade, or doing GTS trades. The Global Missions event gives bonus FC. Always talk to visitors with speech bubbles - they request trades, give FC, or offer facility recommendations. Use Wonder Trade frequently for easy FC income and Pokedex entries.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 12,
+    "slug": "ultra-wormhole-legendaries",
+    "title": "Ultra Wormhole Mechanics for Legendaries",
+    "category": "endgame",
+    "tags": ["ultra-wormhole", "legendaries", "ultra-beasts", "endgame"],
+    "content": "After becoming Champion, you unlock Ultra Warp Ride at the Altar of the Sunne. You ride Solgaleo through wormholes to find Ultra Beasts and Legendary Pokemon. Wormhole colors determine encounter types: White - Ultra Beasts (Nihilego, Buzzwole, Pheromosa, Xurkitree, Celesteela, Kartana, Guzzlord). Red - Fire/Ground legendaries (Entei, Heatran, Ho-Oh in Ultra Sun). Blue - Water/Ice legendaries (Suicune, Kyogre, Lugia in Ultra Moon equivalents). Green - Grass/Bug legendaries and others. Yellow - Electric/Steel/Rock legendaries. The further you travel (higher light-years), the rarer and more rings a wormhole has. 4-ring wormholes guarantee legendary encounters. Shiny odds in Ultra Wormholes are drastically increased (up to 1/3 at max distance for non-legendary Pokemon).",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 13,
+    "slug": "totem-stickers-totem-pokemon",
+    "title": "Collecting Totem Stickers for Totem-Sized Pokemon",
+    "category": "collectibles",
+    "tags": ["totem-stickers", "totem-pokemon", "collectibles"],
+    "content": "Throughout Alola, there are 100 Totem Stickers hidden on walls, furniture, and objects. Collecting them lets you receive special Totem-sized Pokemon from Samson Oak at Heahea Beach. Rewards: 20 stickers - Totem Gumshoos (Ultra Sun) or Totem Raticate (Ultra Moon). 40 stickers - Totem Marowak (US) or Totem Araquanid (UM). 50 stickers - Totem Lurantis (US) or Totem Salazzle (UM). 70 stickers - Totem Vikavolt (US) or Totem Togedemaru (UM). 80 stickers - Totem Mimikyu (both). 100 stickers - Totem Kommo-o (US) or Totem Ribombee (UM). These are larger than normal and have higher weight, affecting moves like Heavy Slam and Low Kick.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 14,
+    "slug": "poke-pelago-passive-farming",
+    "title": "Poke Pelago for Passive EV Training and Item Farming",
+    "category": "features",
+    "tags": ["poke-pelago", "ev-training", "berries", "passive"],
+    "content": "Poke Pelago is an island chain managed by Mohn, accessible from the menu once you have a Charizard Ride. It has 5 islands: Isle Abeens (attracts wild Pokemon to join your PC boxes), Isle Aplenny (grows berries passively), Isle Aphun (sends Pokemon on expeditions for items like evolution stones and rare items), Isle Evelup (passive EV training - put up to 6 Pokemon per stat, each session gives 4 EVs over 30 min at max level), Isle Avue (raises friendship and hatches eggs passively). Upgrade islands by depositing Poke Beans. At max level, Isle Evelup is the easiest way to EV train without battling. Isle Aphun's Rare Treasure hunting path finds evolution stones and Bottle Caps.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 15,
+    "slug": "dusk-form-lycanroc",
+    "title": "How to Get Dusk Form Lycanroc",
+    "category": "evolution",
+    "tags": ["lycanroc", "dusk-form", "rockruff", "special"],
+    "content": "Dusk Form Lycanroc is exclusive to Pokemon Ultra Sun and Ultra Moon. To get it: You need a special Rockruff with the ability Own Tempo (its regular abilities are Keen Eye, Vital Spirit, or Steadfast). This Own Tempo Rockruff was distributed as an early purchase bonus via Mystery Gift and can also be bred from that event Rockruff. Evolve it between 5:00 PM and 5:59 PM in-game time (dusk) at level 25 or higher. Ultra Sun's in-game clock matches your 3DS clock, so set the time appropriately. Dusk Form has the ability Tough Claws (boosts contact moves by 30%) and learns both Accelerock (Midday exclusive) and Counter (Midnight exclusive), making it the best Lycanroc form competitively.",
+    "relatedPokemon": [{ "name": "Rockruff", "slug": "rockruff" }],
+    "relatedLocations": [],
+    "priority": "medium"
+  }
+]

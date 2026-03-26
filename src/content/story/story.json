@@ -1,0 +1,286 @@
+[
+  {
+    "id": 1,
+    "slug": "arriving-in-alola",
+    "title": "Chapter 1: Arriving in Alola",
+    "island": "melemele",
+    "summary": "You and your mother have just moved to the Alola region from Kanto. Professor Kukui greets you and introduces you to the island life. You meet Lillie and the mysterious Pokemon Nebby (Cosmog) at the Plank Bridge on Mahalo Trail.",
+    "objectives": [
+      "Unpack in your new home on Route 1",
+      "Follow Professor Kukui to Iki Town",
+      "Rescue Nebby on the Mahalo Trail bridge",
+      "Receive the Sparkling Stone from Tapu Koko"
+    ],
+    "blockers": [],
+    "keyItems": [
+      { "name": "Sparkling Stone", "description": "Given by the guardian deity Tapu Koko after you protect Nebby on the bridge. Later becomes your Z-Ring." }
+    ],
+    "rewards": [
+      "Introduction to the Alola region",
+      "Meet Professor Kukui, Lillie, and Hau",
+      "Sparkling Stone (future Z-Ring)"
+    ],
+    "keyBattles": [],
+    "nextStep": { "slug": "iki-town-festival", "name": "Chapter 2: Iki Town Festival" },
+    "tips": "Take your time exploring your house. You can interact with your Meowth for a fun animation. There are no Pokemon encounters yet, so just enjoy the story."
+  },
+  {
+    "id": 2,
+    "slug": "iki-town-festival",
+    "title": "Chapter 2: Iki Town Festival",
+    "island": "melemele",
+    "summary": "At the festival in Iki Town, you choose your starter Pokemon from Professor Kukui: Rowlet, Litten, or Popplio. Island Kahuna Hala gives you your Pokedex and Rotom Dex. You battle your rival Hau for the first time and begin your journey.",
+    "objectives": [
+      "Attend the festival at Iki Town",
+      "Choose your starter Pokemon (Rowlet, Litten, or Popplio)",
+      "Battle Hau in your first rival battle",
+      "Receive the Pokedex and Rotom Dex from Professor Kukui",
+      "Begin exploring Route 1"
+    ],
+    "blockers": [],
+    "keyItems": [
+      { "name": "Starter Pokemon", "description": "Choose from Rowlet (Grass/Flying), Litten (Fire), or Popplio (Water)" },
+      { "name": "Pokedex / Rotom Dex", "description": "Your talking Pokedex with a built-in map, powered by a Rotom" },
+      { "name": "Trainer Passport", "description": "Your official ID as a Pokemon Trainer" }
+    ],
+    "rewards": [
+      "Your first Pokemon (Level 5 starter)",
+      "Rotom Dex with map functionality",
+      "Access to Route 1 encounters"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Pokemon Trainer Hau",
+        "pokemon": [{ "name": "Starter (weak to yours)", "level": 5 }],
+        "strategy": "Hau picks the starter weak to yours. Just use your STAB move (Leafage, Ember, or Water Gun) to win easily."
+      }
+    ],
+    "nextStep": { "slug": "verdant-cavern-trial", "name": "Chapter 3: Verdant Cavern Trial" },
+    "tips": "You can soft reset (L+R+START/SELECT) before choosing your starter to get a good nature. Adamant is ideal for Litten (physical attacker), Modest for Popplio (special attacker), and Adamant or Jolly for Rowlet."
+  },
+  {
+    "id": 3,
+    "slug": "verdant-cavern-trial",
+    "title": "Chapter 3: Verdant Cavern Trial",
+    "island": "melemele",
+    "summary": "Captain Ilima's trial in Verdant Cavern is your first Island Trial. You must defeat three Pokemon lurking in dens within the cave, then face the Totem Pokemon. In Ultra Sun, the Totem is Gumshoos; in Ultra Moon, it is Alolan Raticate.",
+    "objectives": [
+      "Travel through Hau'oli City and Route 2 to reach Verdant Cavern",
+      "Defeat the three Pokemon hiding in the cave dens",
+      "Battle and defeat Totem Gumshoos (Ultra Sun) or Totem Raticate (Ultra Moon)",
+      "Receive the Normalium Z crystal"
+    ],
+    "blockers": [
+      "Must have spoken with Captain Ilima and received the trial challenge"
+    ],
+    "keyItems": [
+      { "name": "Normalium Z", "description": "Z-Crystal that powers up Normal-type moves into Z-Moves" }
+    ],
+    "rewards": [
+      "Normalium Z crystal",
+      "10 Great Balls from Ilima",
+      "Access to the back of Verdant Cavern (TM31 Brick Break, TM46 Thief)"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Totem Gumshoos (Ultra Sun)",
+        "pokemon": [{ "name": "Gumshoos (Totem)", "level": 12 }],
+        "strategy": "Totem Gumshoos gets +1 to all stats and can call Yungoos allies. Fighting-type moves are super effective. Use Makuhita (trade in Route 2 Pokemon Center) or a Pokemon with a Fighting move. Keep your HP above half since its boosted attacks hit hard."
+      },
+      {
+        "trainer": "Totem Raticate (Ultra Moon)",
+        "pokemon": [{ "name": "Alolan Raticate (Totem)", "level": 12 }],
+        "strategy": "Totem Alolan Raticate is Dark/Normal. Fighting-type moves deal 4x damage. Same strategy as Gumshoos but even more vulnerable to Fighting."
+      }
+    ],
+    "nextStep": { "slug": "melemele-grand-trial", "name": "Chapter 4: Melemele Grand Trial" },
+    "tips": "Before entering the trial, make sure your team is at least level 12-13. Stock up on Potions at the Route 2 Pokemon Center. You cannot catch Pokemon during trials. After clearing the trial, go back and explore the blocked-off areas for great TMs."
+  },
+  {
+    "id": 4,
+    "slug": "melemele-grand-trial",
+    "title": "Chapter 4: Melemele Grand Trial",
+    "island": "melemele",
+    "summary": "After completing the Verdant Cavern trial, Kahuna Hala challenges you to the Melemele Grand Trial in Iki Town. Hala specializes in Fighting-type Pokemon. Winning earns you the Fightinium Z and the ability to use Tauros as a Ride Pokemon.",
+    "objectives": [
+      "Return to Iki Town after completing the Verdant Cavern trial",
+      "Receive your Z-Ring from Hala (crafted from the Sparkling Stone)",
+      "Battle Kahuna Hala in the Grand Trial",
+      "Receive the Fightinium Z and Ride Pager"
+    ],
+    "blockers": [
+      "Must have completed Captain Ilima's trial at Verdant Cavern"
+    ],
+    "keyItems": [
+      { "name": "Z-Ring", "description": "Crafted from your Sparkling Stone by Hala. Allows you to use Z-Moves in battle." },
+      { "name": "Fightinium Z", "description": "Z-Crystal for Fighting-type Z-Moves" },
+      { "name": "Ride Pager", "description": "Allows you to call Ride Pokemon like Tauros to smash rocks and traverse terrain" }
+    ],
+    "rewards": [
+      "Z-Ring (enables Z-Moves)",
+      "Fightinium Z crystal",
+      "Ride Pager with Tauros Charge",
+      "Access to Akala Island via ferry"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Island Kahuna Hala",
+        "pokemon": [
+          { "name": "Machop", "level": 15 },
+          { "name": "Makuhita", "level": 15 },
+          { "name": "Crabrawler", "level": 16 }
+        ],
+        "strategy": "Hala's team is all Fighting-type. Flying types like Pikipek/Trumbeak, Rowlet/Dartrix are excellent. Psychic types like Drowzee also work. Crabrawler is his ace at level 16 and knows Power-Up Punch. Watch out for Makuhita's Fake Out on the switch-in turn."
+      }
+    ],
+    "nextStep": { "slug": "arriving-on-akala", "name": "Chapter 5: Arriving on Akala" },
+    "tips": "Make sure you have a Flying or Psychic type for this fight. If you chose Rowlet, this trial is a breeze. After winning, Tauros Charge lets you break rocks blocking items on previous routes. Go back and explore. The ferry to Akala is at Hau'oli Marina."
+  },
+  {
+    "id": 5,
+    "slug": "arriving-on-akala",
+    "title": "Chapter 5: Arriving on Akala",
+    "island": "akala",
+    "summary": "You arrive on Akala Island and meet the Island Kahuna Olivia and the three trial captains: Lana, Kiawe, and Mallow. You explore Heahea City, traverse Route 4, visit Paniola Ranch, and prepare for the three Akala trials.",
+    "objectives": [
+      "Take the ferry from Melemele to Akala Island",
+      "Meet Olivia and the trial captains in Heahea City",
+      "Explore Route 4 and Paniola Town",
+      "Visit Paniola Ranch for breeding and encounters",
+      "Battle Hau and encounter Gladion on Route 5"
+    ],
+    "blockers": [
+      "Must have completed the Melemele Grand Trial against Hala"
+    ],
+    "keyItems": [
+      { "name": "Stoutland Search", "description": "Ride Pokemon that can sniff out hidden items on the ground" }
+    ],
+    "rewards": [
+      "Access to Akala Island and its routes",
+      "Stoutland Search Ride Pokemon",
+      "Access to Paniola Ranch (Pokemon Nursery for breeding)",
+      "Access to the three Akala trials"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Pokemon Trainer Hau",
+        "pokemon": [
+          { "name": "Starter (weak to yours)", "level": 16 },
+          { "name": "Pikachu", "level": 15 }
+        ],
+        "strategy": "Hau's team has grown but is still straightforward. Your starter should handle his easily. Ground types deal with Pikachu."
+      },
+      {
+        "trainer": "Gladion",
+        "pokemon": [{ "name": "Type: Null", "level": 18 }],
+        "strategy": "Gladion's Type: Null is a Normal-type with solid stats. Fighting moves are super effective. It's a tough fight at this point, so make sure your team is level 17-18."
+      }
+    ],
+    "nextStep": { "slug": "brooklet-hill-trial", "name": "Chapter 6: Brooklet Hill Trial" },
+    "tips": "Paniola Ranch has the Pokemon Nursery (breeding). Leave two compatible Pokemon and walk around to hatch eggs. Route 4 has rare Eevee encounters (5%). The Amulet Coin can be found at Paniola Ranch from a man in the ranch house - grab it now for double money from trainer battles."
+  },
+  {
+    "id": 6,
+    "slug": "brooklet-hill-trial",
+    "title": "Chapter 6: Brooklet Hill Trial",
+    "island": "akala",
+    "summary": "Captain Lana's Water-type trial at Brooklet Hill involves investigating mysterious splashing in several pools of water. Each pool reveals increasingly alarming Pokemon until you face the Totem Araquanid, a Water/Bug type with enhanced defenses.",
+    "objectives": [
+      "Reach Brooklet Hill via Route 5",
+      "Investigate the three splashing pools during the trial",
+      "Defeat the Wishiwashi encounters at the first two pools",
+      "Battle and defeat Totem Araquanid at the final pool",
+      "Receive the Waterium Z crystal"
+    ],
+    "blockers": [
+      "Must have reached Brooklet Hill after events on Route 5"
+    ],
+    "keyItems": [
+      { "name": "Waterium Z", "description": "Z-Crystal for Water-type Z-Moves" },
+      { "name": "Lapras Paddle", "description": "Ride Pokemon that lets you surf across water" }
+    ],
+    "rewards": [
+      "Waterium Z crystal",
+      "Lapras Paddle Ride Pokemon",
+      "Fishing Rod (can now fish in water spots)"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Totem Araquanid",
+        "pokemon": [{ "name": "Araquanid (Totem)", "level": 20 }],
+        "strategy": "Totem Araquanid gets a defense boost and its Water Bubble ability doubles Water move damage while halving Fire damage taken. Electric and Rock moves are your best bet. It calls Dewpider as ally which can use Infestation to trap you. KO the ally quickly, then focus on the Totem. Grass types also work but beware of Bug Bite."
+      }
+    ],
+    "nextStep": { "slug": "wela-volcano-trial", "name": "Chapter 7: Wela Volcano Trial" },
+    "tips": "Pikachu or Charjabug are excellent for this trial. Magneton if you've leveled Magnemite enough. After the trial, you unlock the Fishing Rod and Lapras Paddle for surfing. Revisit earlier water areas for new encounters like Magikarp (evolves into Gyarados at level 20)."
+  },
+  {
+    "id": 7,
+    "slug": "wela-volcano-trial",
+    "title": "Chapter 7: Wela Volcano Trial",
+    "island": "akala",
+    "summary": "Captain Kiawe's Fire-type trial at Wela Volcano Park is a dance quiz. You watch Alolan Marowak perform dances and must spot the difference. Wrong answers trigger battles. The trial culminates in a fight against the Totem Alolan Marowak.",
+    "objectives": [
+      "Reach Wela Volcano Park from Route 7",
+      "Watch the three Marowak dance performances",
+      "Correctly identify the differences in each round",
+      "Battle and defeat Totem Alolan Marowak",
+      "Receive the Firium Z crystal"
+    ],
+    "blockers": [
+      "Must have completed Captain Lana's trial at Brooklet Hill"
+    ],
+    "keyItems": [
+      { "name": "Firium Z", "description": "Z-Crystal for Fire-type Z-Moves" }
+    ],
+    "rewards": [
+      "Firium Z crystal",
+      "Charizard Glide Ride Pokemon (unlocked after this trial)"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Totem Alolan Marowak",
+        "pokemon": [{ "name": "Alolan Marowak (Totem)", "level": 22 }],
+        "strategy": "Totem Alolan Marowak is Fire/Ghost with a +2 Speed boost. It uses Shadow Bone and Flame Wheel. Water, Rock, Ground, Ghost, and Dark types are super effective. It calls Salazzle as an ally, which can use Toxic and Venoshock. Take out Salazzle first if it appears, then focus on Marowak. Avoid using Normal or Fighting moves (Ghost immunity/resistance)."
+      }
+    ],
+    "nextStep": { "slug": "lush-jungle-trial", "name": "Chapter 8: Lush Jungle Trial" },
+    "tips": "The dance quiz answers: first round the Hiker is the odd one, second round a Marowak faces a different direction, third round a completely different Pokemon (like a Totem Salazzle) appears. If you get a question wrong, you fight an extra trainer but still proceed. Water types like Gyarados or Wishiwashi (School Form at level 20+) dominate this trial."
+  },
+  {
+    "id": 8,
+    "slug": "lush-jungle-trial",
+    "title": "Chapter 8: Lush Jungle Trial",
+    "island": "akala",
+    "summary": "Captain Mallow's Grass-type trial in Lush Jungle has you collecting ingredients (Mago Berry, Honey, and Big Root) to cook a special meal. The aroma attracts the powerful Totem Lurantis, one of the toughest Totem Pokemon in the game.",
+    "objectives": [
+      "Enter Lush Jungle from Route 5",
+      "Collect the Mago Berry from the berry tree area",
+      "Find the Honey near the Fomantis patch",
+      "Retrieve the Big Root from the cave section",
+      "Cook the ingredients at the trial site to lure out the Totem",
+      "Battle and defeat Totem Lurantis",
+      "Receive the Grassium Z crystal"
+    ],
+    "blockers": [
+      "Must have completed Captain Kiawe's trial at Wela Volcano Park"
+    ],
+    "keyItems": [
+      { "name": "Grassium Z", "description": "Z-Crystal for Grass-type Z-Moves" }
+    ],
+    "rewards": [
+      "Grassium Z crystal",
+      "Access to Route 8 and the rest of Akala",
+      "Mallow's recipe and trial completion stamp"
+    ],
+    "keyBattles": [
+      {
+        "trainer": "Totem Lurantis",
+        "pokemon": [{ "name": "Lurantis (Totem)", "level": 24 }],
+        "strategy": "Totem Lurantis is one of the hardest Totem battles. It gets +2 Speed and holds a Power Herb, allowing instant Solar Blade on turn 1 (a 125 BP Grass move). Its ally Trumbeak can use Sunny Day, which lets Lurantis use Solar Blade without charging for the rest of the battle. Fire types are ideal - Fletchinder and Torracat resist Grass and hit super effectively. Flying types also work. Priority: KO the Trumbeak ally immediately to prevent Sunny Day. Use a Fire or Flying Z-Move if available."
+      }
+    ],
+    "nextStep": { "slug": "akala-grand-trial", "name": "Akala Grand Trial (Kahuna Olivia)" },
+    "tips": "This is widely considered the hardest trial in Akala. Your team should be level 23-25 minimum. Fire/Flying type like Fletchinder is the MVP here. If you have Firium Z, use it on your strongest Fire move to one-shot or severely damage Lurantis. After the trial, the Moss Rock in Lush Jungle lets you evolve Eevee into Leafeon by leveling up near it."
+  }
+]
