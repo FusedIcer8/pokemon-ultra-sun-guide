@@ -71,6 +71,100 @@
     ]
   },
   {
+    "slug": "route-3",
+    "name": "Route 3",
+    "island": "melemele",
+    "category": "route",
+    "description": "A mountainous route on Melemele Island connecting Verdant Cavern to Melemele Meadow. Known for its flying Pokemon shadows and the extremely rare Bagon encounter.",
+    "storyRelevance": "After completing the Verdant Cavern trial, you traverse Route 3 to reach Melemele Meadow and eventually Iki Town for the Grand Trial.",
+    "unlockCondition": "After completing the Verdant Cavern trial",
+    "encounters": [
+      { "pokemon": "Mankey", "pokemonSlug": "mankey", "types": ["fighting"], "method": "walking", "percentage": 30, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" },
+      { "pokemon": "Spearow", "pokemonSlug": "spearow", "types": ["normal", "flying"], "method": "walking", "percentage": 30, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" },
+      { "pokemon": "Cutiefly", "pokemonSlug": "cutiefly", "types": ["bug", "fairy"], "method": "walking", "percentage": 30, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png" },
+      { "pokemon": "Hawlucha", "pokemonSlug": "hawlucha", "types": ["fighting", "flying"], "method": "walking", "percentage": 10, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png" },
+      { "pokemon": "Bagon", "pokemonSlug": "bagon", "types": ["dragon"], "method": "walking", "percentage": 1, "levelRange": [9, 12], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png" },
+      { "pokemon": "Rufflet", "pokemonSlug": "rufflet", "types": ["normal", "flying"], "method": "flying_shadow", "percentage": 30, "levelRange": [10, 13], "notes": "Ultra Sun only, flying shadow encounter", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png" },
+      { "pokemon": "Vullaby", "pokemonSlug": "vullaby", "types": ["dark", "flying"], "method": "flying_shadow", "percentage": 30, "levelRange": [10, 13], "notes": "Ultra Moon only, flying shadow encounter", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png" },
+      { "pokemon": "Crabrawler", "pokemonSlug": "crabrawler", "types": ["fighting"], "method": "berry_tree", "percentage": 100, "levelRange": [10, 13], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png" }
+    ],
+    "items": [
+      { "name": "Heal Ball", "itemSlug": "heal-ball", "location": "Along the main path", "hidden": false },
+      { "name": "Sharp Beak", "itemSlug": "sharp-beak", "location": "Near the bridge area", "hidden": true },
+      { "name": "Super Potion", "itemSlug": "super-potion", "location": "Off the main path near tall grass", "hidden": false },
+      { "name": "Nest Ball", "itemSlug": "nest-ball", "location": "Near the entrance to Melemele Meadow", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Rising Star Tatiana", "pokemon": [{ "name": "Petilil", "level": 11 }], "reward": 528 },
+      { "name": "Ace Trainer Makana", "pokemon": [{ "name": "Rockruff", "level": 12 }, { "name": "Hawlucha", "level": 12 }], "reward": 720 }
+    ],
+    "tips": "Bagon has a 1% encounter rate here and is the earliest you can get a pseudo-legendary in the game. It evolves into Salamence at level 50. Hawlucha at 10% is also excellent for its Fighting/Flying dual typing. In Ultra Sun, Rufflet appears from flying shadows and evolves into Braviary at level 54.",
+    "connectedRoutes": [
+      { "name": "Verdant Cavern", "slug": "verdant-cavern" },
+      { "name": "Melemele Meadow", "slug": "melemele-meadow" },
+      { "name": "Route 1", "slug": "route-1" }
+    ]
+  },
+  {
+    "slug": "hauoli-outskirts",
+    "name": "Hau'oli Outskirts",
+    "island": "melemele",
+    "category": "route",
+    "description": "The outskirts of Hau'oli City on Melemele Island. A coastal area connecting Route 1 to Hau'oli City proper, with grassy patches and ocean access.",
+    "storyRelevance": "You pass through here early in the game on the way to Hau'oli City. Professor Kukui's lab is located on the beachfront here.",
+    "unlockCondition": "After traveling through Route 1",
+    "encounters": [
+      { "pokemon": "Wingull", "pokemonSlug": "wingull", "types": ["water", "flying"], "method": "walking", "percentage": 50, "levelRange": [5, 7], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png" },
+      { "pokemon": "Slowpoke", "pokemonSlug": "slowpoke", "types": ["water", "psychic"], "method": "walking", "percentage": 20, "levelRange": [5, 7], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [5, 7], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" },
+      { "pokemon": "Rattata (Alolan)", "pokemonSlug": "rattata-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 30, "levelRange": [5, 7], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png" },
+      { "pokemon": "Tentacool", "pokemonSlug": "tentacool", "types": ["water", "poison"], "method": "surfing", "percentage": 40, "levelRange": [15, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" },
+      { "pokemon": "Finneon", "pokemonSlug": "finneon", "types": ["water"], "method": "surfing", "percentage": 40, "levelRange": [15, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" },
+      { "pokemon": "Wingull", "pokemonSlug": "wingull", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [15, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png" }
+    ],
+    "items": [
+      { "name": "Potion", "itemSlug": "potion", "location": "Near Kukui's lab on the beach", "hidden": false },
+      { "name": "Poke Ball x5", "itemSlug": "poke-ball", "location": "From Professor Kukui after events", "hidden": false }
+    ],
+    "trainers": [],
+    "tips": "Slowpoke is a great early catch for a Water/Psychic type that can eventually evolve into Slowbro or Slowking. Professor Kukui's lab is here on the beachfront. Surfing encounters become available later after obtaining Lapras Paddle.",
+    "connectedRoutes": [
+      { "name": "Route 1", "slug": "route-1" },
+      { "name": "Hau'oli City", "slug": "hauoli-city" }
+    ]
+  },
+  {
+    "slug": "ten-carat-hill",
+    "name": "Ten Carat Hill",
+    "island": "melemele",
+    "category": "dungeon",
+    "description": "A cave and grassy hollow on Melemele Island accessible from Route 1. The Farthest Hollow area requires Tauros Charge to access and contains rare Pokemon like Rockruff.",
+    "storyRelevance": "An optional exploration area on Melemele Island. The Farthest Hollow is one of the few early places to catch Rockruff, and Carbink/Sableye can be found via SOS battles in the cave.",
+    "unlockCondition": "Cave accessible early; Farthest Hollow requires Tauros Charge (after Melemele Grand Trial)",
+    "encounters": [
+      { "pokemon": "Zubat", "pokemonSlug": "zubat", "types": ["poison", "flying"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "notes": "Cave area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" },
+      { "pokemon": "Roggenrola", "pokemonSlug": "roggenrola", "types": ["rock"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "notes": "Cave area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png" },
+      { "pokemon": "Mawile", "pokemonSlug": "mawile", "types": ["steel", "fairy"], "method": "walking", "percentage": 30, "levelRange": [11, 14], "notes": "Cave area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png" },
+      { "pokemon": "Carbink", "pokemonSlug": "carbink", "types": ["rock", "fairy"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "notes": "Cave area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png" },
+      { "pokemon": "Sableye", "pokemonSlug": "sableye", "types": ["dark", "ghost"], "method": "sos", "percentage": 0, "levelRange": [11, 14], "notes": "SOS call from Carbink in cave", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png" },
+      { "pokemon": "Rockruff", "pokemonSlug": "rockruff", "types": ["rock"], "method": "walking", "percentage": 20, "levelRange": [11, 14], "notes": "Farthest Hollow (grass)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png" },
+      { "pokemon": "Machop", "pokemonSlug": "machop", "types": ["fighting"], "method": "walking", "percentage": 30, "levelRange": [11, 14], "notes": "Farthest Hollow (grass)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" },
+      { "pokemon": "Spinda", "pokemonSlug": "spinda", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [11, 14], "notes": "Farthest Hollow (grass)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png" },
+      { "pokemon": "Psyduck", "pokemonSlug": "psyduck", "types": ["water"], "method": "walking", "percentage": 10, "levelRange": [11, 14], "notes": "Cave area", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" }
+    ],
+    "items": [
+      { "name": "Nugget", "itemSlug": "nugget", "location": "Deep in the cave area", "hidden": true },
+      { "name": "Hard Stone", "itemSlug": "hard-stone", "location": "In the Farthest Hollow", "hidden": false },
+      { "name": "Star Piece", "itemSlug": "star-piece", "location": "Hidden in the cave near Carbink encounters", "hidden": true },
+      { "name": "Burn Heal", "itemSlug": "burn-heal", "location": "Near the cave entrance", "hidden": false }
+    ],
+    "trainers": [],
+    "tips": "Rockruff is a fan-favorite that evolves into Lycanroc. In Ultra Sun, it evolves into Midday Form (level 25 during day) or Dusk Form (level 25 at dusk, 5-6 PM). Mawile is a strong Steel/Fairy type worth catching. Sableye can only appear via SOS calls from Carbink. The Farthest Hollow requires Tauros Charge to break the rocks blocking entry.",
+    "connectedRoutes": [
+      { "name": "Route 1", "slug": "route-1" }
+    ]
+  },
+  {
     "slug": "verdant-cavern",
     "name": "Verdant Cavern",
     "island": "melemele",
@@ -170,6 +264,36 @@
     ]
   },
   {
+    "slug": "paniola-ranch",
+    "name": "Paniola Ranch",
+    "island": "akala",
+    "category": "route",
+    "description": "A large ranch on Akala Island home to the Pokemon Nursery (breeding). Features open fields with Mudbray, Mareep, and rare Tauros and Miltank encounters.",
+    "storyRelevance": "You visit the ranch on your way to Route 5 and Brooklet Hill. The Pokemon Nursery here allows breeding for the first time. Hau gives you a tour.",
+    "unlockCondition": "After passing through Paniola Town from Route 4",
+    "encounters": [
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "types": ["ground"], "method": "walking", "percentage": 40, "levelRange": [12, 15], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png" },
+      { "pokemon": "Mareep", "pokemonSlug": "mareep", "types": ["electric"], "method": "walking", "percentage": 30, "levelRange": [12, 15], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png" },
+      { "pokemon": "Lillipup", "pokemonSlug": "lillipup", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [12, 15], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png" },
+      { "pokemon": "Tauros", "pokemonSlug": "tauros", "types": ["normal"], "method": "walking", "percentage": 5, "levelRange": [12, 15], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png" },
+      { "pokemon": "Miltank", "pokemonSlug": "miltank", "types": ["normal"], "method": "walking", "percentage": 5, "levelRange": [12, 15], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png" }
+    ],
+    "items": [
+      { "name": "Amulet Coin", "itemSlug": "amulet-coin", "location": "From a man inside the ranch house", "hidden": false },
+      { "name": "Moomoo Milk", "itemSlug": "moomoo-milk", "location": "From the woman near the Miltank pen", "hidden": false },
+      { "name": "Repeat Ball", "itemSlug": "repeat-ball", "location": "Near the nursery", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Pokemon Breeder Wesley", "pokemon": [{ "name": "Lillipup", "level": 14 }, { "name": "Mudbray", "level": 14 }], "reward": 560 }
+    ],
+    "tips": "Grab the Amulet Coin from the ranch house immediately. It doubles money from trainer battles and is essential for funding your adventure. Mareep is a great Electric-type that evolves into Ampharos. The Pokemon Nursery allows breeding. Leave two compatible Pokemon and walk around to hatch eggs.",
+    "connectedRoutes": [
+      { "name": "Paniola Town", "slug": "paniola-town" },
+      { "name": "Route 5", "slug": "route-5" },
+      { "name": "Route 6", "slug": "route-6" }
+    ]
+  },
+  {
     "slug": "route-5",
     "name": "Route 5",
     "island": "akala",
@@ -203,6 +327,131 @@
     ]
   },
   {
+    "slug": "route-6",
+    "name": "Route 6",
+    "island": "akala",
+    "category": "route",
+    "description": "A route on Akala Island connecting Heahea City to Royal Avenue. Features grassy fields with Oricorio and a rare Eevee encounter.",
+    "storyRelevance": "You pass through here on the way to Royal Avenue and the Battle Royal Dome. Hapu and her Mudsdale make an appearance.",
+    "unlockCondition": "After arriving on Akala Island",
+    "encounters": [
+      { "pokemon": "Igglybuff", "pokemonSlug": "igglybuff", "types": ["normal", "fairy"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png" },
+      { "pokemon": "Oricorio (Pa'u)", "pokemonSlug": "oricorio-pau", "types": ["psychic", "flying"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png" },
+      { "pokemon": "Lillipup", "pokemonSlug": "lillipup", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png" },
+      { "pokemon": "Pikipek", "pokemonSlug": "pikipek", "types": ["normal", "flying"], "method": "walking", "percentage": 15, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png" },
+      { "pokemon": "Yungoos", "pokemonSlug": "yungoos", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [14, 17], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png" },
+      { "pokemon": "Rattata (Alolan)", "pokemonSlug": "rattata-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 10, "levelRange": [14, 17], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png" },
+      { "pokemon": "Grubbin", "pokemonSlug": "grubbin", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png" },
+      { "pokemon": "Eevee", "pokemonSlug": "eevee", "types": ["normal"], "method": "walking", "percentage": 5, "levelRange": [14, 17], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" },
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "types": ["ground"], "method": "walking", "percentage": 20, "levelRange": [14, 17], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png" },
+      { "pokemon": "Espeon", "pokemonSlug": "espeon", "types": ["psychic"], "method": "sos", "percentage": 0, "levelRange": [14, 17], "notes": "SOS call from Eevee during day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png" },
+      { "pokemon": "Umbreon", "pokemonSlug": "umbreon", "types": ["dark"], "method": "sos", "percentage": 0, "levelRange": [14, 17], "notes": "SOS call from Eevee during night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png" }
+    ],
+    "items": [
+      { "name": "TM88 Sleep Talk", "itemSlug": "tm88-sleep-talk", "location": "Along the eastern path", "hidden": false },
+      { "name": "X Sp. Atk", "itemSlug": "x-sp-atk", "location": "In the grass area near the fence", "hidden": true },
+      { "name": "Elixir", "itemSlug": "elixir", "location": "Near the south exit to Royal Avenue", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Dancer Maika", "pokemon": [{ "name": "Oricorio", "level": 18 }], "reward": 720 },
+      { "name": "Beauty Brittney", "pokemon": [{ "name": "Cutiefly", "level": 17 }, { "name": "Lillipup", "level": 17 }], "reward": 680 }
+    ],
+    "tips": "Another spot to hunt for Eevee at 5% encounter rate. Even better, Eevee can SOS call Espeon (day) or Umbreon (night) which saves you evolution effort. Oricorio's Pa'u Style is a decent Psychic/Flying type. The route connects to Royal Avenue where you can try the Battle Royal.",
+    "connectedRoutes": [
+      { "name": "Heahea City", "slug": "heahea-city" },
+      { "name": "Royal Avenue", "slug": "royal-avenue" },
+      { "name": "Paniola Ranch", "slug": "paniola-ranch" }
+    ]
+  },
+  {
+    "slug": "route-7",
+    "name": "Route 7",
+    "island": "akala",
+    "category": "route",
+    "description": "A coastal surfing and fishing route on Akala Island connecting Wela Volcano Park to Royal Avenue. Primarily a water route with no walking grass encounters.",
+    "storyRelevance": "You pass through this water route between Wela Volcano Park and Royal Avenue. It serves as a transition between the fire and water areas of Akala.",
+    "unlockCondition": "After completing Lana's trial at Brooklet Hill (for Lapras Paddle surfing)",
+    "encounters": [
+      { "pokemon": "Tentacool", "pokemonSlug": "tentacool", "types": ["water", "poison"], "method": "surfing", "percentage": 30, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" },
+      { "pokemon": "Finneon", "pokemonSlug": "finneon", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" },
+      { "pokemon": "Pyukumuku", "pokemonSlug": "pyukumuku", "types": ["water"], "method": "surfing", "percentage": 20, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png" },
+      { "pokemon": "Wingull", "pokemonSlug": "wingull", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [16, 19], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 55, "levelRange": [10, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Staryu", "pokemonSlug": "staryu", "types": ["water"], "method": "fishing", "percentage": 5, "levelRange": [10, 18], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png" },
+      { "pokemon": "Gyarados", "pokemonSlug": "gyarados", "types": ["water", "flying"], "method": "sos", "percentage": 0, "levelRange": [10, 18], "notes": "SOS call from Magikarp", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" },
+      { "pokemon": "Starmie", "pokemonSlug": "starmie", "types": ["water", "psychic"], "method": "sos", "percentage": 0, "levelRange": [10, 18], "notes": "SOS call from Staryu", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png" }
+    ],
+    "items": [
+      { "name": "Dive Ball", "itemSlug": "dive-ball", "location": "On the small beach area", "hidden": false },
+      { "name": "Pearl", "itemSlug": "pearl", "location": "Hidden in the rocks near the shore", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Swimmer Jake", "pokemon": [{ "name": "Tentacool", "level": 18 }, { "name": "Finneon", "level": 18 }], "reward": 360 }
+    ],
+    "tips": "Staryu is rare at 5% via fishing but evolves into the excellent Starmie with a Water Stone. Starmie can also appear via SOS from Staryu. This is a great grinding spot for Water-type encounters. Wishiwashi at level 20+ transforms into School Form in battle, making it incredibly powerful.",
+    "connectedRoutes": [
+      { "name": "Wela Volcano Park", "slug": "wela-volcano-park" },
+      { "name": "Royal Avenue", "slug": "royal-avenue" }
+    ]
+  },
+  {
+    "slug": "royal-avenue",
+    "name": "Royal Avenue",
+    "island": "akala",
+    "category": "city",
+    "description": "A festive avenue on Akala Island centered around the Battle Royal Dome. Features shops, the Thrifty Megamart, and the Battle Royal where four trainers fight simultaneously.",
+    "storyRelevance": "You are introduced to the Battle Royal here, a four-way battle format. The Masked Royal (Professor Kukui) appears. Team Skull grunts cause trouble at the Thrifty Megamart.",
+    "unlockCondition": "After traveling through Route 6 or Route 7",
+    "encounters": [],
+    "items": [
+      { "name": "TM44 Rest", "itemSlug": "tm44-rest", "location": "From an NPC inside the Battle Royal Dome", "hidden": false },
+      { "name": "Effort Wing Set", "itemSlug": "effort-wings", "location": "Reward from winning Battle Royals", "hidden": false },
+      { "name": "Flame Orb", "itemSlug": "flame-orb", "location": "Battle Royal prize exchange (48 BP)", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "The Masked Royal", "pokemon": [{ "name": "Rockruff", "level": 20 }], "reward": 0, "notes": "Battle Royal introduction, four-way format" }
+    ],
+    "tips": "The Battle Royal Dome lets you exchange BP (Battle Points) for rare items and TMs. Stock up on healing items at the Thrifty Megamart here for cheaper prices. The Masked Royal is obviously Professor Kukui, but the game plays it straight.",
+    "connectedRoutes": [
+      { "name": "Route 6", "slug": "route-6" },
+      { "name": "Route 7", "slug": "route-7" },
+      { "name": "Route 8", "slug": "route-8" }
+    ]
+  },
+  {
+    "slug": "route-9",
+    "name": "Route 9",
+    "island": "akala",
+    "category": "route",
+    "description": "A water route on Akala Island accessible by Lapras Paddle from Konikoni City. Known for fishing Corsola and the rare Mareanie SOS encounter.",
+    "storyRelevance": "You explore this route while investigating the Diglett Tunnel and heading to Memorial Hill. A police officer tasks you with defeating some Team Skull grunts here.",
+    "unlockCondition": "After obtaining Lapras Paddle from Brooklet Hill trial",
+    "encounters": [
+      { "pokemon": "Luvdisc", "pokemonSlug": "luvdisc", "types": ["water"], "method": "fishing", "percentage": 50, "levelRange": [10, 23], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 20, "levelRange": [10, 23], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Corsola", "pokemonSlug": "corsola", "types": ["water", "rock"], "method": "fishing", "percentage": 15, "levelRange": [10, 23], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "fishing", "percentage": 15, "levelRange": [10, 23], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Mareanie", "pokemonSlug": "mareanie", "types": ["poison", "water"], "method": "sos", "percentage": 0, "levelRange": [10, 23], "notes": "SOS call from Corsola only. Corsola calls Mareanie as its predator.", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png" },
+      { "pokemon": "Ditto", "pokemonSlug": "ditto", "types": ["normal"], "method": "special", "percentage": 0, "levelRange": [29, 29], "notes": "Interactable overworld encounter near the police station", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" }
+    ],
+    "items": [
+      { "name": "Net Ball", "itemSlug": "net-ball", "location": "On the shore near the police station", "hidden": false },
+      { "name": "Pearl String", "itemSlug": "pearl-string", "location": "Hidden in the rocks along the waterway", "hidden": true },
+      { "name": "TM29 Psychic", "itemSlug": "tm29-psychic", "location": "Reward from the police officer after defeating Team Skull", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Haunter", "level": 22 }], "reward": 704 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Salandit", "level": 22 }], "reward": 704 }
+    ],
+    "tips": "Mareanie is one of the most sought-after Pokemon here. To find it, fish for Corsola and let Corsola call for help via SOS. Mareanie has a low chance of appearing as a Corsola SOS ally since Mareanie preys on Corsola. Be patient. Ditto near the police station is essential for breeding.",
+    "connectedRoutes": [
+      { "name": "Konikoni City", "slug": "konikoni-city" },
+      { "name": "Diglett's Tunnel", "slug": "digletts-tunnel" },
+      { "name": "Memorial Hill", "slug": "memorial-hill" }
+    ]
+  },
+  {
     "slug": "brooklet-hill",
     "name": "Brooklet Hill",
     "island": "akala",
@@ -226,7 +475,7 @@
       { "name": "TM55 Scald", "itemSlug": "tm55-scald", "location": "After the trial, near the exit", "hidden": false }
     ],
     "trainers": [
-      { "name": "Totem Araquanid", "pokemon": [{ "name": "Araquanid (Totem)", "level": 20 }], "reward": 0, "notes": "Totem Pokemon. +1 to all defenses. Calls Dewpider as ally. Uses Water Bubble ability to boost Water moves." }
+      { "name": "Totem Araquanid", "pokemon": [{ "name": "Araquanid (Totem)", "level": 20 }], "reward": 0, "notes": "Totem Pokemon. +1 Speed. Calls Masquerain or Dewpider as ally. Uses Water Bubble ability to boost Water moves." }
     ],
     "tips": "The Totem Araquanid is bulky with Water Bubble boosting its Water-type attacks. Electric and Grass types are your best bet. Bring a Pikachu or Fomantis. The ally Dewpider can use Infestation to trap you, so try to KO it quickly. Wishiwashi's School Form in the trial pools is an appetizer for the real challenge.",
     "connectedRoutes": [
@@ -255,7 +504,7 @@
       { "name": "Burn Heal", "itemSlug": "burn-heal", "location": "Near a ledge on the volcanic slopes", "hidden": true }
     ],
     "trainers": [
-      { "name": "Totem Marowak (Alolan)", "pokemon": [{ "name": "Marowak-A (Totem)", "level": 22 }], "reward": 0, "notes": "Totem Pokemon. +2 Speed boost. Fire/Ghost type. Calls Salazzle as ally. Uses Shadow Bone and Flame Wheel." }
+      { "name": "Totem Marowak (Alolan)", "pokemon": [{ "name": "Marowak-A (Totem)", "level": 22 }], "reward": 0, "notes": "Totem Pokemon. +1 Speed boost. Fire/Ghost type. Calls Salazzle as ally. Uses Shadow Bone and Flame Wheel." }
     ],
     "tips": "Totem Alolan Marowak is Fire/Ghost and calls Salazzle as an ally. Water types dominate here. Rock and Dark types also work well. Watch out for the Salazzle ally's Poison Gas. Cubone evolves into Alolan Marowak when leveled up at night starting at level 28. Female Salandit (12.5% female rate) are needed to get Salazzle.",
     "connectedRoutes": [
@@ -288,9 +537,9 @@
       { "name": "Honey", "itemSlug": "honey", "location": "Trial ingredient - from a Fomantis area", "hidden": false }
     ],
     "trainers": [
-      { "name": "Totem Lurantis", "pokemon": [{ "name": "Lurantis (Totem)", "level": 24 }], "reward": 0, "notes": "Totem Pokemon. +2 Speed boost. Uses Solar Blade with Power Herb for instant use. Calls Trumbeak (which can use Sunny Day) or Castform as ally." }
+      { "name": "Totem Lurantis", "pokemon": [{ "name": "Lurantis (Totem)", "level": 24 }], "reward": 0, "notes": "Totem Pokemon. +1 Speed boost. Uses Solar Blade with Power Herb for instant use. Calls Kecleon or Comfey as ally." }
     ],
-    "tips": "Totem Lurantis is one of the hardest early trials. It uses Power Herb + Solar Blade for a devastating first-turn nuke. Its Trumbeak ally sets up Sunny Day, boosting Solar Blade even more. Fire and Flying types are the best counters. The Moss Rock is here for evolving Eevee into Leafeon. Comfey is a strong Fairy-type healer if you can find one.",
+    "tips": "Totem Lurantis is one of the hardest early trials. It uses Power Herb + Solar Blade for a devastating first-turn nuke. Its Kecleon ally can use Camouflage, and Comfey can heal with Floral Healing. Fire and Flying types are the best counters. The Moss Rock is here for evolving Eevee into Leafeon. Comfey is a strong Fairy-type healer if you can find one.",
     "connectedRoutes": [
       { "name": "Route 5", "slug": "route-5" },
       { "name": "Route 8", "slug": "route-8" }
@@ -328,6 +577,278 @@
       { "name": "Route 5", "slug": "route-5" },
       { "name": "Fossil Restoration Center", "slug": "fossil-restoration-center" },
       { "name": "Dividing Peak Tunnel", "slug": "dividing-peak-tunnel" }
+    ]
+  },
+  {
+    "slug": "route-10",
+    "name": "Route 10",
+    "island": "ulaulua",
+    "category": "route",
+    "description": "A mountainous route on Ula'ula Island leading up to the Hokulani Observatory and Mount Hokulani. Features a bus stop and tall grass with strong Pokemon.",
+    "storyRelevance": "You travel through Route 10 on the way to Captain Sophocles' Electric-type trial at the Hokulani Observatory. The bus takes you up Mount Hokulani.",
+    "unlockCondition": "After arriving on Ula'ula Island and exploring Malie City",
+    "encounters": [
+      { "pokemon": "Fearow", "pokemonSlug": "fearow", "types": ["normal", "flying"], "method": "walking", "percentage": 30, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [26, 29], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 30, "levelRange": [26, 29], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Ledian", "pokemonSlug": "ledian", "types": ["bug", "flying"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png" },
+      { "pokemon": "Ariados", "pokemonSlug": "ariados", "types": ["bug", "poison"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png" },
+      { "pokemon": "Skarmory", "pokemonSlug": "skarmory", "types": ["steel", "flying"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png" },
+      { "pokemon": "Pancham", "pokemonSlug": "pancham", "types": ["fighting"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png" },
+      { "pokemon": "Pineco", "pokemonSlug": "pineco", "types": ["bug"], "method": "shaking_tree", "percentage": 30, "levelRange": [26, 29], "notes": "Shaking tree spots only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png" },
+      { "pokemon": "Pangoro", "pokemonSlug": "pangoro", "types": ["fighting", "dark"], "method": "sos", "percentage": 0, "levelRange": [26, 29], "notes": "SOS call from Pancham", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png" }
+    ],
+    "items": [
+      { "name": "TM74 Gyro Ball", "itemSlug": "tm74-gyro-ball", "location": "Near the bus stop", "hidden": false },
+      { "name": "Thunder Stone", "itemSlug": "thunder-stone", "location": "Hidden near the tall grass", "hidden": true },
+      { "name": "Max Repel", "itemSlug": "max-repel", "location": "Along the mountain trail", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Collector Bryan", "pokemon": [{ "name": "Alolan Sandshrew", "level": 28 }], "reward": 1344 },
+      { "name": "Ace Trainer Hiroshi", "pokemon": [{ "name": "Haunter", "level": 29 }, { "name": "Golduck", "level": 29 }], "reward": 1740 }
+    ],
+    "tips": "Skarmory is an excellent Steel/Flying defensive Pokemon at 10% encounter rate. Pancham evolves into Pangoro at level 32 if you have a Dark-type in your party. The bus at the top of Route 10 takes you to Hokulani Observatory for Sophocles' trial.",
+    "connectedRoutes": [
+      { "name": "Malie City", "slug": "malie-city" },
+      { "name": "Hokulani Observatory", "slug": "hokulani-observatory" },
+      { "name": "Mount Hokulani", "slug": "mount-hokulani" }
+    ]
+  },
+  {
+    "slug": "route-11",
+    "name": "Route 11",
+    "island": "ulaulua",
+    "category": "route",
+    "description": "A route on Ula'ula Island connecting Route 10 to Route 12. Known for the unique Komala encounters, a Normal-type that is always asleep.",
+    "storyRelevance": "You traverse Route 11 heading toward the Secluded Shore and Route 12 as you continue exploring Ula'ula Island.",
+    "unlockCondition": "After completing Sophocles' trial at Hokulani Observatory",
+    "encounters": [
+      { "pokemon": "Komala", "pokemonSlug": "komala", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png" },
+      { "pokemon": "Ledian", "pokemonSlug": "ledian", "types": ["bug", "flying"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png" },
+      { "pokemon": "Ariados", "pokemonSlug": "ariados", "types": ["bug", "poison"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png" },
+      { "pokemon": "Pancham", "pokemonSlug": "pancham", "types": ["fighting"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png" },
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png" },
+      { "pokemon": "Parasect", "pokemonSlug": "parasect", "types": ["bug", "grass"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" },
+      { "pokemon": "Shiinotic", "pokemonSlug": "shiinotic", "types": ["grass", "fairy"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png" },
+      { "pokemon": "Pangoro", "pokemonSlug": "pangoro", "types": ["fighting", "dark"], "method": "sos", "percentage": 0, "levelRange": [26, 29], "notes": "SOS call from Pancham", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png" }
+    ],
+    "items": [
+      { "name": "TM74 Gyro Ball", "itemSlug": "tm74-gyro-ball", "location": "Along the route path", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden near the cliff edge", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the route sign", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Black Belt Clayton", "pokemon": [{ "name": "Pancham", "level": 29 }, { "name": "Primeape", "level": 29 }], "reward": 928 },
+      { "name": "Hiker Jacob", "pokemon": [{ "name": "Boldore", "level": 28 }, { "name": "Mudbray", "level": 28 }], "reward": 896 }
+    ],
+    "tips": "Komala is unique - its Comatose ability means it is always considered asleep, making it immune to other status conditions. It has decent attack stats. Shiinotic at night is a rare Grass/Fairy type with useful support moves.",
+    "connectedRoutes": [
+      { "name": "Route 10", "slug": "route-10" },
+      { "name": "Route 12", "slug": "route-12" }
+    ]
+  },
+  {
+    "slug": "route-12",
+    "name": "Route 12",
+    "island": "ulaulua",
+    "category": "route",
+    "description": "A rocky mountain trail on Ula'ula Island that requires Mudsdale Gallop to traverse the rough terrain. Features Graveler, Torkoal, and the rare Manectric.",
+    "storyRelevance": "You navigate this rocky route using Mudsdale to reach Secluded Shore and continue toward Route 13. The terrain is impassable without the Mudsdale ride.",
+    "unlockCondition": "Requires Mudsdale Gallop ride Pokemon",
+    "encounters": [
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "types": ["ground"], "method": "walking", "percentage": 30, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png" },
+      { "pokemon": "Graveler (Alolan)", "pokemonSlug": "graveler-alola", "types": ["rock", "electric"], "method": "walking", "percentage": 30, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png" },
+      { "pokemon": "Manectric", "pokemonSlug": "manectric", "types": ["electric"], "method": "walking", "percentage": 20, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png" },
+      { "pokemon": "Torkoal", "pokemonSlug": "torkoal", "types": ["fire"], "method": "walking", "percentage": 20, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png" },
+      { "pokemon": "Mudsdale", "pokemonSlug": "mudsdale", "types": ["ground"], "method": "sos", "percentage": 0, "levelRange": [29, 32], "notes": "SOS call from Mudbray", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png" }
+    ],
+    "items": [
+      { "name": "Max Potion", "itemSlug": "max-potion", "location": "Along the rocky trail", "hidden": false },
+      { "name": "Nugget", "itemSlug": "nugget", "location": "Hidden in the rocks off the main path", "hidden": true },
+      { "name": "TM77 Psych Up", "itemSlug": "tm77-psych-up", "location": "Near the cliff edge", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Collector Kawika", "pokemon": [{ "name": "Torkoal", "level": 30 }], "reward": 1440 },
+      { "name": "Hiker Lucas", "pokemon": [{ "name": "Graveler", "level": 30 }, { "name": "Boldore", "level": 30 }], "reward": 960 }
+    ],
+    "tips": "Torkoal is a solid Fire-type wall with high Defense and access to Drought (hidden ability via SOS). Manectric is a strong Electric-type attacker. Mudsdale can appear as an SOS ally from Mudbray, saving you the effort of evolving one. Use Mudsdale ride to cross the rocky terrain.",
+    "connectedRoutes": [
+      { "name": "Route 11", "slug": "route-11" },
+      { "name": "Route 13", "slug": "route-13" },
+      { "name": "Secluded Shore", "slug": "secluded-shore" }
+    ]
+  },
+  {
+    "slug": "route-13",
+    "name": "Route 13",
+    "island": "ulaulua",
+    "category": "route",
+    "description": "A desert-adjacent route on Ula'ula Island connecting Route 12 to Tapu Village. The route itself is barren, with encounters limited to fishing only.",
+    "storyRelevance": "You pass through this desolate route on the way to Tapu Village and the Aether House. Haina Desert is accessible from here.",
+    "unlockCondition": "After traversing Route 12",
+    "encounters": [
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 55, "levelRange": [10, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Bruxish", "pokemonSlug": "bruxish", "types": ["water", "psychic"], "method": "fishing", "percentage": 5, "levelRange": [10, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png" },
+      { "pokemon": "Gyarados", "pokemonSlug": "gyarados", "types": ["water", "flying"], "method": "sos", "percentage": 0, "levelRange": [10, 33], "notes": "SOS call from Magikarp", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" }
+    ],
+    "items": [
+      { "name": "Max Repel", "itemSlug": "max-repel", "location": "Along the sandy path", "hidden": false },
+      { "name": "Comet Shard", "itemSlug": "comet-shard", "location": "Hidden near the oasis", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the route entrance", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Golbat", "level": 32 }], "reward": 1024 }
+    ],
+    "tips": "Bruxish is rare at 5% via fishing but is a solid Water/Psychic type with Strong Jaw ability boosting biting moves. The oasis fishing spot has better rates for rare Pokemon. Haina Desert is accessible from this route but is easy to get lost in.",
+    "connectedRoutes": [
+      { "name": "Route 12", "slug": "route-12" },
+      { "name": "Tapu Village", "slug": "tapu-village" },
+      { "name": "Haina Desert", "slug": "haina-desert" }
+    ]
+  },
+  {
+    "slug": "haina-desert",
+    "name": "Haina Desert",
+    "island": "ulaulua",
+    "category": "dungeon",
+    "description": "A confusing desert maze on Ula'ula Island. Harsh sunlight blazes during the day while sandstorms rage at night. Navigation requires following specific rock cairn patterns to avoid going in circles.",
+    "storyRelevance": "An optional exploration area accessible from Route 13. You can find the Psychium Z here at the altar, and it connects to the Ruins of Abundance where Tapu Bulu resides.",
+    "unlockCondition": "Accessible from Route 13 after reaching Tapu Village",
+    "encounters": [
+      { "pokemon": "Krokorok", "pokemonSlug": "krokorok", "types": ["ground", "dark"], "method": "walking", "percentage": 70, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png" },
+      { "pokemon": "Dugtrio (Alolan)", "pokemonSlug": "dugtrio-alola", "types": ["ground", "steel"], "method": "walking", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png" },
+      { "pokemon": "Trapinch", "pokemonSlug": "trapinch", "types": ["ground"], "method": "rustling_spot", "percentage": 10, "levelRange": [32, 35], "notes": "Rustling sand spots only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png" },
+      { "pokemon": "Gabite", "pokemonSlug": "gabite", "types": ["dragon", "ground"], "method": "sos", "percentage": 10, "levelRange": [28, 31], "notes": "SOS call during sandstorm weather", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png" },
+      { "pokemon": "Golett", "pokemonSlug": "golett", "types": ["ground", "ghost"], "method": "sos", "percentage": 10, "levelRange": [32, 35], "notes": "Ultra Sun only, SOS call", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png" },
+      { "pokemon": "Baltoy", "pokemonSlug": "baltoy", "types": ["ground", "psychic"], "method": "sos", "percentage": 10, "levelRange": [32, 35], "notes": "Ultra Moon only, SOS call", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png" },
+      { "pokemon": "Castform", "pokemonSlug": "castform", "types": ["normal"], "method": "sos", "percentage": 1, "levelRange": [28, 31], "notes": "SOS call during weather conditions", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png" }
+    ],
+    "items": [
+      { "name": "Psychium Z", "itemSlug": "psychium-z", "location": "At the altar deep in the desert (follow the rock cairns)", "hidden": false },
+      { "name": "TM85 Dream Eater", "itemSlug": "tm85-dream-eater", "location": "In the northern section of the desert", "hidden": false },
+      { "name": "Soft Sand", "itemSlug": "soft-sand", "location": "Near the entrance", "hidden": true },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden among the sand dunes", "hidden": true }
+    ],
+    "trainers": [],
+    "tips": "Navigation is tricky. To reach the altar with Psychium Z, follow the pattern of rock cairns (stacked stones). Gabite is a rare SOS encounter during sandstorm and eventually evolves into Garchomp. Trapinch in rustling sand spots evolves into Vibrava (level 35) and then Flygon (level 45). Krokorok evolves into Krookodile at level 40.",
+    "connectedRoutes": [
+      { "name": "Route 13", "slug": "route-13" },
+      { "name": "Ruins of Abundance", "slug": "ruins-of-abundance" }
+    ]
+  },
+  {
+    "slug": "mount-lanakila",
+    "name": "Mount Lanakila",
+    "island": "ulaulua",
+    "category": "dungeon",
+    "description": "The tallest mountain in Alola, located on Ula'ula Island. Its snow-capped peak hosts the newly built Pokemon League. Features ice cave sections with high-level Pokemon.",
+    "storyRelevance": "The final area before the Pokemon League. You must climb through the mountain's caves and exterior to reach the summit. Gladion battles you here before the League.",
+    "unlockCondition": "After completing all Grand Trials and the Vast Poni Canyon trial",
+    "encounters": [
+      { "pokemon": "Snorunt", "pokemonSlug": "snorunt", "types": ["ice"], "method": "walking", "percentage": 30, "levelRange": [47, 50], "notes": "Base area has lower levels (30-33)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png" },
+      { "pokemon": "Vulpix (Alolan)", "pokemonSlug": "vulpix-alola", "types": ["ice"], "method": "walking", "percentage": 30, "levelRange": [47, 50], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png" },
+      { "pokemon": "Sandshrew (Alolan)", "pokemonSlug": "sandshrew-alola", "types": ["ice", "steel"], "method": "walking", "percentage": 30, "levelRange": [47, 50], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png" },
+      { "pokemon": "Absol", "pokemonSlug": "absol", "types": ["dark"], "method": "walking", "percentage": 20, "levelRange": [47, 50], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png" },
+      { "pokemon": "Sneasel", "pokemonSlug": "sneasel", "types": ["dark", "ice"], "method": "walking", "percentage": 20, "levelRange": [47, 50], "notes": "Mountainside and cave areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png" },
+      { "pokemon": "Glalie", "pokemonSlug": "glalie", "types": ["ice"], "method": "walking", "percentage": 30, "levelRange": [47, 50], "notes": "Upper mountain areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png" },
+      { "pokemon": "Golbat", "pokemonSlug": "golbat", "types": ["poison", "flying"], "method": "walking", "percentage": 30, "levelRange": [47, 50], "notes": "Cave areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" },
+      { "pokemon": "Vanillish", "pokemonSlug": "vanillish", "types": ["ice"], "method": "sos", "percentage": 10, "levelRange": [47, 50], "notes": "SOS call during hail/snow weather", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png" },
+      { "pokemon": "Vanilluxe", "pokemonSlug": "vanilluxe", "types": ["ice"], "method": "sos", "percentage": 1, "levelRange": [47, 50], "notes": "Rare SOS call during hail/snow", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png" }
+    ],
+    "items": [
+      { "name": "TM13 Ice Beam", "itemSlug": "tm13-ice-beam", "location": "In the ice cave section", "hidden": false },
+      { "name": "Full Restore", "itemSlug": "full-restore", "location": "Near the mountainside path", "hidden": false },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "Hidden in the cave behind ice formations", "hidden": true },
+      { "name": "Icium Z", "itemSlug": "icium-z", "location": "In the cave near the summit", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "On a ledge overlooking the mountain", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Gladion", "pokemon": [{ "name": "Crobat", "level": 53 }, { "name": "Lucario", "level": 53 }, { "name": "Silvally", "level": 55 }], "reward": 5500, "notes": "Silvally's type matches your starter weakness" },
+      { "name": "Veteran Arjun", "pokemon": [{ "name": "Bewear", "level": 50 }, { "name": "Magnezone", "level": 50 }], "reward": 4800 }
+    ],
+    "tips": "Stock up on Full Restores, Revives, and status heals before ascending. Gladion's Silvally holds a memory disc matching your starter's weakness. Sneasel evolves into Weavile with a Razor Claw at night. Alolan Vulpix (Ultra Sun) evolves into Ninetales with an Ice Stone. The Pokemon League awaits at the summit.",
+    "connectedRoutes": [
+      { "name": "Tapu Village", "slug": "tapu-village" },
+      { "name": "Pokemon League", "slug": "pokemon-league" }
+    ]
+  },
+  {
+    "slug": "vast-poni-canyon",
+    "name": "Vast Poni Canyon",
+    "island": "poni",
+    "category": "dungeon",
+    "description": "A sprawling canyon on Poni Island that serves as the site of the Dragon-type trial. Features multiple cave areas and outdoor sections with high-level Pokemon including the Jangmo-o evolution line.",
+    "storyRelevance": "The site of the Dragon-type trial, one of the last trials before the Pokemon League. The Totem Kommo-o awaits at the end. Lillie accompanies you through parts of the canyon.",
+    "unlockCondition": "After completing Hapu's Grand Trial on Exeggutor Island",
+    "encounters": [
+      { "pokemon": "Boldore", "pokemonSlug": "boldore", "types": ["rock"], "method": "walking", "percentage": 30, "levelRange": [42, 45], "notes": "Inside cave areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png" },
+      { "pokemon": "Golbat", "pokemonSlug": "golbat", "types": ["poison", "flying"], "method": "walking", "percentage": 30, "levelRange": [42, 45], "notes": "Inside cave areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" },
+      { "pokemon": "Carbink", "pokemonSlug": "carbink", "types": ["rock", "fairy"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png" },
+      { "pokemon": "Dugtrio (Alolan)", "pokemonSlug": "dugtrio-alola", "types": ["ground", "steel"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png" },
+      { "pokemon": "Mienfoo", "pokemonSlug": "mienfoo", "types": ["fighting"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "notes": "Top outdoor areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png" },
+      { "pokemon": "Machoke", "pokemonSlug": "machoke", "types": ["fighting"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "notes": "Top outdoor areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" },
+      { "pokemon": "Lycanroc", "pokemonSlug": "lycanroc", "types": ["rock"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "notes": "Top outdoor areas, Midday Form (day) or Midnight Form (night)", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png" },
+      { "pokemon": "Skarmory", "pokemonSlug": "skarmory", "types": ["steel", "flying"], "method": "walking", "percentage": 10, "levelRange": [42, 45], "notes": "Top outdoor areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png" },
+      { "pokemon": "Jangmo-o", "pokemonSlug": "jangmo-o", "types": ["dragon"], "method": "walking", "percentage": 5, "levelRange": [42, 45], "notes": "Top outdoor areas only, rare", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png" },
+      { "pokemon": "Hakamo-o", "pokemonSlug": "hakamo-o", "types": ["dragon", "fighting"], "method": "sos", "percentage": 0, "levelRange": [42, 45], "notes": "SOS call from Jangmo-o", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png" },
+      { "pokemon": "Kommo-o", "pokemonSlug": "kommo-o", "types": ["dragon", "fighting"], "method": "sos", "percentage": 0, "levelRange": [42, 45], "notes": "Rare SOS call, 3% from Jangmo-o/Hakamo-o", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png" },
+      { "pokemon": "Sableye", "pokemonSlug": "sableye", "types": ["dark", "ghost"], "method": "sos", "percentage": 0, "levelRange": [42, 45], "notes": "SOS call from Carbink in cave areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png" }
+    ],
+    "items": [
+      { "name": "Dragonium Z", "itemSlug": "dragonium-z", "location": "Reward for defeating Totem Kommo-o", "hidden": false },
+      { "name": "TM02 Dragon Claw", "itemSlug": "tm02-dragon-claw", "location": "Deep in the canyon cave", "hidden": false },
+      { "name": "Full Restore", "itemSlug": "full-restore", "location": "Near the trial area entrance", "hidden": false },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "Hidden in the cave behind a boulder", "hidden": true },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "On the outdoor cliffside path", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Totem Kommo-o", "pokemon": [{ "name": "Kommo-o (Totem)", "level": 49 }], "reward": 0, "notes": "Totem Pokemon. All stats +1. Calls Scizor (Lv 46) and Noivern (Lv 48) as allies. Dragon/Fighting type." },
+      { "name": "Veteran Harry", "pokemon": [{ "name": "Gigalith", "level": 44 }, { "name": "Flygon", "level": 44 }], "reward": 4224 },
+      { "name": "Backpacker Maria", "pokemon": [{ "name": "Jangmo-o", "level": 43 }], "reward": 1032 }
+    ],
+    "tips": "Totem Kommo-o is extremely dangerous with +1 to all stats and powerful allies Scizor and Noivern. Fairy types are ideal since Kommo-o is 4x weak to Fairy. Bring a strong Fairy like Ribombee, Mimikyu, or Gardevoir. Jangmo-o at 5% in the top areas is your chance to catch the pseudo-legendary Dragon line. Lillie heals your team at certain points in the canyon.",
+    "connectedRoutes": [
+      { "name": "Poni Breaker Coast", "slug": "poni-breaker-coast" },
+      { "name": "Altar of the Sunne", "slug": "altar-of-the-sunne" }
+    ]
+  },
+  {
+    "slug": "poni-plains",
+    "name": "Poni Plains",
+    "island": "poni",
+    "category": "route",
+    "description": "A wide-open grassy area on Poni Island with some of the highest-level wild Pokemon in the game. Features rare encounters like Tauros, Miltank, and version-exclusive Cottonee/Petilil.",
+    "storyRelevance": "A post-game exploration area on Poni Island unlocked after becoming Champion. Features extremely high-level wild Pokemon for training and catching.",
+    "unlockCondition": "After becoming Champion and completing the main story",
+    "encounters": [
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [54, 57], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 30, "levelRange": [54, 57], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Cottonee", "pokemonSlug": "cottonee", "types": ["grass", "fairy"], "method": "walking", "percentage": 20, "levelRange": [54, 57], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png" },
+      { "pokemon": "Petilil", "pokemonSlug": "petilil", "types": ["grass"], "method": "walking", "percentage": 20, "levelRange": [54, 57], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 20, "levelRange": [54, 57], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Miltank", "pokemonSlug": "miltank", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [54, 57], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png" },
+      { "pokemon": "Tauros", "pokemonSlug": "tauros", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [54, 57], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png" },
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "types": ["normal", "flying"], "method": "walking", "percentage": 10, "levelRange": [54, 57], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png" },
+      { "pokemon": "Pyroar", "pokemonSlug": "pyroar", "types": ["fire", "normal"], "method": "shaking_tree", "percentage": 30, "levelRange": [54, 57], "notes": "Shaking plant spots", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png" },
+      { "pokemon": "Scyther", "pokemonSlug": "scyther", "types": ["bug", "flying"], "method": "shaking_tree", "percentage": 30, "levelRange": [54, 57], "notes": "Shaking plant spots", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png" },
+      { "pokemon": "Chansey", "pokemonSlug": "chansey", "types": ["normal"], "method": "shaking_tree", "percentage": 20, "levelRange": [54, 57], "notes": "Shaking plant spots, great for EXP grinding", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png" }
+    ],
+    "items": [
+      { "name": "Max Elixir", "itemSlug": "max-elixir", "location": "In the tall grass area", "hidden": true },
+      { "name": "PP Max", "itemSlug": "pp-max", "location": "Near the Poni Meadow entrance", "hidden": true },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden among the flowers", "hidden": true },
+      { "name": "TM24 Thunderbolt", "itemSlug": "tm24-thunderbolt", "location": "Along the cliff path", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Veteran Alonsa", "pokemon": [{ "name": "Talonflame", "level": 55 }, { "name": "Starmie", "level": 55 }], "reward": 5280 },
+      { "name": "Ace Trainer Cole", "pokemon": [{ "name": "Flygon", "level": 56 }, { "name": "Toxapex", "level": 56 }], "reward": 3360 }
+    ],
+    "tips": "This is the best post-game grinding spot. Chansey from shaking plants gives massive EXP. Use an Adrenaline Orb and False Swipe to trigger SOS chains for shiny hunting or EV training. Scyther from shaking plants can be evolved into Scizor via Metal Coat trade. Wild Pokemon here are level 54-57, so bring a strong team.",
+    "connectedRoutes": [
+      { "name": "Poni Meadow", "slug": "poni-meadow" },
+      { "name": "Poni Coast", "slug": "poni-coast" },
+      { "name": "Poni Grove", "slug": "poni-grove" }
     ]
   }
 ]

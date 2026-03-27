@@ -180,5 +180,140 @@
     "relatedPokemon": [{ "name": "Rockruff", "slug": "rockruff" }],
     "relatedLocations": [],
     "priority": "medium"
+  },
+  {
+    "id": 16,
+    "slug": "ash-greninja-transfer",
+    "title": "How to Get Ash-Greninja from the Sun/Moon Demo",
+    "category": "special",
+    "tags": ["ash-greninja", "demo", "transfer", "special-pokemon"],
+    "content": "Ash-Greninja is obtainable by transferring it from the Pokemon Sun/Moon Special Demo Version. Download the free demo from the 3DS eShop, play through it until you receive Greninja, then in the demo's Pokemon Center, talk to Professor Kukui to send Greninja to your full game. In your full game, visit any Pokemon Center and talk to the deliveryman to receive it. Ash-Greninja has the ability Battle Bond: when it KOs an opponent, it transforms into Ash-Greninja form, boosting Water Shuriken to 20 base power per hit (3 hits guaranteed) and increasing its Attack, Sp. Attack, and Speed. It cannot breed and is always male. Best nature: Timid or Naive for its special/mixed attacking moveset.",
+    "relatedPokemon": [{ "name": "Greninja", "slug": "greninja" }],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 17,
+    "slug": "ultra-wormhole-all-legendaries-guide",
+    "title": "How to Catch All Legendary Pokemon via Ultra Wormhole",
+    "category": "endgame",
+    "tags": ["legendaries", "ultra-wormhole", "catching", "endgame"],
+    "content": "Ultra Wormholes contain nearly every non-Mythical Legendary from past games. Ultra Sun exclusives: Ho-Oh, Raikou, Groudon, Latios, Dialga, Heatran, Reshiram, Tornadus, Xerneas. Ultra Moon exclusives: Lugia, Entei, Kyogre, Latias, Palkia, Regigigas, Zekrom, Thundurus, Yveltal. Both versions: Mewtwo, Suicune, Rayquaza, Uxie, Mesprit, Azelf, Giratina (requires both Dialga and Palkia), Cresselia, Kyurem (requires both Reshiram and Zekrom), Landorus (requires both Tornadus and Thundurus). Tips: Save before entering a wormhole. Use Timer Balls after 10+ turns for best catch rate. Bring a Pokemon with False Swipe and Thunder Wave. Synchronize ability on lead Pokemon sets the Legendary's nature 50% of the time.",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Altar of the Sunne", "slug": "altar-of-the-sunne" }],
+    "priority": "high"
+  },
+  {
+    "id": 18,
+    "slug": "poke-pelago-optimization",
+    "title": "Poke Pelago Optimization for Berry Farming, EV Training, and Eggs",
+    "category": "optimization",
+    "tags": ["poke-pelago", "berries", "ev-training", "egg-hatching", "optimization"],
+    "content": "To maximize Poke Pelago efficiency: Isle Aplenny (berries) - Plant Leppa Berries for SOS chaining supply, or EV-reducing berries (Pomeg, Kelpsy, etc.) for competitive prep. At level 3, each berry plot yields 14 berries per harvest. Harvest every 24 hours. Isle Evelup (EV training) - At level 3, each play session gives 4 EVs per 30 minutes. Set 63 sessions (252 EVs) and leave overnight. Use Poke Beans to halve the time. Isle Avue (eggs/friendship) - Place up to 18 eggs at level 3. Each egg takes about 12-24 hours to hatch depending on species. Also raises friendship, useful for evolving Pichu, Type: Null, etc. Always keep Poke Beans stocked in the crate (max 50) to double all island speeds.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 19,
+    "slug": "gts-trading-version-exclusives",
+    "title": "GTS Trading Tips for Version Exclusives",
+    "category": "trading",
+    "tags": ["gts", "trading", "version-exclusives", "pokedex"],
+    "content": "The GTS in Festival Plaza lets you trade for version exclusives and hard-to-find Pokemon. Ultra Sun exclusives include: Houndour, Cranidos, Tirtouga, Cottonee, Rufflet, Clauncher, Turtonator, Passimian, and UB Burst (Blacephalon). Ultra Moon exclusives include: Electrike, Shieldon, Archen, Petilil, Vullaby, Skrelp, Drampa, Oranguru, and UB Assembly (Stakataka). GTS tips: Deposit a Pokemon requesting what you need rather than searching (your trade fills faster). Breed starters or rare Pokemon to deposit as trade bait. Avoid requesting Legendaries for common Pokemon as those trades rarely complete. Use the alphabet trick: request a Pokemon starting with a less common letter to reduce competition.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 20,
+    "slug": "heart-scale-farming",
+    "title": "How to Farm Heart Scales at Konikoni City Restaurant",
+    "category": "items",
+    "tags": ["heart-scales", "move-relearner", "farming"],
+    "content": "Heart Scales are needed to relearn forgotten moves at the Move Reminder in the Mount Lanakila Pokemon Center. The fastest farming method is ordering meals at the restaurants in Konikoni City and Malie City. Each meal costs between 1,040 and 4,000 Poke Dollars, and you receive 2 Heart Scales per meal at the Konikoni City restaurant. You can eat at each restaurant once per day. Other sources: wild Luvdisc (50% chance to hold one, use Thief to steal it), fishing spots occasionally yield them, and the Pelago Isle Aphun expeditions can find them. The Move Reminder is essential for competitive Pokemon who need egg moves or level-up moves they passed.",
+    "relatedPokemon": [{ "name": "Luvdisc", "slug": "luvdisc" }],
+    "relatedLocations": [{ "name": "Konikoni City", "slug": "konikoni-city" }],
+    "priority": "high"
+  },
+  {
+    "id": 21,
+    "slug": "hyper-training-bottle-caps",
+    "title": "Hyper Training at Level 100 with Bottle Caps",
+    "category": "competitive",
+    "tags": ["hyper-training", "bottle-caps", "ivs", "competitive", "level-100"],
+    "content": "Hyper Training lets you maximize a Pokemon's IVs at Level 100 without breeding. Visit Mr. Hyper at the Hau'oli City Shopping Mall. A regular Bottle Cap maxes one IV stat, while a Gold Bottle Cap maxes all six IVs at once. Getting Bottle Caps: Fish at Seafolk Village fishing spots (rare catch), earn them from Poke Pelago Isle Aphun Rare Treasure path, win them at the Battle Tree (30 BP each), or occasionally from Lottery shops in Festival Plaza. To reach Level 100 quickly, use Rare Kitchen 5-star in Festival Plaza (costs FC per level) or chain Chansey/Blissey at Poni Plains with Lucky Egg. Note: Hyper Training does NOT change actual IV values for breeding or Hidden Power type calculation.",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Hau'oli City", "slug": "hauoli-city" }],
+    "priority": "high"
+  },
+  {
+    "id": 22,
+    "slug": "battle-tree-guide",
+    "title": "How to Unlock Battle Tree and Best Strategies",
+    "category": "endgame",
+    "tags": ["battle-tree", "competitive", "endgame", "bp"],
+    "content": "The Battle Tree unlocks after becoming Champion and traveling to the far end of Poni Gauntlet. You battle Red and Blue upon arrival, then gain access. Modes: Single (3v3), Double (4v4), and Multi (partner with an NPC or friend, 2v2 each). Every 10 wins, you face a Battle Legend (Red, Blue, Wally, Cynthia, Grimsley, Colress, or Anabel). Earn BP for winning streaks to buy competitive items. Best strategies: Singles - Use a team with good type coverage. Mega Kangaskhan or Mega Salamence are dominant. Doubles - Trick Room teams with Porygon2 + Hariyama or Tailwind teams work well. Key BP purchases: Choice items (48 BP each), Life Orb (48 BP), Focus Sash (48 BP), Ability Capsule (100 BP), Mega Stones (64 BP each).",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Battle Tree", "slug": "battle-tree" }],
+    "priority": "high"
+  },
+  {
+    "id": 23,
+    "slug": "mantine-surf-scoring-tips",
+    "title": "Mantine Surf Scoring Tips for Maximum BP",
+    "category": "features",
+    "tags": ["mantine-surf", "bp", "mini-game", "tricks"],
+    "content": "Mantine Surf is a mini-game available when traveling between islands. Scoring high earns BP, which can buy competitive items. The four routes are: Melemele to Akala, Akala to Ula'ula, Ula'ula to Poni, and reverse. Tricks and their base scores: Lanturn 360 (low), Over-the-Gyarados (medium), Starmie 720 (high), and Primarina Twist (highest). Scoring tips: Chain different tricks without repeating for a multiplier bonus. The multiplier resets if you repeat a trick or crash. Start with small tricks on smaller waves, save big tricks (Primarina Twist, Starmie 720) for the largest waves. Land cleanly without wobbling for bonus points. The Ula'ula to Poni route has the biggest waves and highest scoring potential. Top scores of 50,000+ yield maximum BP rewards.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "medium"
+  },
+  {
+    "id": 24,
+    "slug": "how-to-get-cosmog-postgame",
+    "title": "How to Get Cosmog in the Post-Game",
+    "category": "endgame",
+    "tags": ["cosmog", "legendary", "post-game", "solgaleo", "lunala"],
+    "content": "After becoming Champion, you can obtain a second Cosmog (which evolves into Solgaleo or Lunala). First, have your story Solgaleo (Ultra Sun) or Lunala (Ultra Moon) in your party. Then, at night in Ultra Sun (or day in Ultra Moon), go to the Altar of the Sunne on Poni Island. Walk through the portal that appears to travel to the reverse world. Travel to the Lake of the Moone (Ultra Sun) or Lake of the Sunne (Ultra Moon) at the top of Ula'ula Meadow. With Solgaleo/Lunala in your party, interact with the portal at the lake. Cosmog appears at level 5. It evolves into Cosmoem at level 43, then into Solgaleo (Ultra Sun) or Lunala (Ultra Moon) at level 53. This gives you a second box Legendary for trading.",
+    "relatedPokemon": [
+      { "name": "Cosmog", "slug": "cosmog" },
+      { "name": "Solgaleo", "slug": "solgaleo" }
+    ],
+    "relatedLocations": [{ "name": "Altar of the Sunne", "slug": "altar-of-the-sunne" }],
+    "priority": "high"
+  },
+  {
+    "id": 25,
+    "slug": "z-move-type-guide",
+    "title": "Z-Move Guide: Best Z-Moves for Each Type",
+    "category": "mechanics",
+    "tags": ["z-moves", "z-crystals", "battle-strategy"],
+    "content": "Every type has a Z-Crystal and corresponding Z-Move. Z-Move power is based on the original move's base power. Status Z-Moves have bonus effects (Z-Swords Dance gives +1 Attack on top of the normal +2). Best type Z-Moves by usefulness: Normalium Z on Extreme Speed (160 power priority after setup), Waterium Z on Hydro Pump (185 power nuke), Firium Z on Fire Blast (185 power), Electrium Z on Thunderbolt (175 power), Groundium Z on Earthquake (180 power). Species-exclusive Z-Moves are generally stronger: Decidium Z (Sinister Arrow Raid, 180), Incinium Z (Malicious Moonsault, 180), Primarium Z (Oceanic Operetta, 195). For competitive play, Fairium Z on Moonblast (175 power) and Ghostium Z on Shadow Ball (160 power) are popular choices on their respective types.",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 26,
+    "slug": "best-pokemon-for-trials",
+    "title": "Best Pokemon for Each Trial and Grand Trial",
+    "category": "team-building",
+    "tags": ["trials", "grand-trials", "strategy", "team-building"],
+    "content": "Optimal counters for each trial: Ilima's Trial (Normal, Verdant Cavern) - Makuhita or Crabrawler (Fighting). Lana's Trial (Water, Brooklet Hill) - Pichu/Pikachu or Grubbin/Charjabug (Electric). Kiawe's Trial (Fire, Wela Volcano) - Mudbray (Ground) or Wishiwashi (Water). Mallow's Trial (Grass, Lush Jungle) - Growlithe/Fletchinder (Fire) or Salandit (Poison). Sophocles's Trial (Electric, Hokulani) - Mudsdale (Ground) or Diglett-A (Ground/Steel). Acerola's Trial (Ghost, Thrifty Megamart) - Mudsdale or A-Muk (Dark). Grand Trials: Hala (Fighting) - Drifloon/Haunter (Ghost). Olivia (Rock) - Poliwrath/Mudsdale (Water/Ground). Nanu (Dark) - Crabominable/Hariyama (Fighting). Hapu (Ground) - Lapras/Primarina (Water/Ice).",
+    "relatedPokemon": [],
+    "relatedLocations": [],
+    "priority": "high"
+  },
+  {
+    "id": 27,
+    "slug": "totem-sticker-locations-by-island",
+    "title": "Totem Sticker Locations and Rewards by Milestone",
+    "category": "collectibles",
+    "tags": ["totem-stickers", "collectibles", "locations", "rewards"],
+    "content": "Totem Stickers are shiny gold stickers found throughout Alola. Melemele Island has about 20 stickers in locations like: your house (bedroom wall), Kukui's lab, Hau'oli City mall (multiple floors), Route 2 Pokemon Center, and the Trainers' School. Akala Island has about 30 stickers: Heahea City hotel, Tide Song Hotel, Royal Avenue shops, Konikoni City shops, and Route 5 Pokemon Center. Ula'ula Island has about 30 stickers: Malie City Library, Malie Garden, Hokulani Observatory, Po Town Pokemon Center, and Aether House. Poni Island has about 20: Seafolk Village boats, Poni Wilds, and the Battle Tree lobby. Milestone rewards from Samson Oak at Heahea Beach: 20 (Gumshoos/Raticate), 40 (Marowak/Araquanid), 50 (Lurantis/Salazzle), 70 (Vikavolt/Togedemaru), 80 (Mimikyu), 100 (Kommo-o/Ribombee).",
+    "relatedPokemon": [],
+    "relatedLocations": [{ "name": "Heahea City", "slug": "heahea-city" }],
+    "priority": "medium"
   }
 ]
