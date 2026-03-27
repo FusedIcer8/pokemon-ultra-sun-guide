@@ -13,7 +13,10 @@
     ],
     "blockers": [],
     "keyItems": [
-      { "name": "Sparkling Stone", "description": "Given by the guardian deity Tapu Koko after you protect Nebby on the bridge. Later becomes your Z-Ring." }
+      {
+        "name": "Sparkling Stone",
+        "description": "Given by the guardian deity Tapu Koko after you protect Nebby on the bridge. Later becomes your Z-Ring."
+      }
     ],
     "rewards": [
       "Introduction to the Alola region",
@@ -21,7 +24,10 @@
       "Sparkling Stone (future Z-Ring)"
     ],
     "keyBattles": [],
-    "nextStep": { "slug": "iki-town-festival", "name": "Chapter 2: Iki Town Festival" },
+    "nextStep": {
+      "slug": "iki-town-festival",
+      "name": "Chapter 2: Iki Town Festival"
+    },
     "tips": "Take your time exploring your house. You can interact with your Meowth for a fun animation. There are no Pokemon encounters yet, so just enjoy the story."
   },
   {
@@ -39,9 +45,18 @@
     ],
     "blockers": [],
     "keyItems": [
-      { "name": "Starter Pokemon", "description": "Choose from Rowlet (Grass/Flying), Litten (Fire), or Popplio (Water)" },
-      { "name": "Pokedex / Rotom Dex", "description": "Your talking Pokedex with a built-in map, powered by a Rotom" },
-      { "name": "Trainer Passport", "description": "Your official ID as a Pokemon Trainer" }
+      {
+        "name": "Starter Pokemon",
+        "description": "Choose from Rowlet (Grass/Flying), Litten (Fire), or Popplio (Water)"
+      },
+      {
+        "name": "Pokedex / Rotom Dex",
+        "description": "Your talking Pokedex with a built-in map, powered by a Rotom"
+      },
+      {
+        "name": "Trainer Passport",
+        "description": "Your official ID as a Pokemon Trainer"
+      }
     ],
     "rewards": [
       "Your first Pokemon (Level 5 starter)",
@@ -51,11 +66,19 @@
     "keyBattles": [
       {
         "trainer": "Pokemon Trainer Hau",
-        "pokemon": [{ "name": "Starter (weak to yours)", "level": 5 }],
+        "pokemon": [
+          {
+            "name": "Starter (weak to yours)",
+            "level": 5
+          }
+        ],
         "strategy": "Hau picks the starter weak to yours. Just use your STAB move (Leafage, Ember, or Water Gun) to win easily."
       }
     ],
-    "nextStep": { "slug": "verdant-cavern-trial", "name": "Chapter 3: Verdant Cavern Trial" },
+    "nextStep": {
+      "slug": "verdant-cavern-trial",
+      "name": "Chapter 3: Verdant Cavern Trial"
+    },
     "tips": "You can soft reset (L+R+START/SELECT) before choosing your starter to get a good nature. Adamant is ideal for Litten (physical attacker), Modest for Popplio (special attacker), and Adamant or Jolly for Rowlet."
   },
   {
@@ -74,7 +97,10 @@
       "Must have spoken with Captain Ilima and received the trial challenge"
     ],
     "keyItems": [
-      { "name": "Normalium Z", "description": "Z-Crystal that powers up Normal-type moves into Z-Moves" }
+      {
+        "name": "Normalium Z",
+        "description": "Z-Crystal that powers up Normal-type moves into Z-Moves"
+      }
     ],
     "rewards": [
       "Normalium Z crystal",
@@ -84,16 +110,29 @@
     "keyBattles": [
       {
         "trainer": "Totem Gumshoos (Ultra Sun)",
-        "pokemon": [{ "name": "Gumshoos (Totem)", "level": 12 }],
+        "pokemon": [
+          {
+            "name": "Gumshoos (Totem)",
+            "level": 12
+          }
+        ],
         "strategy": "Totem Gumshoos gets +1 Defense and can call Yungoos allies. Fighting-type moves are super effective. Use Makuhita (trade in Route 2 Pokemon Center) or a Pokemon with a Fighting move. Keep your HP above half since its boosted attacks hit hard."
       },
       {
         "trainer": "Totem Raticate (Ultra Moon)",
-        "pokemon": [{ "name": "Alolan Raticate (Totem)", "level": 12 }],
+        "pokemon": [
+          {
+            "name": "Alolan Raticate (Totem)",
+            "level": 12
+          }
+        ],
         "strategy": "Totem Alolan Raticate is Dark/Normal. Fighting-type moves deal 4x damage. Same strategy as Gumshoos but even more vulnerable to Fighting."
       }
     ],
-    "nextStep": { "slug": "melemele-grand-trial", "name": "Chapter 4: Melemele Grand Trial" },
+    "nextStep": {
+      "slug": "melemele-grand-trial",
+      "name": "Chapter 4: Melemele Grand Trial"
+    },
     "tips": "Before entering the trial, make sure your team is at least level 12-13. Stock up on Potions at the Route 2 Pokemon Center. You cannot catch Pokemon during trials. After clearing the trial, go back and explore the blocked-off areas for great TMs."
   },
   {
@@ -112,9 +151,18 @@
       "Must have completed Captain Ilima's trial at Verdant Cavern"
     ],
     "keyItems": [
-      { "name": "Z-Ring", "description": "Crafted from your Sparkling Stone by Hala. Allows you to use Z-Moves in battle." },
-      { "name": "Fightinium Z", "description": "Z-Crystal for Fighting-type Z-Moves" },
-      { "name": "Ride Pager", "description": "Allows you to call Ride Pokemon like Tauros to smash rocks and traverse terrain" }
+      {
+        "name": "Z-Ring",
+        "description": "Crafted from your Sparkling Stone by Hala. Allows you to use Z-Moves in battle."
+      },
+      {
+        "name": "Fightinium Z",
+        "description": "Z-Crystal for Fighting-type Z-Moves"
+      },
+      {
+        "name": "Ride Pager",
+        "description": "Allows you to call Ride Pokemon like Tauros to smash rocks and traverse terrain"
+      }
     ],
     "rewards": [
       "Z-Ring (enables Z-Moves)",
@@ -126,14 +174,26 @@
       {
         "trainer": "Island Kahuna Hala",
         "pokemon": [
-          { "name": "Machop", "level": 15 },
-          { "name": "Makuhita", "level": 15 },
-          { "name": "Crabrawler", "level": 16 }
+          {
+            "name": "Machop",
+            "level": 15
+          },
+          {
+            "name": "Makuhita",
+            "level": 15
+          },
+          {
+            "name": "Crabrawler",
+            "level": 16
+          }
         ],
         "strategy": "Hala's team is all Fighting-type. Flying types like Pikipek/Trumbeak, Rowlet/Dartrix are excellent. Psychic types like Drowzee also work. Crabrawler is his ace at level 16, holds Fightinium Z, and knows Power-Up Punch. Watch out for Makuhita's Fake Out on the switch-in turn."
       }
     ],
-    "nextStep": { "slug": "arriving-on-akala", "name": "Chapter 5: Arriving on Akala" },
+    "nextStep": {
+      "slug": "arriving-on-akala",
+      "name": "Chapter 5: Arriving on Akala"
+    },
     "tips": "Make sure you have a Flying or Psychic type for this fight. If you chose Rowlet, this trial is a breeze. After winning, Tauros Charge lets you break rocks blocking items on previous routes. Go back and explore. The ferry to Akala is at Hau'oli Marina."
   },
   {
@@ -153,7 +213,10 @@
       "Must have completed the Melemele Grand Trial against Hala"
     ],
     "keyItems": [
-      { "name": "Stoutland Search", "description": "Ride Pokemon that can sniff out hidden items on the ground" }
+      {
+        "name": "Stoutland Search",
+        "description": "Ride Pokemon that can sniff out hidden items on the ground"
+      }
     ],
     "rewards": [
       "Access to Akala Island and its routes",
@@ -165,18 +228,32 @@
       {
         "trainer": "Pokemon Trainer Hau",
         "pokemon": [
-          { "name": "Starter (weak to yours)", "level": 16 },
-          { "name": "Pikachu", "level": 15 }
+          {
+            "name": "Starter (weak to yours)",
+            "level": 16
+          },
+          {
+            "name": "Pikachu",
+            "level": 15
+          }
         ],
         "strategy": "Hau's team has grown but is still straightforward. Your starter should handle his easily. Ground types deal with Pikachu."
       },
       {
         "trainer": "Gladion",
-        "pokemon": [{ "name": "Type: Null", "level": 18 }],
+        "pokemon": [
+          {
+            "name": "Type: Null",
+            "level": 18
+          }
+        ],
         "strategy": "Gladion's Type: Null is a Normal-type with solid stats. Fighting moves are super effective. It's a tough fight at this point, so make sure your team is level 17-18."
       }
     ],
-    "nextStep": { "slug": "brooklet-hill-trial", "name": "Chapter 6: Brooklet Hill Trial" },
+    "nextStep": {
+      "slug": "brooklet-hill-trial",
+      "name": "Chapter 6: Brooklet Hill Trial"
+    },
     "tips": "Paniola Ranch has the Pokemon Nursery (breeding). Leave two compatible Pokemon and walk around to hatch eggs. Route 4 has rare Eevee encounters (5%). The Amulet Coin can be found at Paniola Ranch from a man in the ranch house - grab it now for double money from trainer battles."
   },
   {
@@ -196,8 +273,14 @@
       "Must have reached Brooklet Hill after events on Route 5"
     ],
     "keyItems": [
-      { "name": "Waterium Z", "description": "Z-Crystal for Water-type Z-Moves" },
-      { "name": "Lapras Paddle", "description": "Ride Pokemon that lets you surf across water" }
+      {
+        "name": "Waterium Z",
+        "description": "Z-Crystal for Water-type Z-Moves"
+      },
+      {
+        "name": "Lapras Paddle",
+        "description": "Ride Pokemon that lets you surf across water"
+      }
     ],
     "rewards": [
       "Waterium Z crystal",
@@ -207,11 +290,19 @@
     "keyBattles": [
       {
         "trainer": "Totem Araquanid",
-        "pokemon": [{ "name": "Araquanid (Totem)", "level": 20 }],
+        "pokemon": [
+          {
+            "name": "Araquanid (Totem)",
+            "level": 20
+          }
+        ],
         "strategy": "Totem Araquanid gets +1 Speed and its Water Bubble ability doubles Water move damage while halving Fire damage taken. Electric and Rock moves are your best bet. It calls Masquerain or Dewpider as allies which can use Infestation to trap you. KO the ally quickly, then focus on the Totem. Grass types also work but beware of Bug Bite."
       }
     ],
-    "nextStep": { "slug": "wela-volcano-trial", "name": "Chapter 7: Wela Volcano Trial" },
+    "nextStep": {
+      "slug": "wela-volcano-trial",
+      "name": "Chapter 7: Wela Volcano Trial"
+    },
     "tips": "Pikachu or Charjabug are excellent for this trial. Magneton if you've leveled Magnemite enough. After the trial, you unlock the Fishing Rod and Lapras Paddle for surfing. Revisit earlier water areas for new encounters like Magikarp (evolves into Gyarados at level 20)."
   },
   {
@@ -231,7 +322,10 @@
       "Must have completed Captain Lana's trial at Brooklet Hill"
     ],
     "keyItems": [
-      { "name": "Firium Z", "description": "Z-Crystal for Fire-type Z-Moves" }
+      {
+        "name": "Firium Z",
+        "description": "Z-Crystal for Fire-type Z-Moves"
+      }
     ],
     "rewards": [
       "Firium Z crystal",
@@ -240,11 +334,19 @@
     "keyBattles": [
       {
         "trainer": "Totem Alolan Marowak",
-        "pokemon": [{ "name": "Alolan Marowak (Totem)", "level": 22 }],
+        "pokemon": [
+          {
+            "name": "Alolan Marowak (Totem)",
+            "level": 22
+          }
+        ],
         "strategy": "Totem Alolan Marowak is Fire/Ghost with a +1 Speed boost. It uses Shadow Bone and Flame Wheel. Water, Rock, Ground, Ghost, and Dark types are super effective. It calls Salazzle as an ally, which can use Toxic and Venoshock. Take out Salazzle first if it appears, then focus on Marowak. Avoid using Normal or Fighting moves (Ghost immunity/resistance)."
       }
     ],
-    "nextStep": { "slug": "lush-jungle-trial", "name": "Chapter 8: Lush Jungle Trial" },
+    "nextStep": {
+      "slug": "lush-jungle-trial",
+      "name": "Chapter 8: Lush Jungle Trial"
+    },
     "tips": "The dance quiz answers: first round the Hiker is the odd one, second round a Marowak faces a different direction, third round a completely different Pokemon (like a Totem Salazzle) appears. If you get a question wrong, you fight an extra trainer but still proceed. Water types like Gyarados or Wishiwashi (School Form at level 20+) dominate this trial."
   },
   {
@@ -266,7 +368,10 @@
       "Must have completed Captain Kiawe's trial at Wela Volcano Park"
     ],
     "keyItems": [
-      { "name": "Grassium Z", "description": "Z-Crystal for Grass-type Z-Moves" }
+      {
+        "name": "Grassium Z",
+        "description": "Z-Crystal for Grass-type Z-Moves"
+      }
     ],
     "rewards": [
       "Grassium Z crystal",
@@ -276,11 +381,19 @@
     "keyBattles": [
       {
         "trainer": "Totem Lurantis",
-        "pokemon": [{ "name": "Lurantis (Totem)", "level": 24 }],
+        "pokemon": [
+          {
+            "name": "Lurantis (Totem)",
+            "level": 24
+          }
+        ],
         "strategy": "Totem Lurantis is one of the hardest Totem battles. It gets +1 Speed and holds a Power Herb, allowing instant Solar Blade on turn 1 (a 125 BP Grass move). Its ally Kecleon can use Camouflage, and Comfey can heal with Floral Healing. Fire types are ideal - Fletchinder and Torracat resist Grass and hit super effectively. Flying types also work. Priority: KO allies immediately to prevent support. Use a Fire or Flying Z-Move if available."
       }
     ],
-    "nextStep": { "slug": "akala-grand-trial", "name": "Chapter 9: Akala Grand Trial" },
+    "nextStep": {
+      "slug": "akala-grand-trial",
+      "name": "Chapter 9: Akala Grand Trial"
+    },
     "tips": "This is widely considered the hardest trial in Akala. Your team should be level 23-25 minimum. Fire/Flying type like Fletchinder is the MVP here. If you have Firium Z, use it on your strongest Fire move to one-shot or severely damage Lurantis. After the trial, the Moss Rock in Lush Jungle lets you evolve Eevee into Leafeon by leveling up near it."
   },
   {
@@ -300,7 +413,10 @@
       "Must have completed all three Akala Island trials (Brooklet Hill, Wela Volcano Park, Lush Jungle)"
     ],
     "keyItems": [
-      { "name": "Rockium Z", "description": "Z-Crystal for Rock-type Z-Moves" }
+      {
+        "name": "Rockium Z",
+        "description": "Z-Crystal for Rock-type Z-Moves"
+      }
     ],
     "rewards": [
       "Rockium Z crystal",
@@ -311,21 +427,33 @@
       {
         "trainer": "Island Kahuna Olivia",
         "pokemon": [
-          { "name": "Anorith", "level": 27 },
-          { "name": "Lileep", "level": 27 },
-          { "name": "Lycanroc (Midnight Form)", "level": 28 }
+          {
+            "name": "Anorith",
+            "level": 27
+          },
+          {
+            "name": "Lileep",
+            "level": 27
+          },
+          {
+            "name": "Lycanroc (Midnight Form)",
+            "level": 28
+          }
         ],
         "strategy": "Olivia's team is Rock-type but each has a secondary type to watch for. Anorith is Rock/Bug - use Water, Rock, or Steel moves. Lileep is Rock/Grass - Ice and Fighting work, but its Giga Drain can heal it. Lycanroc is her ace holding Rockium Z. Water, Grass, Ground, Fighting, and Steel are all super effective against Rock. A strong Water-type like Gyarados or Wishiwashi School Form can sweep. Watch for Lycanroc's Continental Crush Z-Move."
       }
     ],
-    "nextStep": { "slug": "arriving-on-ulaulua", "name": "Chapter 10: Arriving on Ula'ula" },
+    "nextStep": {
+      "slug": "arriving-on-ulaulua",
+      "name": "Chapter 10: Arriving on Ula'ula"
+    },
     "tips": "Water and Grass types are your best friends for this battle. If you have a Gyarados or Wishiwashi (School Form), they can handle Olivia's entire team. Fighting types like Primeape from Route 3's Mankey evolution also work well. Bring a few Super Potions as Lycanroc hits hard with its Z-Move."
   },
   {
     "id": 10,
     "slug": "arriving-on-ulaulua",
     "title": "Chapter 10: Arriving on Ula'ula",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "You arrive on Ula'ula Island, the largest island in Alola. Malie City is a Johto-inspired city with a beautiful garden and library. You explore the Malie Garden, encounter Professor Kukui as the Masked Royal, and meet the Aether Foundation's president Lusamine for the first time. Hau challenges you to a battle.",
     "objectives": [
       "Take the ferry to Ula'ula Island and arrive in Malie City",
@@ -338,7 +466,10 @@
       "Must have completed Kahuna Olivia's Grand Trial on Akala Island"
     ],
     "keyItems": [
-      { "name": "Professor's Mask", "description": "You spot the Masked Royal at the Malie Garden stage, clearly Professor Kukui in disguise" }
+      {
+        "name": "Professor's Mask",
+        "description": "You spot the Masked Royal at the Malie Garden stage, clearly Professor Kukui in disguise"
+      }
     ],
     "rewards": [
       "Access to Ula'ula Island and Malie City shops",
@@ -349,21 +480,33 @@
       {
         "trainer": "Pokemon Trainer Hau",
         "pokemon": [
-          { "name": "Starter (weak to yours)", "level": 28 },
-          { "name": "Alolan Raichu", "level": 27 },
-          { "name": "Eevee/Eeveelution", "level": 27 }
+          {
+            "name": "Starter (weak to yours)",
+            "level": 28
+          },
+          {
+            "name": "Alolan Raichu",
+            "level": 27
+          },
+          {
+            "name": "Eevee/Eeveelution",
+            "level": 27
+          }
         ],
         "strategy": "Hau's team has evolved. His Alolan Raichu is Electric/Psychic, so Ground types are ideal. His starter is fully evolved or close to it. Your team should be around level 27-29."
       }
     ],
-    "nextStep": { "slug": "hokulani-observatory-trial", "name": "Chapter 11: Hokulani Observatory Trial" },
+    "nextStep": {
+      "slug": "hokulani-observatory-trial",
+      "name": "Chapter 11: Hokulani Observatory Trial"
+    },
     "tips": "Malie City has excellent shops including the Incense shop and the Salon for move tutoring. The Malie Library contains important lore about the Legendary Pokemon and Ultra Beasts. Stock up on Ultra Balls here as they become available at the Poke Mart. Route 10 has a bus that takes you up to Hokulani Observatory."
   },
   {
     "id": 11,
     "slug": "hokulani-observatory-trial",
     "title": "Chapter 11: Hokulani Observatory Trial",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "Captain Sophocles runs the Electric-type trial at the Hokulani Observatory atop Mount Hokulani. The trial involves answering audio quiz questions about Pokemon cries while fending off charger Pokemon that attack you. The Totem Togedemaru awaits as the final challenge.",
     "objectives": [
       "Take the bus from Route 10 to Mount Hokulani",
@@ -377,8 +520,14 @@
       "Must have reached Route 10 and taken the bus to Hokulani Observatory"
     ],
     "keyItems": [
-      { "name": "Electrium Z", "description": "Z-Crystal for Electric-type Z-Moves" },
-      { "name": "Steelium Z", "description": "Found on the observatory grounds after the trial" }
+      {
+        "name": "Electrium Z",
+        "description": "Z-Crystal for Electric-type Z-Moves"
+      },
+      {
+        "name": "Steelium Z",
+        "description": "Found on the observatory grounds after the trial"
+      }
     ],
     "rewards": [
       "Electrium Z crystal",
@@ -388,18 +537,26 @@
     "keyBattles": [
       {
         "trainer": "Totem Togedemaru",
-        "pokemon": [{ "name": "Togedemaru (Totem)", "level": 33 }],
+        "pokemon": [
+          {
+            "name": "Togedemaru (Totem)",
+            "level": 33
+          }
+        ],
         "strategy": "Totem Togedemaru is Electric/Steel with +1 Defense boost. It calls Skarmory (Lv 32) and Dedenne (Lv 31) as allies. Ground types are essential here since Ground is 4x effective against Electric/Steel. Mudsdale or Mudbray with Earthquake can one-shot it. Beware of its Zing Zap which can flinch and its Lightning Rod ability which absorbs Electric moves. Take out Skarmory first as it resists Ground with its Flying type."
       }
     ],
-    "nextStep": { "slug": "thrifty-megamart-trial", "name": "Chapter 12: Thrifty Megamart Trial" },
+    "nextStep": {
+      "slug": "thrifty-megamart-trial",
+      "name": "Chapter 12: Thrifty Megamart Trial"
+    },
     "tips": "Ground types absolutely dominate this trial. If you have a Mudsdale, Krookodile, or even a Dugtrio, this fight is straightforward. Togedemaru's Steel typing removes its Electric weakness, making Ground the only super-effective option. Be careful of the Skarmory ally which is immune to Ground. Use Fire or Electric moves on Skarmory. Molayne gives you Steelium Z after the trial."
   },
   {
     "id": 12,
     "slug": "thrifty-megamart-trial",
     "title": "Chapter 12: Thrifty Megamart Trial",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "Captain Acerola's Ghost-type trial takes place in the Abandoned Thrifty Megamart on Route 14. You must use the Poke Finder camera to photograph ghost Pokemon lurking in the abandoned store. The terrifying Totem Mimikyu awaits in the back room.",
     "objectives": [
       "Travel to Route 14 and the Abandoned Thrifty Megamart",
@@ -413,7 +570,10 @@
       "Must have completed Captain Sophocles' trial at Hokulani Observatory"
     ],
     "keyItems": [
-      { "name": "Ghostium Z", "description": "Z-Crystal for Ghost-type Z-Moves" }
+      {
+        "name": "Ghostium Z",
+        "description": "Z-Crystal for Ghost-type Z-Moves"
+      }
     ],
     "rewards": [
       "Ghostium Z crystal",
@@ -422,18 +582,26 @@
     "keyBattles": [
       {
         "trainer": "Totem Mimikyu",
-        "pokemon": [{ "name": "Mimikyu (Totem)", "level": 35 }],
+        "pokemon": [
+          {
+            "name": "Mimikyu (Totem)",
+            "level": 35
+          }
+        ],
         "strategy": "Totem Mimikyu is Ghost/Fairy with ALL stats boosted by +1. It calls Banette (Lv 32) and Jellicent (Lv 33) as allies. Mimikyu's Disguise ability blocks the first hit it takes, so you need at least two attacks to start dealing damage. Steel types are ideal since they resist both Ghost and Fairy. Use a multi-hit move like Rock Blast to break Disguise and deal damage in one turn. Avoid Normal and Fighting moves (Ghost immunity). Take out Jellicent first as it can use Water Spout."
       }
     ],
-    "nextStep": { "slug": "ulaulua-grand-trial", "name": "Chapter 13: Ula'ula Grand Trial" },
+    "nextStep": {
+      "slug": "ulaulua-grand-trial",
+      "name": "Chapter 13: Ula'ula Grand Trial"
+    },
     "tips": "Totem Mimikyu is one of the most feared Totem Pokemon. Its Disguise means you waste a turn breaking it. Multi-hit moves like Bullet Seed, Rock Blast, or Icicle Spear bypass Disguise. Steel types like Magnezone resist both STAB types. Ghost or Dark types hit super effectively but take super effective damage back. Bring Full Restores. The abandoned store atmosphere is genuinely creepy."
   },
   {
     "id": 13,
     "slug": "ulaulua-grand-trial",
     "title": "Chapter 13: Ula'ula Grand Trial",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "Kahuna Nanu specializes in Dark-type Pokemon and battles you on Route 15 as you head toward the Aether Foundation. His team includes Sableye, Krokorok, and his ace Alolan Persian with Darkinium Z. Team Skull's activity escalates and Lillie is kidnapped by the Aether Foundation.",
     "objectives": [
       "Resolve the Team Skull situation at Po Town",
@@ -447,8 +615,14 @@
       "Must have completed events at Po Town"
     ],
     "keyItems": [
-      { "name": "Darkinium Z", "description": "Z-Crystal for Dark-type Z-Moves" },
-      { "name": "Buginium Z", "description": "Found in the Shady House after defeating Guzma" }
+      {
+        "name": "Darkinium Z",
+        "description": "Z-Crystal for Dark-type Z-Moves"
+      },
+      {
+        "name": "Buginium Z",
+        "description": "Found in the Shady House after defeating Guzma"
+      }
     ],
     "rewards": [
       "Darkinium Z crystal",
@@ -460,30 +634,51 @@
       {
         "trainer": "Team Skull Boss Guzma",
         "pokemon": [
-          { "name": "Golisopod", "level": 37 },
-          { "name": "Masquerain", "level": 36 },
-          { "name": "Pinsir", "level": 36 }
+          {
+            "name": "Golisopod",
+            "level": 37
+          },
+          {
+            "name": "Masquerain",
+            "level": 36
+          },
+          {
+            "name": "Pinsir",
+            "level": 36
+          }
         ],
         "strategy": "Guzma leads with Golisopod (Bug/Water) which has Emergency Exit, automatically switching out when its HP drops below 50%. Use Electric or Flying moves. Masquerain is Bug/Flying, weak to Rock, Electric, Fire, and Ice. Pinsir is pure Bug. Flying and Fire types handle his whole team well."
       },
       {
         "trainer": "Island Kahuna Nanu",
         "pokemon": [
-          { "name": "Sableye", "level": 43 },
-          { "name": "Krokorok", "level": 43 },
-          { "name": "Alolan Persian", "level": 44 }
+          {
+            "name": "Sableye",
+            "level": 43
+          },
+          {
+            "name": "Krokorok",
+            "level": 43
+          },
+          {
+            "name": "Alolan Persian",
+            "level": 44
+          }
         ],
         "strategy": "Nanu's Sableye is Dark/Ghost with no 4x weaknesses (only Fairy is super effective). Krokorok is Ground/Dark, weak to Water, Grass, Ice, Bug, Fighting, and Fairy. His ace Alolan Persian holds Darkinium Z and knows Dark Pulse, Power Gem, and Fake Out. Fairy types are the best counter to his team overall. Fighting types work against Persian and Krokorok but not Sableye. A strong Fairy like Ribombee can sweep."
       }
     ],
-    "nextStep": { "slug": "aether-foundation", "name": "Chapter 14: Aether Foundation" },
+    "nextStep": {
+      "slug": "aether-foundation",
+      "name": "Chapter 14: Aether Foundation"
+    },
     "tips": "The Po Town raid has many Team Skull grunts to battle, so make sure you have healing items. Guzma's Golisopod is tricky with Emergency Exit. Nanu's battle level is higher than expected at 43-44, so grind if needed. Fairy types are the MVP for Nanu. After this chapter, the story accelerates dramatically."
   },
   {
     "id": 14,
     "slug": "aether-foundation",
     "title": "Chapter 14: Aether Foundation & Ultra Space",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "You infiltrate Aether Paradise to rescue Lillie and Nebby. President Lusamine has been using Nebby's power to open Ultra Wormholes and summon Ultra Beasts. You battle through Aether Foundation employees, face Guzma again, and ultimately confront Lusamine. In Ultra Sun/Moon, Necrozma absorbs Nebby (now Solgaleo/Lunala) and you must pursue them to Ultra Megalopolis.",
     "objectives": [
       "Travel to Aether Paradise via ferry",
@@ -498,8 +693,14 @@
       "Must have completed all Ula'ula Grand Trial and story events"
     ],
     "keyItems": [
-      { "name": "Master Ball", "description": "Given by Gladion at Aether Paradise, guaranteed catch on any Pokemon" },
-      { "name": "Cosmog", "description": "Nebby evolves from Cosmog into Cosmoem, then into Solgaleo (Ultra Sun) or Lunala (Ultra Moon)" }
+      {
+        "name": "Master Ball",
+        "description": "Given by Gladion at Aether Paradise, guaranteed catch on any Pokemon"
+      },
+      {
+        "name": "Cosmog",
+        "description": "Nebby evolves from Cosmog into Cosmoem, then into Solgaleo (Ultra Sun) or Lunala (Ultra Moon)"
+      }
     ],
     "rewards": [
       "Master Ball from Gladion",
@@ -511,40 +712,84 @@
       {
         "trainer": "Aether Branch Chief Faba",
         "pokemon": [
-          { "name": "Hypno", "level": 39 },
-          { "name": "Bruxish", "level": 39 },
-          { "name": "Alakazam", "level": 39 }
+          {
+            "name": "Hypno",
+            "level": 39
+          },
+          {
+            "name": "Bruxish",
+            "level": 39
+          },
+          {
+            "name": "Alakazam",
+            "level": 39
+          }
         ],
         "strategy": "Faba uses Psychic-types. Dark, Bug, and Ghost types are super effective. A strong Dark-type like Zoroark or Honchkrow can sweep his team."
       },
       {
         "trainer": "Team Skull Boss Guzma (rematch)",
         "pokemon": [
-          { "name": "Golisopod", "level": 41 },
-          { "name": "Vikavolt", "level": 41 },
-          { "name": "Masquerain", "level": 41 },
-          { "name": "Pinsir", "level": 41 }
+          {
+            "name": "Golisopod",
+            "level": 41
+          },
+          {
+            "name": "Vikavolt",
+            "level": 41
+          },
+          {
+            "name": "Masquerain",
+            "level": 41
+          },
+          {
+            "name": "Pinsir",
+            "level": 41
+          }
         ],
         "strategy": "Same strategy as before but higher levels. Flying and Fire types are strong. Rock types handle his whole team well. Watch for Golisopod's Emergency Exit and First Impression."
       },
       {
         "trainer": "Aether President Lusamine",
         "pokemon": [
-          { "name": "Clefable", "level": 44 },
-          { "name": "Lilligant", "level": 44 },
-          { "name": "Lopunny", "level": 44 },
-          { "name": "Milotic", "level": 44 },
-          { "name": "Bewear", "level": 44 }
+          {
+            "name": "Clefable",
+            "level": 44
+          },
+          {
+            "name": "Lilligant",
+            "level": 44
+          },
+          {
+            "name": "Lopunny",
+            "level": 44
+          },
+          {
+            "name": "Milotic",
+            "level": 44
+          },
+          {
+            "name": "Bewear",
+            "level": 44
+          }
         ],
         "strategy": "Lusamine has a diverse team. Clefable is Fairy, Lilligant is Grass, Lopunny is Normal, Milotic is Water, Bewear is Normal/Fighting. No single type covers everything. Poison types handle Clefable and Lilligant. Milotic has Recover, so burst it down. Bewear hits incredibly hard with Fluffy ability."
       },
       {
         "trainer": "Ultra Necrozma",
-        "pokemon": [{ "name": "Ultra Necrozma", "level": 60 }],
+        "pokemon": [
+          {
+            "name": "Ultra Necrozma",
+            "level": 60
+          }
+        ],
         "strategy": "Ultra Necrozma is Psychic/Dragon with absurdly high stats (all base stats above 130). Its Neuroforce ability boosts super-effective moves. This is possibly the hardest mandatory battle in any Pokemon game. Strategy: use Toxic stall with a Sturdy Pokemon, use a Focus Sash Pokemon with Toxic, or use Mimikyu's Disguise to survive a hit and set up. A Zoroark disguised as a Fairy type can bait Necrozma into using a non-super-effective move. Level your team to at least 55+."
       }
     ],
-    "nextStep": { "slug": "poni-island-trials", "name": "Chapter 15: Poni Island Trials" },
+    "nextStep": {
+      "slug": "poni-island-trials",
+      "name": "Chapter 15: Poni Island Trials"
+    },
     "tips": "Ultra Necrozma at level 60 is the hardest fight in the game. Prepare extensively. Strategies that work: Mimikyu with Swords Dance, Focus Sash Zoroark, Toxic stalling with Mudsdale/Toxapex, or simply overleveling to 60+. Save your Master Ball for later roaming legendaries or Ultra Beasts. After this chapter, Nebby joins your team as Solgaleo/Lunala."
   },
   {
@@ -566,9 +811,18 @@
       "Must have completed events at Aether Paradise and Ultra Megalopolis"
     ],
     "keyItems": [
-      { "name": "Fairium Z", "description": "Z-Crystal for Fairy-type Z-Moves, from Mina's trial" },
-      { "name": "Groundium Z", "description": "Z-Crystal for Ground-type Z-Moves, from Hapu's Grand Trial" },
-      { "name": "Dragonium Z", "description": "Z-Crystal for Dragon-type Z-Moves, from Vast Poni Canyon trial" }
+      {
+        "name": "Fairium Z",
+        "description": "Z-Crystal for Fairy-type Z-Moves, from Mina's trial"
+      },
+      {
+        "name": "Groundium Z",
+        "description": "Z-Crystal for Ground-type Z-Moves, from Hapu's Grand Trial"
+      },
+      {
+        "name": "Dragonium Z",
+        "description": "Z-Crystal for Dragon-type Z-Moves, from Vast Poni Canyon trial"
+      }
     ],
     "rewards": [
       "Fairium Z crystal",
@@ -580,33 +834,58 @@
     "keyBattles": [
       {
         "trainer": "Totem Ribombee (Mina's Trial)",
-        "pokemon": [{ "name": "Ribombee (Totem)", "level": 55 }],
+        "pokemon": [
+          {
+            "name": "Ribombee (Totem)",
+            "level": 55
+          }
+        ],
         "strategy": "Totem Ribombee is Bug/Fairy with ALL stats boosted by +1. It calls Blissey (Lv 53) and Pelipper (Lv 52) as allies. Ribombee is fast and hits hard with Dazzling Gleam and Pollen Puff. Steel and Poison types are ideal, resisting both STAB types. Fire types also work. Take out Blissey first as it provides healing support. Pelipper sets up Rain with Drizzle."
       },
       {
         "trainer": "Island Kahuna Hapu",
         "pokemon": [
-          { "name": "Golurk", "level": 53 },
-          { "name": "Gastrodon", "level": 53 },
-          { "name": "Flygon", "level": 53 },
-          { "name": "Mudsdale", "level": 54 }
+          {
+            "name": "Golurk",
+            "level": 53
+          },
+          {
+            "name": "Gastrodon",
+            "level": 53
+          },
+          {
+            "name": "Flygon",
+            "level": 53
+          },
+          {
+            "name": "Mudsdale",
+            "level": 54
+          }
         ],
         "strategy": "Hapu is all Ground types. Water, Grass, and Ice moves are generally super effective. Golurk is Ground/Ghost - use Water, Grass, Dark, Ghost, or Ice. Gastrodon is Ground/Water with only Grass as a weakness (4x). Flygon is Ground/Dragon, 4x weak to Ice. Mudsdale is her ace holding Groundium Z. A Pokemon with Grass or Ice coverage handles most of her team."
       },
       {
         "trainer": "Totem Kommo-o (Vast Poni Canyon)",
-        "pokemon": [{ "name": "Kommo-o (Totem)", "level": 49 }],
+        "pokemon": [
+          {
+            "name": "Kommo-o (Totem)",
+            "level": 49
+          }
+        ],
         "strategy": "Totem Kommo-o is Dragon/Fighting with ALL stats boosted by +1. Its allies are Scizor (Lv 46) and Noivern (Lv 48). Fairy types deal 4x damage and are immune to Dragon, making them the absolute best counter. Bring Ribombee, Mimikyu, Gardevoir, or any strong Fairy. Ice and Flying also hit super effectively. Watch out for Scizor's Bullet Punch priority."
       }
     ],
-    "nextStep": { "slug": "pokemon-league", "name": "Chapter 16: Mount Lanakila & Pokemon League" },
+    "nextStep": {
+      "slug": "pokemon-league",
+      "name": "Chapter 16: Mount Lanakila & Pokemon League"
+    },
     "tips": "Mina's trial is a scavenger hunt that takes you across all islands to battle captains. It is time-consuming but the battles give good EXP. Hapu's Gastrodon has only one weakness (Grass 4x), so bring a strong Grass move. For Totem Kommo-o, a single Fairy-type can solo the fight. Ribombee with Dazzling Gleam is the easiest answer."
   },
   {
     "id": 16,
     "slug": "pokemon-league",
     "title": "Chapter 16: Mount Lanakila & Pokemon League",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "summary": "You climb Mount Lanakila, the tallest peak in Alola, battling through ice caves and snowy paths. Gladion challenges you one final time near the summit. At the top, the newly constructed Pokemon League awaits. You must defeat the Elite Four (Molayne, Olivia, Acerola, Kahili) and then face your rival Hau as the Champion.",
     "objectives": [
       "Enter Mount Lanakila from Tapu Village",
@@ -624,7 +903,10 @@
       "Must have completed events at Vast Poni Canyon"
     ],
     "keyItems": [
-      { "name": "Champion Title", "description": "You become the first Champion of the Alola Pokemon League" }
+      {
+        "name": "Champion Title",
+        "description": "You become the first Champion of the Alola Pokemon League"
+      }
     ],
     "rewards": [
       "Title of Alola Champion",
@@ -636,70 +918,160 @@
       {
         "trainer": "Gladion (Mount Lanakila)",
         "pokemon": [
-          { "name": "Crobat", "level": 53 },
-          { "name": "Lucario", "level": 53 },
-          { "name": "Silvally", "level": 55 }
+          {
+            "name": "Crobat",
+            "level": 53
+          },
+          {
+            "name": "Lucario",
+            "level": 53
+          },
+          {
+            "name": "Silvally",
+            "level": 55
+          }
         ],
         "strategy": "Gladion's Silvally holds a memory disc matching your starter's weakness type. Crobat is Poison/Flying - use Electric, Ice, Rock, Psychic. Lucario is Fighting/Steel - use Fire, Ground, or Fighting. Silvally varies but is strong. Have broad type coverage ready."
       },
       {
         "trainer": "Elite Four Molayne (Steel)",
         "pokemon": [
-          { "name": "Klefki", "level": 56 },
-          { "name": "Bisharp", "level": 56 },
-          { "name": "Magnezone", "level": 56 },
-          { "name": "Metagross", "level": 56 },
-          { "name": "Dugtrio (Alolan)", "level": 57 }
+          {
+            "name": "Klefki",
+            "level": 56
+          },
+          {
+            "name": "Bisharp",
+            "level": 56
+          },
+          {
+            "name": "Magnezone",
+            "level": 56
+          },
+          {
+            "name": "Metagross",
+            "level": 56
+          },
+          {
+            "name": "Dugtrio (Alolan)",
+            "level": 57
+          }
         ],
         "strategy": "Fire and Ground types handle most Steel types. A strong Fire-type sweeper like Incineroar or Arcanine can blast through. Magnezone's Sturdy ability means it survives one hit. Metagross hits hard with Meteor Mash. Ground moves hit 4 of 5 Pokemon super effectively."
       },
       {
         "trainer": "Elite Four Olivia (Rock)",
         "pokemon": [
-          { "name": "Armaldo", "level": 56 },
-          { "name": "Cradily", "level": 56 },
-          { "name": "Gigalith", "level": 56 },
-          { "name": "Probopass", "level": 56 },
-          { "name": "Lycanroc (Midnight)", "level": 57 }
+          {
+            "name": "Armaldo",
+            "level": 56
+          },
+          {
+            "name": "Cradily",
+            "level": 56
+          },
+          {
+            "name": "Gigalith",
+            "level": 56
+          },
+          {
+            "name": "Probopass",
+            "level": 56
+          },
+          {
+            "name": "Lycanroc (Midnight)",
+            "level": 57
+          }
         ],
         "strategy": "Water and Fighting types dominate Olivia. Cradily has no Rock weakness (Rock/Grass) but is weak to Ice, Bug, Fighting, and Steel. Probopass is Rock/Steel, 4x weak to Ground and Fighting. A strong Water-type with good coverage moves can sweep."
       },
       {
         "trainer": "Elite Four Acerola (Ghost)",
         "pokemon": [
-          { "name": "Banette", "level": 56 },
-          { "name": "Drifblim", "level": 56 },
-          { "name": "Dhelmise", "level": 56 },
-          { "name": "Froslass", "level": 56 },
-          { "name": "Palossand", "level": 57 }
+          {
+            "name": "Banette",
+            "level": 56
+          },
+          {
+            "name": "Drifblim",
+            "level": 56
+          },
+          {
+            "name": "Dhelmise",
+            "level": 56
+          },
+          {
+            "name": "Froslass",
+            "level": 56
+          },
+          {
+            "name": "Palossand",
+            "level": 57
+          }
         ],
         "strategy": "Dark types resist Ghost moves and hit super effectively. Dhelmise is Ghost/Grass, Froslass is Ice/Ghost, Palossand is Ghost/Ground. A strong Dark-type like Honchkrow, Zoroark, or Alolan Muk handles most of her team. Watch for Froslass's Blizzard and Palossand's Shore Up recovery."
       },
       {
         "trainer": "Elite Four Kahili (Flying)",
         "pokemon": [
-          { "name": "Braviary", "level": 56 },
-          { "name": "Hawlucha", "level": 56 },
-          { "name": "Oricorio (Baile)", "level": 56 },
-          { "name": "Mandibuzz", "level": 56 },
-          { "name": "Toucannon", "level": 57 }
+          {
+            "name": "Braviary",
+            "level": 56
+          },
+          {
+            "name": "Hawlucha",
+            "level": 56
+          },
+          {
+            "name": "Oricorio (Baile)",
+            "level": 56
+          },
+          {
+            "name": "Mandibuzz",
+            "level": 56
+          },
+          {
+            "name": "Toucannon",
+            "level": 57
+          }
         ],
         "strategy": "Electric types are the best counter. Ice and Rock also work well. Hawlucha is Fighting/Flying, weak to Electric, Ice, Flying, Psychic, and Fairy. Oricorio Baile is Fire/Flying, weak to Rock, Water, Electric. Mandibuzz is Dark/Flying. An Alolan Raichu or Magnezone can sweep most of her team."
       },
       {
         "trainer": "Champion Hau",
         "pokemon": [
-          { "name": "Alolan Raichu", "level": 59 },
-          { "name": "Tauros", "level": 58 },
-          { "name": "Crabominable", "level": 59 },
-          { "name": "Noivern", "level": 58 },
-          { "name": "Flareon/Vaporeon/Leafeon", "level": 58 },
-          { "name": "Primarina/Decidueye/Incineroar", "level": 60 }
+          {
+            "name": "Alolan Raichu",
+            "level": 59
+          },
+          {
+            "name": "Tauros",
+            "level": 58
+          },
+          {
+            "name": "Crabominable",
+            "level": 59
+          },
+          {
+            "name": "Noivern",
+            "level": 58
+          },
+          {
+            "name": "Flareon/Vaporeon/Leafeon",
+            "level": 58
+          },
+          {
+            "name": "Primarina/Decidueye/Incineroar",
+            "level": 60
+          }
         ],
         "strategy": "Hau's team depends on your starter choice. His starter is the one strong against yours (level 60). His Eeveelution also varies. Alolan Raichu is Electric/Psychic - Ground types shut it down. Crabominable is Fighting/Ice. Prepare for a long, varied battle with diverse type coverage on your team."
       }
     ],
-    "nextStep": { "slug": "post-game", "name": "Chapter 17: Post-Game" },
+    "nextStep": {
+      "slug": "post-game",
+      "name": "Chapter 17: Post-Game"
+    },
     "tips": "Stock up on Full Restores, Max Revives, and Max Potions before entering the League. You cannot leave once you start. Your team should be level 55-60. The Elite Four can be fought in any order. Consider bringing: a Fire type for Molayne, a Water type for Olivia, a Dark type for Acerola, an Electric type for Kahili, and broad coverage for Hau. You can rebattle the Elite Four after becoming Champion to grind money and EXP."
   },
   {
@@ -722,8 +1094,14 @@
       "Must have become the Alola Champion"
     ],
     "keyItems": [
-      { "name": "Ultra Warp Ride", "description": "Ride Solgaleo/Lunala through Ultra Wormholes to find Legendary Pokemon and Ultra Beasts in alternate dimensions" },
-      { "name": "Zygarde Cube", "description": "Collect all 100 Zygarde Cells and Cores scattered across Alola to assemble Zygarde (10%, 50%, or Complete Forme)" }
+      {
+        "name": "Ultra Warp Ride",
+        "description": "Ride Solgaleo/Lunala through Ultra Wormholes to find Legendary Pokemon and Ultra Beasts in alternate dimensions"
+      },
+      {
+        "name": "Zygarde Cube",
+        "description": "Collect all 100 Zygarde Cells and Cores scattered across Alola to assemble Zygarde (10%, 50%, or Complete Forme)"
+      }
     ],
     "rewards": [
       "Legendary Pokemon from past games via Ultra Wormholes (Mewtwo, Ho-Oh, Lugia, Groudon, Kyogre, Dialga, Palkia, etc.)",
@@ -736,22 +1114,52 @@
       {
         "trainer": "Giovanni (Team Rainbow Rocket Boss)",
         "pokemon": [
-          { "name": "Mewtwo", "level": 70 },
-          { "name": "Rhyperior", "level": 66 },
-          { "name": "Dugtrio", "level": 66 },
-          { "name": "Nidoking", "level": 66 },
-          { "name": "Nidoqueen", "level": 66 }
+          {
+            "name": "Mewtwo",
+            "level": 70
+          },
+          {
+            "name": "Rhyperior",
+            "level": 66
+          },
+          {
+            "name": "Dugtrio",
+            "level": 66
+          },
+          {
+            "name": "Nidoking",
+            "level": 66
+          },
+          {
+            "name": "Nidoqueen",
+            "level": 66
+          }
         ],
         "strategy": "Giovanni's Mewtwo is the biggest threat at level 70. Bug, Ghost, and Dark types hit Mewtwo super effectively. His Ground-type team members are weak to Water, Grass, and Ice. A strong Fairy or Dark type plus a Water type can handle his entire team."
       },
       {
         "trainer": "Ghetsis (Team Plasma)",
         "pokemon": [
-          { "name": "Hydreigon", "level": 65 },
-          { "name": "Cofagrigus", "level": 65 },
-          { "name": "Bouffalant", "level": 65 },
-          { "name": "Bisharp", "level": 65 },
-          { "name": "Eelektross", "level": 65 }
+          {
+            "name": "Hydreigon",
+            "level": 65
+          },
+          {
+            "name": "Cofagrigus",
+            "level": 65
+          },
+          {
+            "name": "Bouffalant",
+            "level": 65
+          },
+          {
+            "name": "Bisharp",
+            "level": 65
+          },
+          {
+            "name": "Eelektross",
+            "level": 65
+          }
         ],
         "strategy": "Ghetsis has a diverse team. Hydreigon is Dragon/Dark, 4x weak to Fairy. Eelektross has Levitate so Ground moves do not work. Fighting types handle Bisharp and Bouffalant. Bring diverse type coverage."
       }

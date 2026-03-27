@@ -582,7 +582,7 @@
   {
     "slug": "route-10",
     "name": "Route 10",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "route",
     "description": "A mountainous route on Ula'ula Island leading up to the Hokulani Observatory and Mount Hokulani. Features a bus stop and tall grass with strong Pokemon.",
     "storyRelevance": "You travel through Route 10 on the way to Captain Sophocles' Electric-type trial at the Hokulani Observatory. The bus takes you up Mount Hokulani.",
@@ -617,7 +617,7 @@
   {
     "slug": "route-11",
     "name": "Route 11",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "route",
     "description": "A route on Ula'ula Island connecting Route 10 to Route 12. Known for the unique Komala encounters, a Normal-type that is always asleep.",
     "storyRelevance": "You traverse Route 11 heading toward the Secluded Shore and Route 12 as you continue exploring Ula'ula Island.",
@@ -650,7 +650,7 @@
   {
     "slug": "route-12",
     "name": "Route 12",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "route",
     "description": "A rocky mountain trail on Ula'ula Island that requires Mudsdale Gallop to traverse the rough terrain. Features Graveler, Torkoal, and the rare Manectric.",
     "storyRelevance": "You navigate this rocky route using Mudsdale to reach Secluded Shore and continue toward Route 13. The terrain is impassable without the Mudsdale ride.",
@@ -681,7 +681,7 @@
   {
     "slug": "route-13",
     "name": "Route 13",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "route",
     "description": "A desert-adjacent route on Ula'ula Island connecting Route 12 to Tapu Village. The route itself is barren, with encounters limited to fishing only.",
     "storyRelevance": "You pass through this desolate route on the way to Tapu Village and the Aether House. Haina Desert is accessible from here.",
@@ -710,7 +710,7 @@
   {
     "slug": "haina-desert",
     "name": "Haina Desert",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "dungeon",
     "description": "A confusing desert maze on Ula'ula Island. Harsh sunlight blazes during the day while sandstorms rage at night. Navigation requires following specific rock cairn patterns to avoid going in circles.",
     "storyRelevance": "An optional exploration area accessible from Route 13. You can find the Psychium Z here at the altar, and it connects to the Ruins of Abundance where Tapu Bulu resides.",
@@ -740,7 +740,7 @@
   {
     "slug": "mount-lanakila",
     "name": "Mount Lanakila",
-    "island": "ulaulua",
+    "island": "ula-ula",
     "category": "dungeon",
     "description": "The tallest mountain in Alola, located on Ula'ula Island. Its snow-capped peak hosts the newly built Pokemon League. Features ice cave sections with high-level Pokemon.",
     "storyRelevance": "The final area before the Pokemon League. You must climb through the mountain's caves and exterior to reach the summit. Gladion battles you here before the League.",
@@ -849,6 +849,601 @@
       { "name": "Poni Meadow", "slug": "poni-meadow" },
       { "name": "Poni Coast", "slug": "poni-coast" },
       { "name": "Poni Grove", "slug": "poni-grove" }
+    ]
+  },
+  {
+    "slug": "malie-city",
+    "name": "Malie City",
+    "island": "ula-ula",
+    "category": "city",
+    "description": "The largest city on Ula'ula Island, featuring traditional Johto-inspired architecture, a sprawling Malie Garden, the Malie Library, and various shops. The city serves as the main hub for Ula'ula exploration.",
+    "storyRelevance": "You arrive here by ferry from Akala Island. Professor Kukui challenges you to visit the library. You meet Acerola and learn about the island's trials. Hau battles you near the Outer Cape.",
+    "unlockCondition": "After arriving on Ula'ula Island via ferry from Akala",
+    "encounters": [
+      { "pokemon": "Poliwag", "pokemonSlug": "poliwag", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [24, 27], "notes": "Outer Cape water areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" },
+      { "pokemon": "Psyduck", "pokemonSlug": "psyduck", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [24, 27], "notes": "Outer Cape water areas", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" },
+      { "pokemon": "Goldeen", "pokemonSlug": "goldeen", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 28], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 55, "levelRange": [10, 28], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Gyarados", "pokemonSlug": "gyarados", "types": ["water", "flying"], "method": "sos", "percentage": 0, "levelRange": [10, 28], "notes": "SOS call from Magikarp", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" }
+    ],
+    "items": [
+      { "name": "TM21 Frustration", "itemSlug": "tm21-frustration", "location": "From Team Skull Grunt near the community center", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden near the Outer Cape", "hidden": true },
+      { "name": "Bottle Cap", "itemSlug": "bottle-cap", "location": "From the restaurant after completing a meal challenge", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Hau", "pokemon": [{ "name": "Raichu (Alolan)", "level": 28 }, { "name": "Starter (evolved)", "level": 29 }], "reward": 1740, "notes": "Battle near the Outer Cape" }
+    ],
+    "tips": "Stock up at the shops here before heading into Ula'ula's trials. The Malie Library has important lore about Necrozma and the Ultra Beasts. Visit Malie Garden to the north for additional encounters. The Outer Cape has surfing and fishing spots.",
+    "connectedRoutes": [
+      { "name": "Malie Garden", "slug": "malie-garden" },
+      { "name": "Route 10", "slug": "route-10" },
+      { "name": "Outer Cape", "slug": "outer-cape" }
+    ]
+  },
+  {
+    "slug": "malie-garden",
+    "name": "Malie Garden",
+    "island": "ula-ula",
+    "category": "park",
+    "description": "A traditional Johto-style garden in Malie City featuring a central lake, bridges, and lush vegetation. Wild Pokemon roam the grassy areas and water surfaces.",
+    "storyRelevance": "You battle Professor Kukui here shortly after arriving on Ula'ula Island. Later, during the Ultra Beast quest, Kartana (US) or Celesteela (UM) can be found here.",
+    "unlockCondition": "After arriving in Malie City",
+    "encounters": [
+      { "pokemon": "Meowth (Alolan)", "pokemonSlug": "meowth-alola", "types": ["dark"], "method": "walking", "percentage": 20, "levelRange": [24, 27], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png" },
+      { "pokemon": "Arbok", "pokemonSlug": "arbok", "types": ["poison"], "method": "walking", "percentage": 20, "levelRange": [24, 27], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" },
+      { "pokemon": "Ledian", "pokemonSlug": "ledian", "types": ["bug", "flying"], "method": "walking", "percentage": 20, "levelRange": [24, 27], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png" },
+      { "pokemon": "Ariados", "pokemonSlug": "ariados", "types": ["bug", "poison"], "method": "walking", "percentage": 20, "levelRange": [24, 27], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png" },
+      { "pokemon": "Poliwhirl", "pokemonSlug": "poliwhirl", "types": ["water"], "method": "walking", "percentage": 20, "levelRange": [24, 27], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" },
+      { "pokemon": "Psyduck", "pokemonSlug": "psyduck", "types": ["water"], "method": "walking", "percentage": 10, "levelRange": [24, 27], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" },
+      { "pokemon": "Cottonee", "pokemonSlug": "cottonee", "types": ["grass", "fairy"], "method": "walking", "percentage": 10, "levelRange": [24, 27], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png" },
+      { "pokemon": "Petilil", "pokemonSlug": "petilil", "types": ["grass"], "method": "walking", "percentage": 10, "levelRange": [24, 27], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png" },
+      { "pokemon": "Goldeen", "pokemonSlug": "goldeen", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 28], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png" },
+      { "pokemon": "Basculin", "pokemonSlug": "basculin", "types": ["water"], "method": "fishing", "percentage": 30, "levelRange": [10, 28], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 30, "levelRange": [10, 28], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Politoed", "pokemonSlug": "politoed", "types": ["water"], "method": "sos", "percentage": 0, "levelRange": [24, 27], "notes": "SOS call from Poliwhirl during rain at night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png" },
+      { "pokemon": "Poliwrath", "pokemonSlug": "poliwrath", "types": ["water", "fighting"], "method": "sos", "percentage": 0, "levelRange": [24, 27], "notes": "SOS call from Poliwhirl during rain in daytime", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" }
+    ],
+    "items": [
+      { "name": "Grassy Seed", "itemSlug": "grassy-seed", "location": "Near the central bridge", "hidden": true },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden behind the pagoda", "hidden": true },
+      { "name": "TM83 Infestation", "itemSlug": "tm83-infestation", "location": "Near the garden entrance", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Professor Kukui", "pokemon": [{ "name": "Lycanroc", "level": 28 }, { "name": "Starter (opposite type)", "level": 29 }], "reward": 0, "notes": "Story battle upon first visit" }
+    ],
+    "tips": "Politoed is extremely rare - you need rain weather AND a nighttime Poliwhirl SOS call. Poliwrath can appear the same way during daytime rain. Cottonee (US) and Petilil (UM) are version exclusives worth catching here. The garden is also a post-game Ultra Beast location for Kartana (US) or Celesteela (UM).",
+    "connectedRoutes": [
+      { "name": "Malie City", "slug": "malie-city" }
+    ]
+  },
+  {
+    "slug": "mount-hokulani",
+    "name": "Mount Hokulani",
+    "island": "ula-ula",
+    "category": "dungeon",
+    "description": "The summit of Mount Hokulani on Ula'ula Island, home to the Hokulani Observatory where Captain Sophocles holds his Electric-type trial. The mountain is known for rare Pokemon like Beldum and Minior.",
+    "storyRelevance": "Captain Sophocles' Electric-type trial takes place at the observatory. You must navigate a puzzle to summon the Totem Vikavolt (US) or Totem Togedemaru (UM).",
+    "unlockCondition": "Take the bus from Route 10 to Mount Hokulani",
+    "encounters": [
+      { "pokemon": "Minior", "pokemonSlug": "minior", "types": ["rock", "flying"], "method": "walking", "percentage": 30, "levelRange": [26, 29], "notes": "Night encounters more common", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png" },
+      { "pokemon": "Cleffa", "pokemonSlug": "cleffa", "types": ["fairy"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "notes": "More common at night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png" },
+      { "pokemon": "Ditto", "pokemonSlug": "ditto", "types": ["normal"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" },
+      { "pokemon": "Beldum", "pokemonSlug": "beldum", "types": ["steel", "psychic"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "notes": "Rare but highly valuable, evolves into Metagross", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png" },
+      { "pokemon": "Elgyem", "pokemonSlug": "elgyem", "types": ["psychic"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png" },
+      { "pokemon": "Dedenne", "pokemonSlug": "dedenne", "types": ["electric", "fairy"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png" },
+      { "pokemon": "Fearow", "pokemonSlug": "fearow", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [26, 29], "notes": "Daytime only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" },
+      { "pokemon": "Skarmory", "pokemonSlug": "skarmory", "types": ["steel", "flying"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "notes": "Daytime only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png" },
+      { "pokemon": "Elekid", "pokemonSlug": "elekid", "types": ["electric"], "method": "walking", "percentage": 10, "levelRange": [26, 29], "notes": "Daytime only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png" },
+      { "pokemon": "Metang", "pokemonSlug": "metang", "types": ["steel", "psychic"], "method": "sos", "percentage": 0, "levelRange": [26, 29], "notes": "SOS call from Beldum", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png" },
+      { "pokemon": "Clefairy", "pokemonSlug": "clefairy", "types": ["fairy"], "method": "sos", "percentage": 0, "levelRange": [26, 29], "notes": "SOS call from Cleffa", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" }
+    ],
+    "items": [
+      { "name": "Electrium Z", "itemSlug": "electrium-z", "location": "Reward for completing Sophocles' trial", "hidden": false },
+      { "name": "Comet Shard", "itemSlug": "comet-shard", "location": "Near the observatory telescope", "hidden": true },
+      { "name": "Metal Coat", "itemSlug": "metal-coat", "location": "Hidden near the mountain path", "hidden": true },
+      { "name": "TM72 Volt Switch", "itemSlug": "tm72-volt-switch", "location": "Inside the observatory", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Totem Vikavolt", "pokemon": [{ "name": "Vikavolt (Totem)", "level": 29 }], "reward": 0, "notes": "Ultra Sun Totem. +1 Sp. Atk. Calls Charjabug and Blissey as allies. Uses Bug Buzz and Thunderbolt." },
+      { "name": "Totem Togedemaru", "pokemon": [{ "name": "Togedemaru (Totem)", "level": 29 }], "reward": 0, "notes": "Ultra Moon Totem. +1 Defense. Calls Skarmory and Dedenne as allies." },
+      { "name": "Rising Star Sean", "pokemon": [{ "name": "Magneton", "level": 28 }], "reward": 1344 }
+    ],
+    "tips": "Beldum is the big prize here at 10% encounter rate. It only knows Take Down, so use a Ghost-type to prevent it from fainting itself. Minior has Shields Down ability - bring it below 50% HP to break the shield, then use status moves. Ditto at 10% is essential for breeding. Cleffa evolves into the versatile Clefable.",
+    "connectedRoutes": [
+      { "name": "Route 10", "slug": "route-10" },
+      { "name": "Blush Mountain", "slug": "blush-mountain" }
+    ]
+  },
+  {
+    "slug": "blush-mountain",
+    "name": "Blush Mountain",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A volcanic mountain area on Ula'ula Island near the Hokulani Observatory. Known for its special magnetic field that allows Charjabug, Magneton, and Nosepass to evolve. Features Electric and Fire-type Pokemon.",
+    "storyRelevance": "An optional area accessible from Mount Hokulani. The Blush Mountain Power Plant is located here. The special magnetic field makes this the only place to evolve Charjabug into Vikavolt.",
+    "unlockCondition": "Accessible from Mount Hokulani area",
+    "encounters": [
+      { "pokemon": "Charjabug", "pokemonSlug": "charjabug", "types": ["bug", "electric"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "notes": "Level up here to evolve into Vikavolt", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png" },
+      { "pokemon": "Togedemaru", "pokemonSlug": "togedemaru", "types": ["electric", "steel"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png" },
+      { "pokemon": "Dedenne", "pokemonSlug": "dedenne", "types": ["electric", "fairy"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png" },
+      { "pokemon": "Turtonator", "pokemonSlug": "turtonator", "types": ["fire", "dragon"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png" },
+      { "pokemon": "Elekid", "pokemonSlug": "elekid", "types": ["electric"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png" },
+      { "pokemon": "Torkoal", "pokemonSlug": "torkoal", "types": ["fire"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png" },
+      { "pokemon": "Mudbray", "pokemonSlug": "mudbray", "types": ["ground"], "method": "walking", "percentage": 20, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png" },
+      { "pokemon": "Graveler (Alolan)", "pokemonSlug": "graveler-alola", "types": ["rock", "electric"], "method": "walking", "percentage": 20, "levelRange": [29, 32], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png" },
+      { "pokemon": "Drampa", "pokemonSlug": "drampa", "types": ["normal", "dragon"], "method": "walking", "percentage": 10, "levelRange": [29, 32], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png" },
+      { "pokemon": "Electabuzz", "pokemonSlug": "electabuzz", "types": ["electric"], "method": "sos", "percentage": 0, "levelRange": [29, 32], "notes": "SOS call from Elekid", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png" }
+    ],
+    "items": [
+      { "name": "TM93 Wild Charge", "itemSlug": "tm93-wild-charge", "location": "Near the power plant entrance", "hidden": false },
+      { "name": "Magnet", "itemSlug": "magnet", "location": "Inside the power plant area", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden among the volcanic rocks", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Collector Raymond", "pokemon": [{ "name": "Charjabug", "level": 30 }, { "name": "Togedemaru", "level": 30 }], "reward": 1440 }
+    ],
+    "tips": "This is THE place to evolve Charjabug into Vikavolt, Magneton into Magnezone, and Nosepass into Probopass. Just level them up here. Turtonator (Ultra Sun only) is a unique Fire/Dragon type with Shell Trap. Drampa (Ultra Moon only) is the version counterpart.",
+    "connectedRoutes": [
+      { "name": "Mount Hokulani", "slug": "mount-hokulani" },
+      { "name": "Route 12", "slug": "route-12" }
+    ]
+  },
+  {
+    "slug": "tapu-village",
+    "name": "Tapu Village",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A desolate village at the base of Mount Lanakila on Ula'ula Island, destroyed long ago by Tapu Bulu in a fit of rage. Features Ice-type and Dark-type Pokemon in the surrounding area.",
+    "storyRelevance": "The Aether House is located here where Acerola cares for orphaned children. Team Skull kidnaps a child's Pokemon from the Aether House, leading to your confrontation at Po Town.",
+    "unlockCondition": "After traversing Route 13",
+    "encounters": [
+      { "pokemon": "Snorunt", "pokemonSlug": "snorunt", "types": ["ice"], "method": "walking", "percentage": 20, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png" },
+      { "pokemon": "Absol", "pokemonSlug": "absol", "types": ["dark"], "method": "walking", "percentage": 10, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png" },
+      { "pokemon": "Vulpix (Alolan)", "pokemonSlug": "vulpix-alola", "types": ["ice"], "method": "walking", "percentage": 10, "levelRange": [30, 33], "notes": "Ultra Sun only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png" },
+      { "pokemon": "Sandshrew (Alolan)", "pokemonSlug": "sandshrew-alola", "types": ["ice", "steel"], "method": "walking", "percentage": 10, "levelRange": [30, 33], "notes": "Ultra Moon only", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 30, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 30, "levelRange": [30, 33], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 30, "levelRange": [30, 33], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Vanillite", "pokemonSlug": "vanillite", "types": ["ice"], "method": "sos", "percentage": 0, "levelRange": [28, 31], "notes": "SOS call during hail weather", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png" },
+      { "pokemon": "Castform", "pokemonSlug": "castform", "types": ["normal"], "method": "sos", "percentage": 0, "levelRange": [28, 31], "notes": "SOS call during weather conditions, extremely rare", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png" }
+    ],
+    "items": [
+      { "name": "Max Potion", "itemSlug": "max-potion", "location": "Near the ruined buildings", "hidden": false },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the Aether House entrance", "hidden": false },
+      { "name": "Never-Melt Ice", "itemSlug": "never-melt-ice", "location": "Hidden near the base of Mount Lanakila path", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Fomantis", "level": 33 }], "reward": 1056 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Mareanie", "level": 33 }], "reward": 1056 }
+    ],
+    "tips": "Alolan Vulpix (US) is one of the most popular Alolan forms. It evolves into Alolan Ninetales with an Ice Stone. Absol is a strong Dark-type attacker with Super Luck ability. Snorunt evolves into Glalie (level 42) or Froslass (female + Dawn Stone). Visit the Aether House to advance the story.",
+    "connectedRoutes": [
+      { "name": "Route 13", "slug": "route-13" },
+      { "name": "Route 14", "slug": "route-14" },
+      { "name": "Mount Lanakila", "slug": "mount-lanakila" }
+    ]
+  },
+  {
+    "slug": "route-14",
+    "name": "Route 14",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A dark coastal route on Ula'ula Island connecting Tapu Village to the Abandoned Thrifty Megamart. Features eerie waters with Frillish encounters and access to the haunted trial site.",
+    "storyRelevance": "You travel through this shadowy route on the way to Acerola's Ghost-type trial at the Abandoned Thrifty Megamart. A swimmer near the lighthouse is being harassed by a Frillish.",
+    "unlockCondition": "After events at Tapu Village and the Aether House",
+    "encounters": [
+      { "pokemon": "Finneon", "pokemonSlug": "finneon", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" },
+      { "pokemon": "Tentacruel", "pokemonSlug": "tentacruel", "types": ["water", "poison"], "method": "surfing", "percentage": 30, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Frillish", "pokemonSlug": "frillish", "types": ["water", "ghost"], "method": "surfing", "percentage": 20, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 55, "levelRange": [10, 34], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 34], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Bruxish", "pokemonSlug": "bruxish", "types": ["water", "psychic"], "method": "fishing", "percentage": 5, "levelRange": [10, 34], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png" },
+      { "pokemon": "Jellicent", "pokemonSlug": "jellicent", "types": ["water", "ghost"], "method": "sos", "percentage": 0, "levelRange": [30, 33], "notes": "SOS call from Frillish", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png" }
+    ],
+    "items": [
+      { "name": "TM30 Shadow Ball", "itemSlug": "tm30-shadow-ball", "location": "Near the abandoned lighthouse", "hidden": false },
+      { "name": "Dusk Ball", "itemSlug": "dusk-ball", "location": "Along the dark shoreline", "hidden": false },
+      { "name": "Big Pearl", "itemSlug": "big-pearl", "location": "Hidden near the rocks by the water", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Swimmer Yuki", "pokemon": [{ "name": "Frillish", "level": 33 }, { "name": "Tentacruel", "level": 33 }], "reward": 660 },
+      { "name": "Fisherman Hisato", "pokemon": [{ "name": "Wishiwashi", "level": 34 }], "reward": 1088 }
+    ],
+    "tips": "Frillish is a solid Water/Ghost type with Cursed Body ability. Bruxish at 5% fishing rate has the Strong Jaw ability and Dazzling hidden ability (blocks priority moves). The dark atmosphere fits the upcoming Ghost trial. Save before heading into the Abandoned Thrifty Megamart.",
+    "connectedRoutes": [
+      { "name": "Tapu Village", "slug": "tapu-village" },
+      { "name": "Thrifty Megamart (Abandoned)", "slug": "thrifty-megamart-abandoned" }
+    ]
+  },
+  {
+    "slug": "thrifty-megamart-abandoned",
+    "name": "Thrifty Megamart (Abandoned)",
+    "island": "ula-ula",
+    "category": "dungeon",
+    "description": "An abandoned supermarket on Ula'ula Island that serves as Captain Acerola's Ghost-type trial site. The building is haunted by Ghost-type Pokemon, and the Totem Mimikyu lurks in the back room.",
+    "storyRelevance": "Acerola's trial requires you to use the Poke Finder to photograph Ghost Pokemon causing mischief throughout the store. The trial culminates in a battle against the Totem Mimikyu.",
+    "unlockCondition": "After reaching the Abandoned Thrifty Megamart via Route 14",
+    "encounters": [
+      { "pokemon": "Shuppet", "pokemonSlug": "shuppet", "types": ["ghost"], "method": "walking", "percentage": 30, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png" },
+      { "pokemon": "Haunter", "pokemonSlug": "haunter", "types": ["ghost", "poison"], "method": "walking", "percentage": 30, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" },
+      { "pokemon": "Klefki", "pokemonSlug": "klefki", "types": ["steel", "fairy"], "method": "walking", "percentage": 20, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png" },
+      { "pokemon": "Mimikyu", "pokemonSlug": "mimikyu", "types": ["ghost", "fairy"], "method": "walking", "percentage": 5, "levelRange": [30, 33], "notes": "Rare encounter, also the Totem Pokemon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png" },
+      { "pokemon": "Golbat", "pokemonSlug": "golbat", "types": ["poison", "flying"], "method": "walking", "percentage": 15, "levelRange": [30, 33], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" },
+      { "pokemon": "Gengar", "pokemonSlug": "gengar", "types": ["ghost", "poison"], "method": "sos", "percentage": 0, "levelRange": [30, 33], "notes": "SOS call from Haunter", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" },
+      { "pokemon": "Banette", "pokemonSlug": "banette", "types": ["ghost"], "method": "sos", "percentage": 0, "levelRange": [30, 33], "notes": "SOS call from Shuppet", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png" }
+    ],
+    "items": [
+      { "name": "Ghostium Z", "itemSlug": "ghostium-z", "location": "Reward for completing Acerola's trial", "hidden": false },
+      { "name": "TM46 Thief", "itemSlug": "tm46-thief", "location": "In the back storage room", "hidden": false },
+      { "name": "Dusk Stone", "itemSlug": "dusk-stone", "location": "Hidden behind a shelf in the store", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Totem Mimikyu", "pokemon": [{ "name": "Mimikyu (Totem)", "level": 33 }], "reward": 0, "notes": "Totem Pokemon. All stats +1. Calls Banette and Jellicent as allies. Disguise ability blocks the first hit. Uses Play Rough and Shadow Claw." }
+    ],
+    "tips": "Totem Mimikyu's Disguise ability blocks your first attack, so lead with a non-damaging move or a multi-hit move like Bullet Seed or Rock Blast. Steel types resist both STAB moves. After the trial, return to catch wild Mimikyu at 5% rate - it is one of the best Pokemon in the game with Disguise acting as a free Substitute. Gengar via Haunter SOS is another incredible catch.",
+    "connectedRoutes": [
+      { "name": "Route 14", "slug": "route-14" }
+    ]
+  },
+  {
+    "slug": "route-15",
+    "name": "Route 15",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A coastal route on Ula'ula Island connecting Tapu Village to Route 16. Features a Pokemon Center, the Aether House, and access to surfing and fishing areas. Connects to the Islet of the Ancestor.",
+    "storyRelevance": "You return here after the events at Po Town. The Aether House is located nearby. Surfing areas lead to the Islet of the Ancestor where you can find rare items.",
+    "unlockCondition": "After completing events at Tapu Village",
+    "encounters": [
+      { "pokemon": "Slowpoke", "pokemonSlug": "slowpoke", "types": ["water", "psychic"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Tentacruel", "pokemonSlug": "tentacruel", "types": ["water", "poison"], "method": "surfing", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" },
+      { "pokemon": "Lumineon", "pokemonSlug": "lumineon", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png" },
+      { "pokemon": "Finneon", "pokemonSlug": "finneon", "types": ["water"], "method": "surfing", "percentage": 20, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Clamperl", "pokemonSlug": "clamperl", "types": ["water"], "method": "fishing", "percentage": 20, "levelRange": [10, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 50, "levelRange": [10, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Bruxish", "pokemonSlug": "bruxish", "types": ["water", "psychic"], "method": "fishing", "percentage": 30, "levelRange": [10, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png" },
+      { "pokemon": "Slowbro", "pokemonSlug": "slowbro", "types": ["water", "psychic"], "method": "sos", "percentage": 0, "levelRange": [32, 35], "notes": "SOS call from Slowpoke", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" }
+    ],
+    "items": [
+      { "name": "TM93 Wild Charge", "itemSlug": "tm93-wild-charge", "location": "Near the shore past the Pokemon Center", "hidden": false },
+      { "name": "PP Up", "itemSlug": "pp-up", "location": "Hidden on the beach area", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the surfing launch point", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Swimmer Kyra", "pokemon": [{ "name": "Seaking", "level": 35 }, { "name": "Lumineon", "level": 35 }], "reward": 700 },
+      { "name": "Ace Trainer Yuki", "pokemon": [{ "name": "Slowbro", "level": 35 }, { "name": "Pelipper", "level": 35 }], "reward": 2100 }
+    ],
+    "tips": "Clamperl is unique - it evolves into Huntail (Deep Sea Tooth trade) or Gorebyss (Deep Sea Scale trade). Lumineon via surfing is not a competitive powerhouse but fills your Pokedex. Slowpoke can SOS call Slowbro, saving you evolution time. The Pokemon Center here is crucial for healing between Routes 14-17.",
+    "connectedRoutes": [
+      { "name": "Tapu Village", "slug": "tapu-village" },
+      { "name": "Route 16", "slug": "route-16" }
+    ]
+  },
+  {
+    "slug": "route-16",
+    "name": "Route 16",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A short route on Ula'ula Island connecting Route 15 to Ula'ula Meadow and Route 17. Features a Pokemon Center and access to the Lake of the Sunne (US) / Lake of the Moone (UM).",
+    "storyRelevance": "A transitional route leading to Ula'ula Meadow and eventually Po Town. The Lake of the Sunne/Moone is accessible from here and plays a role in the Cosmog subplot.",
+    "unlockCondition": "After traversing Route 15",
+    "encounters": [
+      { "pokemon": "Scraggy", "pokemonSlug": "scraggy", "types": ["dark", "fighting"], "method": "walking", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png" },
+      { "pokemon": "Slowpoke", "pokemonSlug": "slowpoke", "types": ["water", "psychic"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 30, "levelRange": [32, 35], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 20, "levelRange": [32, 35], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Scrafty", "pokemonSlug": "scrafty", "types": ["dark", "fighting"], "method": "sos", "percentage": 0, "levelRange": [32, 35], "notes": "SOS call from Scraggy", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png" }
+    ],
+    "items": [
+      { "name": "TM74 Gyro Ball", "itemSlug": "tm74-gyro-ball", "location": "Near the Pokemon Center", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden near the fence", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the route entrance", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Punk Girl Anna", "pokemon": [{ "name": "Scraggy", "level": 34 }, { "name": "Pawniard", "level": 34 }], "reward": 1088 }
+    ],
+    "tips": "Scraggy is worth catching here - it evolves into Scrafty at level 39, gaining excellent Dark/Fighting dual typing with great abilities like Intimidate and Moxie. Visit the Lake of the Sunne (US) or Lake of the Moone (UM) for story events and later for Cosmog in the post-game.",
+    "connectedRoutes": [
+      { "name": "Route 15", "slug": "route-15" },
+      { "name": "Ula'ula Meadow", "slug": "ulaula-meadow" },
+      { "name": "Route 17", "slug": "route-17" }
+    ]
+  },
+  {
+    "slug": "route-17",
+    "name": "Route 17",
+    "island": "ula-ula",
+    "category": "route",
+    "description": "A constantly rainy route on Ula'ula Island leading to Po Town, Team Skull's headquarters. The persistent rain enables rare Goomy SOS encounters and creates a gloomy atmosphere fitting for the approach to the villains' base.",
+    "storyRelevance": "You traverse this rain-soaked route on the way to confront Team Skull at Po Town. The rain never stops here, creating unique weather-based encounters.",
+    "unlockCondition": "After passing through Route 16 and Ula'ula Meadow",
+    "encounters": [
+      { "pokemon": "Fearow", "pokemonSlug": "fearow", "types": ["normal", "flying"], "method": "walking", "percentage": 20, "levelRange": [33, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" },
+      { "pokemon": "Graveler (Alolan)", "pokemonSlug": "graveler-alola", "types": ["rock", "electric"], "method": "walking", "percentage": 20, "levelRange": [33, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png" },
+      { "pokemon": "Scraggy", "pokemonSlug": "scraggy", "types": ["dark", "fighting"], "method": "walking", "percentage": 20, "levelRange": [33, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [33, 36], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 20, "levelRange": [33, 36], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" },
+      { "pokemon": "Skarmory", "pokemonSlug": "skarmory", "types": ["steel", "flying"], "method": "walking", "percentage": 15, "levelRange": [33, 36], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png" },
+      { "pokemon": "Bisharp", "pokemonSlug": "bisharp", "types": ["dark", "steel"], "method": "walking", "percentage": 5, "levelRange": [33, 36], "notes": "Rare encounter in brown tall grass on the hill", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png" },
+      { "pokemon": "Pawniard", "pokemonSlug": "pawniard", "types": ["dark", "steel"], "method": "sos", "percentage": 0, "levelRange": [33, 36], "notes": "SOS call from Bisharp or as standalone", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png" },
+      { "pokemon": "Goomy", "pokemonSlug": "goomy", "types": ["dragon"], "method": "sos", "percentage": 0, "levelRange": [33, 36], "notes": "SOS call during rain weather only. Rain is constant on this route.", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png" },
+      { "pokemon": "Castform", "pokemonSlug": "castform", "types": ["normal"], "method": "sos", "percentage": 0, "levelRange": [28, 33], "notes": "SOS call during rain, extremely rare", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png" }
+    ],
+    "items": [
+      { "name": "TM84 Poison Jab", "itemSlug": "tm84-poison-jab", "location": "Along the rainy path", "hidden": false },
+      { "name": "Max Repel", "itemSlug": "max-repel", "location": "Near the Po Town gate", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden in the mud near the hillside", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Golbat", "level": 34 }, { "name": "Salandit", "level": 34 }], "reward": 1088 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Fomantis", "level": 34 }], "reward": 1088 },
+      { "name": "Office Worker Jeremy", "pokemon": [{ "name": "Kadabra", "level": 35 }], "reward": 1400 }
+    ],
+    "tips": "Goomy is the big prize here. Since it always rains on Route 17, any SOS battle has a chance to call Goomy. It evolves into Sliggoo (level 40) and then Goodra (level 50 while raining). Bisharp at 5% is fully evolved and extremely powerful with Defiant ability. The constant rain also boosts Water-type moves for any battles here.",
+    "connectedRoutes": [
+      { "name": "Route 16", "slug": "route-16" },
+      { "name": "Po Town", "slug": "po-town" }
+    ]
+  },
+  {
+    "slug": "po-town",
+    "name": "Po Town",
+    "island": "ula-ula",
+    "category": "city",
+    "description": "An abandoned town on Ula'ula Island that has been taken over by Team Skull as their headquarters. Surrounded by high walls and constant rain, the Shady House serves as their base of operations.",
+    "storyRelevance": "You infiltrate Team Skull's base to rescue a stolen Pokemon and recover a Yungoos taken from the Aether House. You battle your way through grunts and face Guzma, Team Skull's boss.",
+    "unlockCondition": "After traversing Route 17",
+    "encounters": [],
+    "items": [
+      { "name": "Buginium Z", "itemSlug": "buginium-z", "location": "Reward for defeating Guzma in the Shady House", "hidden": false },
+      { "name": "TM36 Sludge Bomb", "itemSlug": "tm36-sludge-bomb", "location": "Inside the Shady House, second floor", "hidden": false },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Hidden in a room in the Shady House", "hidden": true },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "In a chest in Guzma's room", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Team Skull Boss Guzma", "pokemon": [{ "name": "Golisopod", "level": 34 }, { "name": "Ariados", "level": 34 }, { "name": "Masquerain", "level": 34 }], "reward": 4080, "notes": "First battle with Guzma. Golisopod has Emergency Exit ability." },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Drowzee", "level": 33 }], "reward": 1056 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Haunter", "level": 33 }, { "name": "Golbat", "level": 33 }], "reward": 1056 },
+      { "name": "Team Skull Grunt", "pokemon": [{ "name": "Raticate (Alolan)", "level": 33 }], "reward": 1056 }
+    ],
+    "tips": "No wild encounters here, but plenty of Team Skull Grunts to battle. Guzma's Golisopod is dangerous with First Impression (priority Bug move on first turn) and Emergency Exit (switches out at 50% HP, then returns later). Flying and Rock types handle most of his team. Heal at the makeshift Pokemon Center inside Po Town (costs 10 Poke Dollars).",
+    "connectedRoutes": [
+      { "name": "Route 17", "slug": "route-17" }
+    ]
+  },
+  {
+    "slug": "seafolk-village",
+    "name": "Seafolk Village",
+    "island": "poni",
+    "category": "city",
+    "description": "A floating village of houseboats on Poni Island, serving as the main settlement. Despite its small size, it has a Pokemon Center, restaurants, and shops aboard various boats. The Steelix boat holds a rare fishing spot.",
+    "storyRelevance": "Your arrival point on Poni Island. You meet Hapu here and learn about the final Grand Trial. The Steelix houseboat has the rare Dhelmise fishing spot. Mina gives you her trial after becoming Champion.",
+    "unlockCondition": "After arriving on Poni Island via ferry",
+    "encounters": [
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 59, "levelRange": [10, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Wishiwashi", "pokemonSlug": "wishiwashi", "types": ["water"], "method": "fishing", "percentage": 30, "levelRange": [10, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png" },
+      { "pokemon": "Wailmer", "pokemonSlug": "wailmer", "types": ["water"], "method": "fishing", "percentage": 10, "levelRange": [10, 45], "notes": "Evolves into Wailord at level 40", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png" },
+      { "pokemon": "Dhelmise", "pokemonSlug": "dhelmise", "types": ["ghost", "grass"], "method": "fishing", "percentage": 1, "levelRange": [10, 45], "notes": "Extremely rare, fish from the Steelix houseboat balcony. Bubble fishing spots increase odds.", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png" },
+      { "pokemon": "Gyarados", "pokemonSlug": "gyarados", "types": ["water", "flying"], "method": "sos", "percentage": 0, "levelRange": [10, 45], "notes": "SOS call from Magikarp", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" },
+      { "pokemon": "Wailord", "pokemonSlug": "wailord", "types": ["water"], "method": "sos", "percentage": 0, "levelRange": [10, 45], "notes": "SOS call from Wailmer", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png" }
+    ],
+    "items": [
+      { "name": "Aerodactylite", "itemSlug": "aerodactylite", "location": "From the Huntail-boat NPC after becoming Champion", "hidden": false },
+      { "name": "Lucky Punch", "itemSlug": "lucky-punch", "location": "From the restaurant boat NPC", "hidden": false },
+      { "name": "Heart Scale", "itemSlug": "heart-scale", "location": "From the restaurant for ordering a meal", "hidden": false }
+    ],
+    "trainers": [],
+    "tips": "Dhelmise at 1% is one of the rarest fishing encounters in the game. Use the Steelix houseboat's balcony fishing spot, and look for bubbling spots which have a better encounter table (around 10% Dhelmise). Dhelmise has the unique Steelworker ability giving it pseudo-triple STAB (Ghost, Grass, Steel). Wailmer evolves into the massive Wailord at level 40.",
+    "connectedRoutes": [
+      { "name": "Poni Wilds", "slug": "poni-wilds" },
+      { "name": "Exeggutor Island", "slug": "exeggutor-island" }
+    ]
+  },
+  {
+    "slug": "poni-wilds",
+    "name": "Poni Wilds",
+    "island": "poni",
+    "category": "route",
+    "description": "A wild, untamed area on Poni Island north of Seafolk Village. Features rocky terrain, tall grass, and strong wild Pokemon. The harsh environment reflects Poni Island's rugged nature.",
+    "storyRelevance": "You explore this area on the way to Ancient Poni Path and the Ruins of Hope. Hapu appears here as you make your way through the wilderness.",
+    "unlockCondition": "After arriving at Seafolk Village",
+    "encounters": [
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 30, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Granbull", "pokemonSlug": "granbull", "types": ["fairy"], "method": "walking", "percentage": 20, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png" },
+      { "pokemon": "Inkay", "pokemonSlug": "inkay", "types": ["dark", "psychic"], "method": "walking", "percentage": 20, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png" },
+      { "pokemon": "Furfrou", "pokemonSlug": "furfrou", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png" },
+      { "pokemon": "Gastrodon", "pokemonSlug": "gastrodon", "types": ["water", "ground"], "method": "walking", "percentage": 10, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png" },
+      { "pokemon": "Malamar", "pokemonSlug": "malamar", "types": ["dark", "psychic"], "method": "sos", "percentage": 0, "levelRange": [41, 44], "notes": "SOS call from Inkay", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png" },
+      { "pokemon": "Tentacruel", "pokemonSlug": "tentacruel", "types": ["water", "poison"], "method": "surfing", "percentage": 30, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" },
+      { "pokemon": "Lumineon", "pokemonSlug": "lumineon", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [41, 44], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Relicanth", "pokemonSlug": "relicanth", "types": ["water", "rock"], "method": "fishing", "percentage": 5, "levelRange": [10, 45], "notes": "Rare fishing encounter", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png" }
+    ],
+    "items": [
+      { "name": "TM97 Dark Pulse", "itemSlug": "tm97-dark-pulse", "location": "Near the rocky cliff area", "hidden": false },
+      { "name": "Max Elixir", "itemSlug": "max-elixir", "location": "Hidden among the tall grass", "hidden": true },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near the beach entrance", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Ace Trainer Hiroshi", "pokemon": [{ "name": "Gastrodon", "level": 43 }, { "name": "Pelipper", "level": 43 }], "reward": 2580 },
+      { "name": "Dancer Julia", "pokemon": [{ "name": "Oricorio", "level": 43 }], "reward": 1720 }
+    ],
+    "tips": "Granbull is a solid Fairy-type with Intimidate ability. Inkay evolves into Malamar at level 30 while holding the 3DS upside down - one of the most unique evolution methods. Gastrodon has only one weakness (Grass, 4x). Furfrou changes appearance at the salon in Hau'oli City.",
+    "connectedRoutes": [
+      { "name": "Seafolk Village", "slug": "seafolk-village" },
+      { "name": "Ancient Poni Path", "slug": "ancient-poni-path" }
+    ]
+  },
+  {
+    "slug": "poni-breaker-coast",
+    "name": "Poni Breaker Coast",
+    "island": "poni",
+    "category": "route",
+    "description": "A rugged coastal area on Poni Island with crashing waves and eroded rock formations. Water gushes through holes in the rock. Surfing and fishing yield rare Water-type Pokemon.",
+    "storyRelevance": "You traverse this coast on the way between Vast Poni Canyon and Ancient Poni Path. The Ruins of Hope where Tapu Fini resides are accessible from here.",
+    "unlockCondition": "After reaching Poni Island and exploring toward Vast Poni Canyon",
+    "encounters": [
+      { "pokemon": "Tentacruel", "pokemonSlug": "tentacruel", "types": ["water", "poison"], "method": "surfing", "percentage": 30, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" },
+      { "pokemon": "Lumineon", "pokemonSlug": "lumineon", "types": ["water"], "method": "surfing", "percentage": 30, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png" },
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "surfing", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Wailmer", "pokemonSlug": "wailmer", "types": ["water"], "method": "surfing", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 40, "levelRange": [10, 46], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Carvanha", "pokemonSlug": "carvanha", "types": ["water", "dark"], "method": "fishing", "percentage": 30, "levelRange": [10, 46], "notes": "Evolves into Sharpedo at level 30", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png" },
+      { "pokemon": "Wailmer", "pokemonSlug": "wailmer", "types": ["water"], "method": "fishing", "percentage": 15, "levelRange": [10, 46], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png" },
+      { "pokemon": "Relicanth", "pokemonSlug": "relicanth", "types": ["water", "rock"], "method": "fishing", "percentage": 5, "levelRange": [10, 46], "notes": "Rare ancient fish Pokemon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png" },
+      { "pokemon": "Sharpedo", "pokemonSlug": "sharpedo", "types": ["water", "dark"], "method": "sos", "percentage": 0, "levelRange": [10, 46], "notes": "SOS call from Carvanha", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png" },
+      { "pokemon": "Lapras", "pokemonSlug": "lapras", "types": ["water", "ice"], "method": "surfing", "percentage": 1, "levelRange": [42, 45], "notes": "Extremely rare surfing encounter", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png" }
+    ],
+    "items": [
+      { "name": "TM55 Scald", "itemSlug": "tm55-scald", "location": "Along the rocky coast path", "hidden": false },
+      { "name": "Pearl String", "itemSlug": "pearl-string", "location": "Hidden in the eroded rock formations", "hidden": true },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "On a ledge overlooking the waves", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Swimmer Logan", "pokemon": [{ "name": "Sharpedo", "level": 44 }, { "name": "Tentacruel", "level": 44 }], "reward": 880 },
+      { "name": "Fisherman Kai", "pokemon": [{ "name": "Relicanth", "level": 44 }, { "name": "Wailord", "level": 44 }], "reward": 1408 }
+    ],
+    "tips": "Relicanth at 5% fishing is rare but has no evolution, making it a one-and-done catch. Lapras is an extremely rare surfing encounter here. Carvanha evolves into the fast and powerful Sharpedo with Speed Boost hidden ability. The Ruins of Hope nearby house Tapu Fini, catchable post-game.",
+    "connectedRoutes": [
+      { "name": "Ancient Poni Path", "slug": "ancient-poni-path" },
+      { "name": "Vast Poni Canyon", "slug": "vast-poni-canyon" },
+      { "name": "Ruins of Hope", "slug": "ruins-of-hope" }
+    ]
+  },
+  {
+    "slug": "ancient-poni-path",
+    "name": "Ancient Poni Path",
+    "island": "poni",
+    "category": "route",
+    "description": "An ancient pathway on Poni Island leading to the Ruins of Hope where Tapu Fini resides. Features weathered stone structures and connects several key Poni Island locations.",
+    "storyRelevance": "You travel this path to reach the Ruins of Hope for Hapu's Grand Trial. The ancient stonework hints at the deep history of the Tapu guardians and the people of Poni Island.",
+    "unlockCondition": "After exploring Poni Wilds",
+    "encounters": [
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 30, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Granbull", "pokemonSlug": "granbull", "types": ["fairy"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png" },
+      { "pokemon": "Inkay", "pokemonSlug": "inkay", "types": ["dark", "psychic"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png" },
+      { "pokemon": "Gastrodon", "pokemonSlug": "gastrodon", "types": ["water", "ground"], "method": "walking", "percentage": 10, "levelRange": [42, 45], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png" },
+      { "pokemon": "Gumshoos", "pokemonSlug": "gumshoos", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "timeOfDay": "day", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png" },
+      { "pokemon": "Raticate (Alolan)", "pokemonSlug": "raticate-alola", "types": ["dark", "normal"], "method": "walking", "percentage": 20, "levelRange": [42, 45], "timeOfDay": "night", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png" }
+    ],
+    "items": [
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "Near the ancient stone pillars", "hidden": true },
+      { "name": "TM60 Quash", "itemSlug": "tm60-quash", "location": "Along the path toward the ruins", "hidden": false },
+      { "name": "Zygarde Cell", "itemSlug": "zygarde-cell", "location": "Near a weathered structure", "hidden": false }
+    ],
+    "trainers": [
+      { "name": "Veteran Leon", "pokemon": [{ "name": "Talonflame", "level": 44 }, { "name": "Alakazam", "level": 44 }], "reward": 4224 }
+    ],
+    "tips": "The Ancient Poni Path is primarily a connector between Poni Wilds and the Ruins of Hope. Hapu's Grand Trial at the Ruins of Hope involves Ground-type Pokemon. Prepare Water, Grass, or Ice-type Pokemon. Granbull with Intimidate is worth catching if you missed it in Poni Wilds.",
+    "connectedRoutes": [
+      { "name": "Poni Wilds", "slug": "poni-wilds" },
+      { "name": "Poni Breaker Coast", "slug": "poni-breaker-coast" },
+      { "name": "Ruins of Hope", "slug": "ruins-of-hope" }
+    ]
+  },
+  {
+    "slug": "poni-grove",
+    "name": "Poni Grove",
+    "island": "poni",
+    "category": "route",
+    "description": "A dense forested area on Poni Island accessible after becoming Champion. Features high-level Pokemon including Heracross, Riolu, and Zoroark. The Ultra Beast Blacephalon (US) or Stakataka (UM) can be encountered here.",
+    "storyRelevance": "Post-game area where the Ultra Recon Squad asks you to help deal with Blacephalon (US) or Stakataka (UM). Connects to Poni Plains and leads toward the Battle Tree.",
+    "unlockCondition": "After becoming Champion",
+    "encounters": [
+      { "pokemon": "Trumbeak", "pokemonSlug": "trumbeak", "types": ["normal", "flying"], "method": "walking", "percentage": 30, "levelRange": [52, 55], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png" },
+      { "pokemon": "Zoroark", "pokemonSlug": "zoroark", "types": ["dark"], "method": "walking", "percentage": 20, "levelRange": [52, 55], "notes": "Illusion ability disguises it as the last party Pokemon", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png" },
+      { "pokemon": "Buneary", "pokemonSlug": "buneary", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [52, 55], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png" },
+      { "pokemon": "Riolu", "pokemonSlug": "riolu", "types": ["fighting"], "method": "walking", "percentage": 10, "levelRange": [52, 55], "notes": "Evolves into Lucario with high friendship during daytime", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png" },
+      { "pokemon": "Pinsir", "pokemonSlug": "pinsir", "types": ["bug"], "method": "walking", "percentage": 10, "levelRange": [52, 55], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png" },
+      { "pokemon": "Heracross", "pokemonSlug": "heracross", "types": ["bug", "fighting"], "method": "walking", "percentage": 10, "levelRange": [52, 55], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png" },
+      { "pokemon": "Lucario", "pokemonSlug": "lucario", "types": ["fighting", "steel"], "method": "sos", "percentage": 0, "levelRange": [52, 55], "notes": "SOS call from Riolu", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png" },
+      { "pokemon": "Toucannon", "pokemonSlug": "toucannon", "types": ["normal", "flying"], "method": "sos", "percentage": 0, "levelRange": [52, 55], "notes": "SOS call from Trumbeak", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png" },
+      { "pokemon": "Lopunny", "pokemonSlug": "lopunny", "types": ["normal"], "method": "sos", "percentage": 0, "levelRange": [52, 55], "notes": "SOS call from Buneary", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png" }
+    ],
+    "items": [
+      { "name": "TM06 Toxic", "itemSlug": "tm06-toxic", "location": "In the dense forest section", "hidden": false },
+      { "name": "Max Elixir", "itemSlug": "max-elixir", "location": "Hidden among the trees", "hidden": true },
+      { "name": "Dawn Stone", "itemSlug": "dawn-stone", "location": "Near the path to Poni Plains", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Veteran Alonsa", "pokemon": [{ "name": "Zoroark", "level": 54 }, { "name": "Lucario", "level": 54 }], "reward": 5184 },
+      { "name": "Ace Trainer Kekoa", "pokemon": [{ "name": "Heracross", "level": 54 }, { "name": "Pinsir", "level": 54 }], "reward": 3240 }
+    ],
+    "tips": "Riolu into Lucario is one of the best catches here. Raise friendship fast with Soothe Bell, vitamins, and friendship berries, then level up during the day. Zoroark's Illusion ability makes it appear as your last party Pokemon, which can trick opponents. Heracross with Guts or Moxie is a powerful physical attacker. Blacephalon (US only) appears here during the UB quest.",
+    "connectedRoutes": [
+      { "name": "Poni Plains", "slug": "poni-plains" },
+      { "name": "Ancient Poni Path", "slug": "ancient-poni-path" }
+    ]
+  },
+  {
+    "slug": "poni-gauntlet",
+    "name": "Poni Gauntlet",
+    "island": "poni",
+    "category": "route",
+    "description": "The final route on Poni Island leading to the Battle Tree. Features the highest-level wild Pokemon in the overworld and rare Dratini/Dragonair fishing encounters in the freshwater pools.",
+    "storyRelevance": "The gauntlet leading to the Battle Tree, Alola's ultimate post-game battle facility. Strong trainers line the path, and the fishing spots contain the elusive Dratini line.",
+    "unlockCondition": "After becoming Champion and traversing Poni Grove and Poni Plains",
+    "encounters": [
+      { "pokemon": "Pelipper", "pokemonSlug": "pelipper", "types": ["water", "flying"], "method": "walking", "percentage": 25, "levelRange": [58, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png" },
+      { "pokemon": "Granbull", "pokemonSlug": "granbull", "types": ["fairy"], "method": "walking", "percentage": 20, "levelRange": [58, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png" },
+      { "pokemon": "Lickitung", "pokemonSlug": "lickitung", "types": ["normal"], "method": "walking", "percentage": 20, "levelRange": [58, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" },
+      { "pokemon": "Bewear", "pokemonSlug": "bewear", "types": ["normal", "fighting"], "method": "walking", "percentage": 10, "levelRange": [58, 61], "notes": "Extremely strong physical attacker", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png" },
+      { "pokemon": "Inkay", "pokemonSlug": "inkay", "types": ["dark", "psychic"], "method": "walking", "percentage": 15, "levelRange": [58, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png" },
+      { "pokemon": "Golduck", "pokemonSlug": "golduck", "types": ["water"], "method": "walking", "percentage": 10, "levelRange": [58, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" },
+      { "pokemon": "Magikarp", "pokemonSlug": "magikarp", "types": ["water"], "method": "fishing", "percentage": 59, "levelRange": [10, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" },
+      { "pokemon": "Barboach", "pokemonSlug": "barboach", "types": ["water", "ground"], "method": "fishing", "percentage": 40, "levelRange": [10, 61], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png" },
+      { "pokemon": "Dratini", "pokemonSlug": "dratini", "types": ["dragon"], "method": "fishing", "percentage": 1, "levelRange": [10, 61], "notes": "Extremely rare, 10% at bubble spots", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png" },
+      { "pokemon": "Dragonair", "pokemonSlug": "dragonair", "types": ["dragon"], "method": "sos", "percentage": 0, "levelRange": [10, 61], "notes": "SOS call from Dratini", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png" },
+      { "pokemon": "Dragonite", "pokemonSlug": "dragonite", "types": ["dragon", "flying"], "method": "sos", "percentage": 0, "levelRange": [10, 61], "notes": "Rare SOS call from Dratini or Dragonair", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png" },
+      { "pokemon": "Whiscash", "pokemonSlug": "whiscash", "types": ["water", "ground"], "method": "sos", "percentage": 0, "levelRange": [10, 61], "notes": "SOS call from Barboach", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png" }
+    ],
+    "items": [
+      { "name": "TM02 Dragon Claw", "itemSlug": "tm02-dragon-claw", "location": "Near the bridge area", "hidden": false },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "Hidden near the waterfall", "hidden": true },
+      { "name": "Dragon Scale", "itemSlug": "dragon-scale", "location": "Near the fishing spots", "hidden": true }
+    ],
+    "trainers": [
+      { "name": "Veteran Eric", "pokemon": [{ "name": "Dragonite", "level": 59 }, { "name": "Garchomp", "level": 59 }], "reward": 5664 },
+      { "name": "Ace Trainer Jada", "pokemon": [{ "name": "Bewear", "level": 58 }, { "name": "Kommo-o", "level": 58 }], "reward": 3480 }
+    ],
+    "tips": "The fishing here is legendary. Dratini at 1% (10% at bubble spots) can SOS call Dragonair and even Dragonite directly. Dragonite is one of the best Pokemon in the game with Multiscale hidden ability. Bewear in the grass has insane Attack with Fluffy ability. The Battle Tree at the end is Alola's ultimate challenge featuring Red, Blue, and Cynthia.",
+    "connectedRoutes": [
+      { "name": "Poni Plains", "slug": "poni-plains" },
+      { "name": "Battle Tree", "slug": "battle-tree" }
+    ]
+  },
+  {
+    "slug": "resolution-cave",
+    "name": "Resolution Cave",
+    "island": "poni",
+    "category": "dungeon",
+    "description": "A deep cave on Poni Island accessible from Poni Meadow. The cave's deepest chamber houses the Ultra Beast Guzzlord. Druddigon and other powerful Pokemon inhabit the cave.",
+    "storyRelevance": "During the post-game Ultra Beast quest, you are sent to investigate this cave where Guzzlord has appeared. A Zygarde also resides in the deepest chamber after the UB mission.",
+    "unlockCondition": "Post-game, after becoming Champion",
+    "encounters": [
+      { "pokemon": "Golbat", "pokemonSlug": "golbat", "types": ["poison", "flying"], "method": "walking", "percentage": 40, "levelRange": [56, 59], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" },
+      { "pokemon": "Dugtrio (Alolan)", "pokemonSlug": "dugtrio-alola", "types": ["ground", "steel"], "method": "walking", "percentage": 30, "levelRange": [56, 59], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png" },
+      { "pokemon": "Druddigon", "pokemonSlug": "druddigon", "types": ["dragon"], "method": "walking", "percentage": 15, "levelRange": [56, 59], "notes": "Only location for Druddigon in Alola", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png" },
+      { "pokemon": "Noivern", "pokemonSlug": "noivern", "types": ["flying", "dragon"], "method": "walking", "percentage": 15, "levelRange": [56, 59], "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png" },
+      { "pokemon": "Crobat", "pokemonSlug": "crobat", "types": ["poison", "flying"], "method": "sos", "percentage": 0, "levelRange": [56, 59], "notes": "SOS call from Golbat", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png" },
+      { "pokemon": "Guzzlord", "pokemonSlug": "guzzlord", "types": ["dark", "dragon"], "method": "special", "percentage": 0, "levelRange": [60, 60], "notes": "Ultra Beast encounter during UB quest. Respawns if defeated.", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png" },
+      { "pokemon": "Zygarde", "pokemonSlug": "zygarde", "types": ["dragon", "ground"], "method": "special", "percentage": 0, "levelRange": [60, 60], "notes": "Static encounter after UB quest. Respawns after entering Hall of Fame if defeated.", "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png" }
+    ],
+    "items": [
+      { "name": "TM26 Earthquake", "itemSlug": "tm26-earthquake", "location": "In the deepest chamber", "hidden": false },
+      { "name": "Max Revive", "itemSlug": "max-revive", "location": "Hidden in a side passage", "hidden": true },
+      { "name": "Rare Candy", "itemSlug": "rare-candy", "location": "Near the cave entrance", "hidden": true }
+    ],
+    "trainers": [],
+    "tips": "Druddigon is exclusive to this cave in all of Alola - it has Sheer Force ability and solid Attack stats. Guzzlord (UB-05 Glutton) is a Dark/Dragon Ultra Beast with massive HP but poor defenses. Bring Beast Balls to catch it. Zygarde appears after the UB quest and can be caught with regular balls. Use Timer Balls after many turns for best catch rate on both.",
+    "connectedRoutes": [
+      { "name": "Poni Meadow", "slug": "poni-meadow" }
     ]
   }
 ]
