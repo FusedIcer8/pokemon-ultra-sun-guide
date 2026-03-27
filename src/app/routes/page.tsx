@@ -68,7 +68,7 @@ export default function RoutesListPage() {
 
       {/* Interactive Map */}
       <div className="mb-8">
-        <AlolaMap island={selectedIsland === 'all' ? undefined : selectedIsland} />
+        <AlolaMap />
       </div>
 
       {/* Island Tabs */}
