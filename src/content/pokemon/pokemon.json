@@ -332,14 +332,14 @@
     "evolution": [
       {
         "pokemon": "Rattata",
-        "pokemonSlug": "rattata",
+        "pokemonSlug": "rattata-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Raticate",
-        "pokemonSlug": "raticate",
+        "pokemonSlug": "raticate-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
         "condition": "Level 20 (Night)",
         "stage": 2
@@ -454,14 +454,14 @@
     "evolution": [
       {
         "pokemon": "Rattata",
-        "pokemonSlug": "rattata",
+        "pokemonSlug": "rattata-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Raticate",
-        "pokemonSlug": "raticate",
+        "pokemonSlug": "raticate-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
         "condition": "Level 20 (Night)",
         "stage": 2
@@ -1045,7 +1045,7 @@
       },
       {
         "pokemon": "Raichu",
-        "pokemonSlug": "raichu",
+        "pokemonSlug": "raichu-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
         "condition": "Thunder Stone (Alolan form in Alola)",
         "stage": 3
@@ -1152,7 +1152,7 @@
       },
       {
         "pokemon": "Raichu",
-        "pokemonSlug": "raichu",
+        "pokemonSlug": "raichu-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
         "condition": "Thunder Stone (Alolan form in Alola)",
         "stage": 3
@@ -2678,14 +2678,14 @@
     "evolution": [
       {
         "pokemon": "Diglett",
-        "pokemonSlug": "diglett",
+        "pokemonSlug": "diglett-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Dugtrio",
-        "pokemonSlug": "dugtrio",
+        "pokemonSlug": "dugtrio-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
         "condition": "Level 26",
         "stage": 2
@@ -2788,14 +2788,14 @@
     "evolution": [
       {
         "pokemon": "Diglett",
-        "pokemonSlug": "diglett",
+        "pokemonSlug": "diglett-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Dugtrio",
-        "pokemonSlug": "dugtrio",
+        "pokemonSlug": "dugtrio-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
         "condition": "Level 26",
         "stage": 2
@@ -2909,14 +2909,14 @@
     "evolution": [
       {
         "pokemon": "Meowth",
-        "pokemonSlug": "meowth",
+        "pokemonSlug": "meowth-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Persian",
-        "pokemonSlug": "persian",
+        "pokemonSlug": "persian-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
         "condition": "Friendship (Alolan form in Alola)",
         "stage": 2
@@ -3017,14 +3017,14 @@
     "evolution": [
       {
         "pokemon": "Meowth",
-        "pokemonSlug": "meowth",
+        "pokemonSlug": "meowth-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Persian",
-        "pokemonSlug": "persian",
+        "pokemonSlug": "persian-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
         "condition": "Friendship (Alolan form in Alola)",
         "stage": 2
@@ -6195,14 +6195,14 @@
     "evolution": [
       {
         "pokemon": "Grimer",
-        "pokemonSlug": "grimer",
+        "pokemonSlug": "grimer-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Muk",
-        "pokemonSlug": "muk",
+        "pokemonSlug": "muk-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
         "condition": "Level 38",
         "stage": 2
@@ -6304,14 +6304,14 @@
     "evolution": [
       {
         "pokemon": "Grimer",
-        "pokemonSlug": "grimer",
+        "pokemonSlug": "grimer-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
         "condition": "Base",
         "stage": 1
       },
       {
         "pokemon": "Muk",
-        "pokemonSlug": "muk",
+        "pokemonSlug": "muk-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
         "condition": "Level 38",
         "stage": 2
@@ -12302,7 +12302,7 @@
       },
       {
         "pokemon": "Raichu",
-        "pokemonSlug": "raichu",
+        "pokemonSlug": "raichu-alola",
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
         "condition": "Thunder Stone (Alolan form in Alola)",
         "stage": 3
