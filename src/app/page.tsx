@@ -3,11 +3,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Search, BookOpen, Map, HelpCircle, ChevronRight, Sparkles } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { ChevronRight } from 'lucide-react';
 import { TypeBadge } from '@/components/shared/TypeBadge';
-import { IslandBadge } from '@/components/shared/IslandBadge';
 import { AlolaMap } from '@/components/shared/AlolaMap';
 import { spriteUrl } from '@/lib/utils';
 import { getAllPokemon, getAllRoutes, getAllTips } from '@/lib/content/loader';
@@ -16,7 +13,6 @@ const pokemon = getAllPokemon();
 const routes = getAllRoutes();
 const tips = getAllTips();
 
-const featuredRoutes = routes.slice(0, 4);
 const recentPokemon = pokemon.slice(0, 8);
 const previewTips = tips.slice(0, 3);
 
@@ -32,47 +28,41 @@ export default function HomePage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-[#FAFAF8]">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-500 via-red-500 to-rose-600 text-white">
-        <div className="absolute inset-0 bg-[url('/pokeball-pattern.svg')] opacity-5" />
+      <section className="relative overflow-hidden bg-gradient-to-br from-red-500 via-orange-500 to-amber-400 text-white">
         <div className="relative mx-auto max-w-5xl px-6 py-20 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
             Pokemon Ultra Sun Guide
           </h1>
           <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto sm:text-xl">
-            Your interactive companion for every route, Pokemon, and challenge in Alola
+            Your interactive companion for Alola
           </p>
 
-          <form onSubmit={handleSearch} className="mt-8 flex items-center mx-auto max-w-lg">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+          <form onSubmit={handleSearch} className="mt-8 mx-auto max-w-lg">
+            <div className="relative">
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search Pokemon, routes, items..."
-                className="w-full rounded-l-lg border-0 bg-white/95 py-3 pl-10 pr-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="w-full rounded-full bg-white py-3 pl-5 pr-14 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-lg"
               />
+              <button
+                type="submit"
+                className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full bg-red-600 px-5 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+              >
+                Search
+              </button>
             </div>
-            <button
-              type="submit"
-              className="rounded-r-lg bg-gray-900 px-6 py-3 font-semibold text-white transition-colors hover:bg-gray-800"
-            >
-              Search
-            </button>
           </form>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-1.5 text-sm">
-              {pokemon.length}+ Pokemon
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-1.5 text-sm">
-              {routes.length}+ Routes
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-1.5 text-sm">
-              Full Walkthrough
-            </Badge>
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-white/80 text-sm font-medium">
+            <span>{pokemon.length}+ Pokemon</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>{routes.length} Routes</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Full Walkthrough</span>
           </div>
         </div>
       </section>
@@ -81,93 +71,61 @@ export default function HomePage() {
       <section className="mx-auto max-w-5xl w-full px-6 -mt-8 relative z-10">
         <div className="grid gap-4 sm:grid-cols-3">
           <Link href="/story" className="group">
-            <Card className="h-full transition-shadow hover:shadow-lg border-2 hover:border-orange-200">
-              <CardContent className="flex items-start gap-4 pt-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-5 h-full transition-shadow hover:shadow-md">
+              <div className="flex items-start gap-4">
                 <span className="text-3xl">📖</span>
-                <div>
-                  <CardTitle className="text-lg group-hover:text-orange-600 transition-colors">Story Guide</CardTitle>
-                  <CardDescription className="mt-1">Step-by-step walkthrough with spoiler controls</CardDescription>
+                <div className="flex-1">
+                  <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors">Story Guide</h3>
+                  <p className="text-sm text-gray-500 mt-1">Step-by-step walkthrough with spoiler controls</p>
                 </div>
-              </CardContent>
-            </Card>
+                <ChevronRight size={16} className="text-gray-300 group-hover:text-red-400 transition-colors mt-1" />
+              </div>
+            </div>
           </Link>
           <Link href="/routes" className="group">
-            <Card className="h-full transition-shadow hover:shadow-lg border-2 hover:border-blue-200">
-              <CardContent className="flex items-start gap-4 pt-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-5 h-full transition-shadow hover:shadow-md">
+              <div className="flex items-start gap-4">
                 <span className="text-3xl">🗺️</span>
-                <div>
-                  <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">Routes & Pokemon</CardTitle>
-                  <CardDescription className="mt-1">Encounter tables, items, and maps for every location</CardDescription>
+                <div className="flex-1">
+                  <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors">Routes &amp; Pokemon</h3>
+                  <p className="text-sm text-gray-500 mt-1">Encounter tables, items, and maps for every location</p>
                 </div>
-              </CardContent>
-            </Card>
+                <ChevronRight size={16} className="text-gray-300 group-hover:text-red-400 transition-colors mt-1" />
+              </div>
+            </div>
           </Link>
           <Link href="/unstuck" className="group">
-            <Card className="h-full transition-shadow hover:shadow-lg border-2 hover:border-green-200">
-              <CardContent className="flex items-start gap-4 pt-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-5 h-full transition-shadow hover:shadow-md">
+              <div className="flex items-start gap-4">
                 <span className="text-3xl">🆘</span>
-                <div>
-                  <CardTitle className="text-lg group-hover:text-green-600 transition-colors">Getting Unstuck?</CardTitle>
-                  <CardDescription className="mt-1">Tell us where you are and we&apos;ll help</CardDescription>
+                <div className="flex-1">
+                  <h3 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors">Getting Unstuck</h3>
+                  <p className="text-sm text-gray-500 mt-1">Tell us where you are and we&apos;ll help</p>
                 </div>
-              </CardContent>
-            </Card>
+                <ChevronRight size={16} className="text-gray-300 group-hover:text-red-400 transition-colors mt-1" />
+              </div>
+            </div>
           </Link>
         </div>
       </section>
 
       {/* Interactive Alola Map */}
-      <section className="mb-12">
+      <section className="mx-auto max-w-5xl w-full px-6 py-12">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Explore Alola</h2>
-          <Link href="/routes" className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
+          <h2 className="text-2xl font-bold text-gray-900">Explore Alola</h2>
+          <Link href="/routes" className="text-sm font-medium text-red-600 hover:text-red-700 flex items-center gap-1">
             All Routes <ChevronRight size={14} />
           </Link>
         </div>
         <AlolaMap />
       </section>
 
-      {/* Featured Routes */}
-      <section className="mx-auto max-w-5xl w-full px-6 py-12">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Featured Routes</h2>
-          <Link href="/routes" className="flex items-center gap-1 text-sm font-medium text-orange-600 hover:text-orange-700">
-            View all <ChevronRight size={16} />
-          </Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {featuredRoutes.map((route) => (
-            <Link key={route.slug} href={`/routes/${route.slug}`} className="group">
-              <Card className="h-full transition-all hover:shadow-lg hover:border-orange-200">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-lg group-hover:text-orange-600 transition-colors">
-                      {route.name}
-                    </CardTitle>
-                    <IslandBadge island={route.island} />
-                  </div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <Badge variant="outline" className="text-xs capitalize">{route.category}</Badge>
-                    <span className="text-xs text-muted-foreground">
-                      {route.encounters.length} encounters
-                    </span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground line-clamp-2">{route.description}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Recent Pokemon */}
+      {/* Pokemon Preview */}
       <section className="mx-auto max-w-5xl w-full px-6 pb-12">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Pokemon</h2>
-          <Link href="/pokemon" className="flex items-center gap-1 text-sm font-medium text-orange-600 hover:text-orange-700">
-            View all <ChevronRight size={16} />
+          <h2 className="text-2xl font-bold text-gray-900">Pokemon</h2>
+          <Link href="/pokemon" className="flex items-center gap-1 text-sm font-medium text-red-600 hover:text-red-700">
+            See All <ChevronRight size={16} />
           </Link>
         </div>
         <div className="flex gap-4 overflow-x-auto pb-4 -mx-2 px-2 scrollbar-thin">
@@ -177,57 +135,48 @@ export default function HomePage() {
               href={`/pokemon/${mon.slug}`}
               className="group flex-shrink-0 w-36"
             >
-              <Card className="h-full transition-all hover:shadow-lg hover:border-orange-200 text-center">
-                <CardContent className="flex flex-col items-center pt-4 pb-3 px-3">
-                  <img
-                    src={spriteUrl(mon.id)}
-                    alt={mon.name}
-                    width={80}
-                    height={80}
-                    className="pixelated group-hover:scale-110 transition-transform"
-                  />
-                  <span className="text-xs text-muted-foreground font-mono mt-1">#{String(mon.id).padStart(3, '0')}</span>
-                  <span className="font-semibold text-sm mt-0.5 group-hover:text-orange-600 transition-colors">{mon.name}</span>
-                  <div className="flex gap-1 mt-2 flex-wrap justify-center">
-                    {mon.types.map((t) => (
-                      <TypeBadge key={t} type={t} size="xs" />
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="bg-white rounded-xl border border-gray-200 p-3 h-full text-center transition-shadow hover:shadow-md">
+                <img
+                  src={spriteUrl(mon.id)}
+                  alt={mon.name}
+                  width={80}
+                  height={80}
+                  className="pixelated mx-auto group-hover:scale-110 transition-transform"
+                />
+                <span className="block text-xs text-gray-400 font-mono mt-1">#{String(mon.id).padStart(3, '0')}</span>
+                <span className="block font-bold text-sm text-gray-900 mt-0.5 group-hover:text-red-600 transition-colors">{mon.name}</span>
+                <div className="flex gap-1 mt-2 flex-wrap justify-center">
+                  {mon.types.map((t) => (
+                    <TypeBadge key={t} type={t} size="xs" />
+                  ))}
+                </div>
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* Tips Preview */}
-      <section className="bg-gray-50 dark:bg-gray-900/50 py-12">
+      {/* Tips */}
+      <section className="bg-white border-t border-gray-200 py-12">
         <div className="mx-auto max-w-5xl w-full px-6">
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-2">
-              <Sparkles size={20} className="text-yellow-500" />
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Quick Tips</h2>
-            </div>
-            <Link href="/tips" className="flex items-center gap-1 text-sm font-medium text-orange-600 hover:text-orange-700">
+            <h2 className="text-2xl font-bold text-gray-900">Quick Tips</h2>
+            <Link href="/tips" className="flex items-center gap-1 text-sm font-medium text-red-600 hover:text-red-700">
               View all <ChevronRight size={16} />
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
             {previewTips.map((tip) => (
-              <Card key={tip.id} className="h-full">
-                <CardHeader>
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">{tip.icon}</span>
-                    <div>
-                      <CardTitle className="text-base">{tip.title}</CardTitle>
-                      <Badge variant="outline" className="mt-1.5 text-xs capitalize">{tip.category}</Badge>
-                    </div>
+              <div key={tip.id} className="bg-white rounded-xl border border-gray-200 p-5 transition-shadow hover:shadow-md">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">{tip.icon}</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900">{tip.title}</h3>
+                    <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-50 text-orange-600 mt-1.5 capitalize">{tip.category}</span>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground line-clamp-3">{tip.description}</p>
-                </CardContent>
-              </Card>
+                </div>
+                <p className="text-sm text-gray-600 mt-3 line-clamp-3">{tip.description}</p>
+              </div>
             ))}
           </div>
         </div>

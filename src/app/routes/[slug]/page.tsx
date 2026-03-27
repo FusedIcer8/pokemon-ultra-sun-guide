@@ -1,13 +1,10 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ChevronRight, MapPin, Package, Swords, Lightbulb, Info } from 'lucide-react';
 import { getRouteBySlug, getAllRoutes } from '@/lib/content/loader';
 import { spriteUrl, METHOD_LABELS } from '@/lib/utils';
 import { TypeBadge } from '@/components/shared/TypeBadge';
 import { IslandBadge } from '@/components/shared/IslandBadge';
 import { PercentBar } from '@/components/shared/PercentBar';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { RouteEncounter } from '@/types';
 
 export function generateStaticParams() {
@@ -54,240 +51,194 @@ export default async function RouteDetailPage({
   return (
     <div className="mx-auto max-w-5xl px-6 py-10">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-1 text-sm text-muted-foreground mb-6">
-        <Link href="/routes" className="hover:text-orange-600 transition-colors">Routes</Link>
-        <ChevronRight size={14} />
-        <span className="text-foreground font-medium">{route.name}</span>
+      <nav className="flex items-center gap-1 text-sm text-gray-400 mb-6">
+        <Link href="/routes" className="hover:text-red-600 transition-colors">Routes</Link>
+        <span className="mx-1">/</span>
+        <span className="text-gray-900 font-medium">{route.name}</span>
       </nav>
 
-      {/* Hero */}
+      {/* Header */}
       <div className="mb-10">
         <div className="flex flex-wrap items-center gap-3 mb-3">
-          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white">{route.name}</h1>
+          <h1 className="text-3xl font-bold text-gray-900">{route.name}</h1>
           <IslandBadge island={route.island} size="md" />
           <span className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold capitalize ${CATEGORY_COLORS[route.category] || ''}`}>
             {route.category}
           </span>
         </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">{route.description}</p>
+        <p className="text-lg text-gray-600 max-w-3xl">{route.description}</p>
       </div>
 
-      {/* Story Relevance */}
+      {/* Story Callout */}
       {route.storyRelevance && (
-        <div className="mb-8 flex gap-3 items-start rounded-xl border border-blue-200 bg-blue-50 dark:border-blue-900 dark:bg-blue-950 p-4">
-          <Info size={20} className="text-blue-500 mt-0.5 flex-shrink-0" />
-          <div>
-            <h3 className="font-semibold text-blue-900 dark:text-blue-200 text-sm">Story Relevance</h3>
-            <p className="text-sm text-blue-800 dark:text-blue-300 mt-1">{route.storyRelevance}</p>
-            {route.unlockCondition && (
-              <p className="text-xs text-blue-600 dark:text-blue-400 mt-2">
-                <span className="font-semibold">Unlock:</span> {route.unlockCondition}
-              </p>
-            )}
-          </div>
+        <div className="mb-8 bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <h3 className="font-semibold text-amber-800 text-sm mb-1">Story Relevance</h3>
+          <p className="text-sm text-amber-800">{route.storyRelevance}</p>
+          {route.unlockCondition && (
+            <p className="text-xs text-amber-700 mt-2">
+              <span className="font-semibold">Unlock:</span> {route.unlockCondition}
+            </p>
+          )}
         </div>
       )}
 
-      {/* Encounter Tables */}
+      {/* Encounter Table */}
       {Object.keys(encounterGroups).length > 0 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl flex items-center gap-2">
-              <MapPin size={20} className="text-orange-500" />
-              Encounter Table
-              <Badge variant="secondary" className="ml-auto text-xs font-mono">
-                {route.encounters.length} total
-              </Badge>
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-8">
-            {Object.entries(encounterGroups).map(([method, encounters]) => (
-              <div key={method}>
-                <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
-                  <span className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
-                  {METHOD_LABELS[method] || method}
-                  <span className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
-                </h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-gray-200 dark:border-gray-700">
-                        <th className="text-left py-2 pr-3 font-semibold">Pokemon</th>
-                        <th className="text-left py-2 pr-3 font-semibold">Type</th>
-                        <th className="text-left py-2 pr-3 font-semibold">Rate</th>
-                        <th className="text-left py-2 pr-3 font-semibold">Levels</th>
-                        <th className="text-left py-2 pr-3 font-semibold">Time</th>
-                        <th className="text-left py-2 font-semibold">Notes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {encounters.map((enc, i) => (
-                        <tr key={i} className="border-b border-gray-100 dark:border-gray-800 last:border-0">
-                          <td className="py-2.5 pr-3">
-                            <Link
-                              href={`/pokemon/${enc.pokemonSlug}`}
-                              className="flex items-center gap-2 group/pokemon"
-                            >
-                              <img
-                                src={enc.sprite || spriteUrl(0)}
-                                alt={enc.pokemon}
-                                width={32}
-                                height={32}
-                                className="pixelated"
-                              />
-                              <span className="font-medium text-orange-600 group-hover/pokemon:text-orange-700 group-hover/pokemon:underline">
-                                {enc.pokemon}
-                              </span>
-                            </Link>
-                          </td>
-                          <td className="py-2.5 pr-3">
-                            <div className="flex gap-1">
-                              {enc.types.map((t) => (
-                                <TypeBadge key={t} type={t} size="xs" />
-                              ))}
-                            </div>
-                          </td>
-                          <td className="py-2.5 pr-3">
-                            <PercentBar percent={enc.percentage} />
-                          </td>
-                          <td className="py-2.5 pr-3 font-mono text-xs whitespace-nowrap">
-                            Lv. {enc.levelRange[0]}-{enc.levelRange[1]}
-                          </td>
-                          <td className="py-2.5 pr-3 capitalize text-xs text-muted-foreground">
-                            {enc.timeOfDay || 'Any'}
-                          </td>
-                          <td className="py-2.5 text-xs text-muted-foreground max-w-[200px]">
-                            {enc.notes || '-'}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+        <div className="mb-8 bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900">Encounter Table</h2>
+            <span className="text-xs font-mono text-gray-400">{route.encounters.length} total</span>
+          </div>
+
+          {Object.entries(encounterGroups).map(([method, encounters]) => (
+            <div key={method}>
+              <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide bg-gray-50 px-4 py-2">
+                {METHOD_LABELS[method] || method}
               </div>
-            ))}
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Items Found Here */}
-      {route.items.length > 0 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl flex items-center gap-2">
-              <Package size={20} className="text-amber-500" />
-              Items Found Here
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="divide-y divide-gray-100 dark:divide-gray-800">
-              {route.items.map((item, i) => (
-                <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="font-semibold text-sm">{item.name}</span>
-                      {item.hidden && (
-                        <Badge variant="outline" className="text-[10px] bg-yellow-50 text-yellow-700 border-yellow-300">
-                          Hidden
-                        </Badge>
-                      )}
-                      {!item.hidden && (
-                        <Badge variant="outline" className="text-[10px]">Visible</Badge>
-                      )}
+              {encounters.map((enc, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-3 px-4 py-3 border-b border-gray-100 last:border-0"
+                >
+                  <img
+                    src={enc.sprite || spriteUrl(0)}
+                    alt={enc.pokemon}
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 pixelated flex-shrink-0"
+                  />
+                  <div className="flex-1 min-w-0">
+                    <Link
+                      href={`/pokemon/${enc.pokemonSlug}`}
+                      className="font-medium text-gray-900 hover:text-red-600 transition-colors"
+                    >
+                      {enc.pokemon}
+                    </Link>
+                    <div className="flex gap-1 mt-0.5">
+                      {enc.types.map((t) => (
+                        <TypeBadge key={t} type={t} size="xs" />
+                      ))}
                     </div>
-                    {item.location && (
-                      <p className="text-xs text-muted-foreground mt-0.5">{item.location}</p>
-                    )}
-                    {item.notes && (
-                      <p className="text-xs text-muted-foreground mt-0.5 italic">{item.notes}</p>
-                    )}
-                    {item.requiresAbility && (
-                      <p className="text-xs text-orange-600 mt-0.5">Requires: {item.requiresAbility}</p>
-                    )}
                   </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Trainers */}
-      {route.trainers.length > 0 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl flex items-center gap-2">
-              <Swords size={20} className="text-red-500" />
-              Trainers
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="divide-y divide-gray-100 dark:divide-gray-800">
-              {route.trainers.map((trainer, i) => (
-                <div key={i} className="py-3 first:pt-0 last:pb-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="font-semibold text-sm">{trainer.name}</span>
-                    <Badge variant="outline" className="text-[10px] capitalize">{trainer.type}</Badge>
+                  <div className="w-28 flex-shrink-0">
+                    <PercentBar percent={enc.percentage} />
                   </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {trainer.pokemon.map((p, j) => (
-                      <span
-                        key={j}
-                        className="inline-flex items-center rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-0.5 text-xs font-medium text-muted-foreground"
-                      >
-                        {typeof p === 'string' ? p : (p as any).name ? `${(p as any).name} Lv.${(p as any).level}` : JSON.stringify(p)}
-                      </span>
-                    ))}
-                  </div>
-                  {trainer.notes && (
-                    <p className="text-xs text-muted-foreground mt-1 italic">{trainer.notes}</p>
+                  <span className="text-xs font-mono text-gray-600 whitespace-nowrap w-20 text-right flex-shrink-0">
+                    Lv. {enc.levelRange[0]}-{enc.levelRange[1]}
+                  </span>
+                  {enc.timeOfDay && enc.timeOfDay !== 'any' && (
+                    <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 flex-shrink-0 capitalize">
+                      {enc.timeOfDay}
+                    </span>
                   )}
                 </div>
               ))}
             </div>
-          </CardContent>
-        </Card>
+          ))}
+        </div>
+      )}
+
+      {/* Items Found Here */}
+      {route.items.length > 0 && (
+        <div className="mb-8 bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="px-5 py-4 border-b border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900">Items Found Here</h2>
+          </div>
+          <div className="divide-y divide-gray-100">
+            {route.items.map((item, i) => (
+              <div key={i} className="flex items-start gap-3 px-5 py-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-sm text-gray-900">{item.name}</span>
+                    {item.hidden ? (
+                      <span className="inline-flex px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-700">
+                        Hidden
+                      </span>
+                    ) : (
+                      <span className="inline-flex px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-500">
+                        Visible
+                      </span>
+                    )}
+                  </div>
+                  {item.location && (
+                    <p className="text-xs text-gray-400 mt-0.5">{item.location}</p>
+                  )}
+                  {item.notes && (
+                    <p className="text-xs text-gray-400 mt-0.5 italic">{item.notes}</p>
+                  )}
+                  {item.requiresAbility && (
+                    <p className="text-xs text-red-600 mt-0.5">Requires: {item.requiresAbility}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Trainers */}
+      {route.trainers.length > 0 && (
+        <div className="mb-8 bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="px-5 py-4 border-b border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900">Trainers</h2>
+          </div>
+          <div className="divide-y divide-gray-100">
+            {route.trainers.map((trainer, i) => (
+              <div key={i} className="px-5 py-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-semibold text-sm text-gray-900">{trainer.name}</span>
+                  <span className="inline-flex px-2 py-0.5 rounded-full text-[10px] font-semibold bg-gray-100 text-gray-600 capitalize">
+                    {trainer.type}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {trainer.pokemon.map((p, j) => (
+                    <span
+                      key={j}
+                      className="inline-flex items-center rounded-md bg-gray-50 px-2 py-0.5 text-xs font-medium text-gray-600"
+                    >
+                      {typeof p === 'string' ? p : (p as Record<string, unknown>).name ? `${(p as Record<string, unknown>).name} Lv.${(p as Record<string, unknown>).level}` : JSON.stringify(p)}
+                    </span>
+                  ))}
+                </div>
+                {trainer.notes && (
+                  <p className="text-xs text-gray-400 mt-1 italic">{trainer.notes}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* Connected Routes */}
       {route.connectedRoutes.length > 0 && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl">Connected Routes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {route.connectedRoutes.map((cr) => (
-                <Link
-                  key={cr.slug}
-                  href={`/routes/${cr.slug}`}
-                  className="flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-700 p-3 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-orange-200 group"
-                >
-                  <MapPin size={16} className="text-gray-400 group-hover:text-orange-500 transition-colors" />
-                  <span className="font-medium text-sm group-hover:text-orange-600 transition-colors">
-                    {cr.name}
-                  </span>
-                  <ChevronRight size={14} className="ml-auto text-gray-300" />
-                </Link>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        <div className="mb-8 bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="px-5 py-4 border-b border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900">Connected Routes</h2>
+          </div>
+          <div className="p-4 flex flex-wrap gap-2">
+            {route.connectedRoutes.map((cr) => (
+              <Link
+                key={cr.slug}
+                href={`/routes/${cr.slug}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-red-200 hover:text-red-600 transition-colors"
+              >
+                {cr.name}
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* Tips */}
       {route.tips && (
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-xl flex items-center gap-2">
-              <Lightbulb size={20} className="text-yellow-500" />
-              Tips
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground whitespace-pre-line">{route.tips}</p>
-          </CardContent>
-        </Card>
+        <div className="mb-8 bg-white rounded-xl border border-gray-200 p-5">
+          <h2 className="text-lg font-bold text-gray-900 mb-3">Tips</h2>
+          <p className="text-sm text-gray-600 whitespace-pre-line">{route.tips}</p>
+        </div>
       )}
     </div>
   );

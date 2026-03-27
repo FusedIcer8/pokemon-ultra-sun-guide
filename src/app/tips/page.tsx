@@ -3,13 +3,9 @@
 import { useState } from 'react';
 import tipData from '@/content/tips/tips.json';
 import { FavoriteButton } from '@/components/shared/FavoriteButton';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardContent } from '@/components/ui/card';
-import { Lightbulb, ChevronDown, ChevronUp } from 'lucide-react';
 import type { Tip } from '@/types';
 
-const tips = tipData as unknown as Tip[];
+const tips = tipData as any[] as Tip[];
 
 const CATEGORIES = [
   { value: 'all', label: 'All' },
@@ -23,20 +19,20 @@ const CATEGORIES = [
 ];
 
 const CATEGORY_COLORS: Record<string, string> = {
-  beginner: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
-  advanced: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300',
-  grinding: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
-  money: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
-  team: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
-  qol: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-300',
-  missable: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
+  beginner: 'bg-green-100 text-green-700',
+  advanced: 'bg-purple-100 text-purple-700',
+  grinding: 'bg-orange-100 text-orange-700',
+  money: 'bg-yellow-100 text-yellow-800',
+  team: 'bg-blue-100 text-blue-700',
+  qol: 'bg-cyan-100 text-cyan-700',
+  missable: 'bg-red-100 text-red-700',
 };
 
 const PHASE_COLORS: Record<string, string> = {
-  early: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
-  mid: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
-  late: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300',
-  all: 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
+  early: 'bg-green-100 text-green-700',
+  mid: 'bg-blue-100 text-blue-700',
+  late: 'bg-purple-100 text-purple-700',
+  all: 'bg-gray-100 text-gray-700',
 };
 
 export default function TipsPage() {
@@ -56,28 +52,31 @@ export default function TipsPage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-3 mb-2">
-          <Lightbulb className="text-yellow-500" size={28} />
-          <h1 className="text-3xl font-bold">Tips & Tricks</h1>
-        </div>
-        <p className="text-gray-500 dark:text-gray-400">
+        <h1 className="text-2xl font-bold text-gray-900 mb-2">Tips & Tricks</h1>
+        <p className="text-gray-500">
           Helpful tips to make your Pokemon Ultra Sun journey smoother.
         </p>
       </div>
 
       {/* Category Tabs */}
-      <Tabs value={activeCategory} onValueChange={setActiveCategory} className="mb-6">
-        <TabsList className="flex-wrap">
-          {CATEGORIES.map((cat) => (
-            <TabsTrigger key={cat.value} value={cat.value}>
-              {cat.label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-      </Tabs>
+      <div className="flex gap-2 flex-wrap mb-6">
+        {CATEGORIES.map((cat) => (
+          <button
+            key={cat.value}
+            onClick={() => setActiveCategory(cat.value)}
+            className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
+              activeCategory === cat.value
+                ? 'bg-red-600 text-white'
+                : 'bg-white text-gray-500 border border-gray-200 hover:border-gray-400'
+            }`}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
 
       {/* Results count */}
-      <p className="text-sm text-gray-500 mb-4">
+      <p className="text-sm text-gray-400 mb-4">
         {filteredTips.length} tip{filteredTips.length !== 1 ? 's' : ''}
       </p>
 
@@ -87,66 +86,68 @@ export default function TipsPage() {
           const isExpanded = expandedId === tip.id;
 
           return (
-            <Card
+            <div
               key={tip.id}
-              className="transition-all hover:shadow-sm cursor-pointer"
+              className="bg-white rounded-xl border border-gray-200 p-4 cursor-pointer hover:shadow-sm transition-all"
               onClick={() => toggleExpand(tip.id)}
             >
-              <CardContent className="pt-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl shrink-0">{tip.icon}</span>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-2 mb-2">
-                      <h3 className="font-semibold text-sm">{tip.title}</h3>
-                      <div className="flex items-center gap-2 shrink-0">
-                        <FavoriteButton id={`tip-${tip.id}`} size={16} />
-                        {isExpanded ? (
-                          <ChevronUp size={16} className="text-gray-400" />
-                        ) : (
-                          <ChevronDown size={16} className="text-gray-400" />
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="flex flex-wrap gap-1.5 mb-2">
-                      <Badge
-                        className={`text-[10px] ${
-                          CATEGORY_COLORS[tip.category] || ''
-                        }`}
+              <div className="flex items-start gap-3">
+                <span className="text-2xl shrink-0">{tip.icon}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className="font-bold text-gray-900 text-sm">{tip.title}</h3>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <FavoriteButton id={`tip-${tip.id}`} size={16} />
+                      <svg
+                        className={`w-4 h-4 text-gray-400 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
                       >
-                        {tip.category}
-                      </Badge>
-                      <Badge
-                        className={`text-[10px] ${PHASE_COLORS[tip.gamePhase]}`}
-                      >
-                        {tip.gamePhase === 'all' ? 'Any Phase' : tip.gamePhase}
-                      </Badge>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
                     </div>
-
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      {tip.description}
-                    </p>
-
-                    {isExpanded && (
-                      <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
-                        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                          {tip.detail}
-                        </p>
-                      </div>
-                    )}
                   </div>
+
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    <span
+                      className={`text-xs rounded-full px-2 py-0.5 font-medium capitalize ${
+                        CATEGORY_COLORS[tip.category] || 'bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      {tip.category}
+                    </span>
+                    <span
+                      className={`text-xs rounded-full px-2 py-0.5 font-medium capitalize ${
+                        PHASE_COLORS[tip.gamePhase] || 'bg-gray-100 text-gray-700'
+                      }`}
+                    >
+                      {tip.gamePhase === 'all' ? 'Any Phase' : tip.gamePhase}
+                    </span>
+                  </div>
+
+                  <p className="text-sm text-gray-600">{tip.description}</p>
+
+                  {isExpanded && (
+                    <div className="bg-gray-50 rounded-lg p-4 mt-3">
+                      <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+                        {tip.detail}
+                      </p>
+                    </div>
+                  )}
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           );
         })}
       </div>
 
       {filteredTips.length === 0 && (
-        <div className="text-center py-16 text-gray-400">
-          <Lightbulb size={48} className="mx-auto mb-4 opacity-30" />
-          <p className="text-lg font-medium">No tips in this category</p>
-          <p className="text-sm mt-1">Try selecting a different category</p>
+        <div className="text-center py-16">
+          <p className="text-4xl mb-4 opacity-30">💡</p>
+          <p className="text-lg font-medium text-gray-400">No tips in this category</p>
+          <p className="text-sm text-gray-400 mt-1">Try selecting a different category</p>
         </div>
       )}
     </div>
